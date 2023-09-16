@@ -1,0 +1,4 @@
+tk
+numpy
+pymongo
+pymongo[srv]
