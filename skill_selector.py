@@ -5,8 +5,8 @@ import torch
 import os
 
 # Model selection from hugging face transformers (question answering)
-#model_name = "vishal0719/llama-fine-tuned-qa"
-model_name = "PY007/TinyLlama-1.1B-Chat-v0.2"
+model_name = "vishal0719/llama-fine-tuned-qa"
+#model_name = "PY007/TinyLlama-1.1B-Chat-v0.2"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 pipeline = transformers.pipeline( # setup model pipeline
     "text-generation",
