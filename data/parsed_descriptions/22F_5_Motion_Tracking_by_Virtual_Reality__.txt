@@ -1,0 +1,4 @@
+The goal is to obtain precisely quantifiable data that can inform our understanding of the relationship between visual 
+and motor processes during task performance.  The objective of this project is to create a VR environment to analyze 
+elbow flexion and extension, and to extract the data regarding  eye-tracking and motion -capture. As a premium 
+objective, the team will analyze the velocity and the coordination of that movement in VR.  

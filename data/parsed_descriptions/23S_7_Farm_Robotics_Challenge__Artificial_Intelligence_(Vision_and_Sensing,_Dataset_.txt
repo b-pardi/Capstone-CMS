@@ -1,0 +1,4 @@
+The team shall develop control software for the robot addressing the specified challenge, as it gets further refined by  
+the or ganizers. Software will be developed using the API provided by the farm -ng company (ROS -- robot operating  
+system), as well as libraries such as OpenCV or similar. The robot will be retrofitted  with cameras and GPS receivers. 
+A measure of performance is the amount of relevant data collected by the robot.  

@@ -1,0 +1,11 @@
+Team will develop a software library that will allow an engineer to buffer time series metric API requests when an 
+internet connection is lost. Engineers must be able to allow for custom callbacks that can occur before and/or after 
+data is sent or if data must be modified in some way before sending. The sync engine will be tested against a server 
+providing metric data to the team's application. Once internet connection is re -established, the goal will be to send 
+these buffered metric elements to the SweepAP I and confirm that the buffered data is uploaded and that the local 
+copy of the data is removed upon confirmation. Engineers must be able to install these packages through NPM 
+package manager and/or PIP.  
+Extended goal if time permits would be to provide a  one-page dashboard that provides simple metrics about 
+current size of the REST API metric buffer, past buffering activity. (i.e., is the buffer currently in use, how many 
+successful sent buffer events have occurred in the last day, average event downtime,  any reported errors sending 
+buffers).  

@@ -1,0 +1,9 @@
+If a team takes on this project, they are asked to develop a database -driven web appli cation that allows the user to see 
+TA allocation history, current eligibility and priority scores for each graduate student and faculty member, as well as 
+the ability to create an allocation, based on faculty and student preferences.  
+The application should  be accessible via a web interface, with data stored on some server (preferably some SQL  
+flavor). Since the data is sensitive, security would be of utmost importance.  
+There is currently a prototype application already developed, which can be used as inspir ation for the project, but 
+the prototype lacks a lot of necessary features as it is just a proof -of-concept.  
+If a team takes on this project, more specific details will be provided, especially around the allocation formula,  
+necessary for computing eligibil ity and priority.  

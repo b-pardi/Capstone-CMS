@@ -1,0 +1,3 @@
+Design a tool that can be used to measure the pocket size in a variety of change parts. The goal is to have a tool that is 
+operational with one hand, provid es repeatable measurements independent of the person using the tool, and measures 
+down to 10 thousandth of an inch. Tool should be designed for 750ml and 1.5L bottles.  

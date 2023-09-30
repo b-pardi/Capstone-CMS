@@ -1,0 +1,6 @@
+Experiment will be executed at the UC Merced Experimental Farm Greenhouse in collaboration with SupHerb 
+Farms . The capstone software team's objective is to develop a vision / learning system to detect cilantro leaves, and 
+estimate volu me of leaves in an area planted with cilantro, by taking images every day as the cilantro grows.  The weight is calculated after every mow. The first phase of this project is to utilize cameras to see if they can provide 
+accurate measurements of the crop m ass of cilantro in the area that is photographed.  Herbs are grown primarily for 
+their leaves and the focus of this work should be to identify the total pounds of plant material that would be harvested 
+from the area but to also identify the weight of unusa ble stems and the weight of usable leaves.  

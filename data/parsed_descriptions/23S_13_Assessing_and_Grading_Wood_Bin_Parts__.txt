@@ -1,0 +1,12 @@
+The primary success factor is whether the vision system can be successfully taught to disc ern mechanically usable 
+components from a diverse range of part appearances (older / newer components), with one or more part types (the 
+six sides are comprised of 4 different part types with a couple  of variations). The year -round nature of our bin sort 
+operation would afford a motivated team the opportunity to tweak and optimize the algorithms to enhance 
+performance. In addition to the core functionality, some of the bonus features that would enhance value would 
+include:  
+• A functional system that can opera te in-line with current sort processes and provide near -real time feedback and 
+recommendations on the grading status (and would make it easier to populate the "teaching" library).  
+• Identifying the defect mode and / or the required repair.  
+• Keeping trac k of a parts count of each status.  
+• Picture retention of parts processed for future review, particularly in cases where the algorithm disagrees with the 
+sorting colleague (useful for training and gaining agreement / training on "borderline" parts).  

@@ -1,0 +1,4 @@
+Task: Analyze movements of the arm with hand controllers.   
+Goal : Obtain precisely quantifiable data that can inf orm our understanding of the arm movements - motion ( using the 
+VR hand controller).  
+ 

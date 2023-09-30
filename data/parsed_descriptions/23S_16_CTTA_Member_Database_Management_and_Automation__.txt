@@ -1,0 +1,2 @@
+The objective is to consolidate systems and have one central database that can host and manage members, member  
+renewals, and member communication all in one system that can be on our website.  

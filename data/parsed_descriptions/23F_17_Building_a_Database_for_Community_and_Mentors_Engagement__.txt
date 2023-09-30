@@ -1,0 +1,2 @@
+The team is asked to perform interviews, requirements analysis, and implementation.  At the end of the semester,  we 
+are expecting to have a fully implemented database with a user-friendly  UI. 

@@ -1,0 +1,8 @@
+Develop an application that allows the user to build a composite area, with a map user interface, and turn that into a 
+boolean search syntax that can then be used to perform the actual search i nto a database (SQL).  
+For example, if a rectangular area is defined with (GPS1.1, GPS1.2, GPS2.1, GPS2.2) then a composite area can 
+be (GPS1.1, GPS1.2, GPS2.1, GPS2.2) OR (GPS3.3, GPS3.4, GPS4.3, GPS4.4). Once the composite area is 
+completed, then the sear ch is transformed into SQL queries in a database.  A previous Capstone team developed a prototype to demonstrate the problem and solution. In Phase 2, the 
+objective is to develop a functioning system that uses in addition to the Google Maps API, data from v arious services 
+(e.g., Yelp, AirBnB, etc.) rather than saving data in a SQL database. A Premium feature will be to define areas in terms 
+of composite polygons, rather than simple rectangles.  

@@ -1,0 +1,8 @@
+We would like this tool to be user friendly, quick, and efficient ( should not take longer than 5 mins to input 
+information and receive loading pattern). We are open to design ideas and welcome the students to try to come up 
+with something that falls into line with our organization and industry (warehousing and logistics).  For output we are open to ideas on what the output actually looks like but  thinking since we would need to give 
+out to the warehouse for loading, a printed paper loading pattern would be best.  
+We would like to see a functioning website or application wher e key truck and order information can be entered. 
+Based on the entries a loading pattern should be provided as the expected output.  
+We will measure the success of the tool by tracking how many trucks are returned to be re -worked vs how many 
+are loaded corr ectly with no weight issues (i.e., overweight). We can also monitor weight on the scales of the trailer.  

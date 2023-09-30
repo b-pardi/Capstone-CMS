@@ -1,0 +1,5 @@
+We need a database (SQL) solution that can be housed on Microsoft Shar ePoint. The software needs a friendly user  
+interface to allow HR to input new records. It also needs an interface for other designated users to retrieve operator  
+training records. The software should be able to provide notification of employee training requirements. We should be  
+able to analyze who is trained in a specific work center or what training is required for an operator to work in a work  
+center.  

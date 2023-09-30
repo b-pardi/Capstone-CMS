@@ -1,0 +1,2 @@
+Build a GUI interface in Linux environment to help to enter parameters to adjust the AI/ML models to fit our needs.  
+Additional details can be found at https://ucmerced.box.com/s/c2smom9uimk6kz5g77uiokce7hrihy6n . 

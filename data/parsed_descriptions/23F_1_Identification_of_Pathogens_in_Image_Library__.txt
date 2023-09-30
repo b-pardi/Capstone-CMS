@@ -1,0 +1,2 @@
+Use the pathogen images files and create an algorithm and a software program that can now be used to ID plant 
+pathogens . 

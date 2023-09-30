@@ -2,3 +2,4 @@ tk
 numpy
 pymongo
 pymongo[srv]
+PyPDF2

@@ -1,0 +1,5 @@
+Evaluate examples of visual defects per predefined inspection criteria using a machine learning algorithm/artificial 
+intelligence that re duces inspection time and increases inspection accuracy. This will be achieved using a stationary 
+camera & the camera's UI to capture images of defects on robotic parts of various sizes. Students are expected to 
+develop an application utilizing ML algorith m/AI to ensure that defects are correctly identified under standard work 
+cell lighting conditions.  

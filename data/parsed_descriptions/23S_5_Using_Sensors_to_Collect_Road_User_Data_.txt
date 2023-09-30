@@ -1,0 +1,2 @@
+Develop a working prototype for a vision -based traffic counter.  Write software that analyzes the visual data to 
+automatically count and classify road users (e -scooters, bicycles, and pedestrians).  

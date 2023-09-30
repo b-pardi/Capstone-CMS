@@ -1,0 +1,6 @@
+Extract and store inside a structured database a set of opportunities for students (i.e., internships, jobs, gigs, 
+scholarships, grants), including important metadata such as name, description, URL for applying, application deadline 
+or deadlines, and impor tant dates. The algorithm should also create meta tags relevant to the opportunity, which can 
+be later used by a recommender algorithm matching opportunities to specific students.  
+This project is recommended for a student and/or group of students interested in Artificial Intelligence (AI) fields 
+such as Text Recognition, OCR, LLMs (e.g., ChatGPT).  

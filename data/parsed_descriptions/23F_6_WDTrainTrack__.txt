@@ -1,0 +1,6 @@
+The primary deliverable will be the fully functioning web -based application. This includes:  
+• User Interface (UI): A user -friendly, intuitive, and responsive web interface for employees, managers, and 
+administrators.  
+• Backend Server: A secure and efficient server setup to handle requests and provide services such as user 
+management, progress tracking, and notification management.  
+• Database: A well -structured database to store all relevant data.  

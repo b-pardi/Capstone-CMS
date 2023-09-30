@@ -1,0 +1,5 @@
+Build an app similar to When2Meet, but with the following  differences.  
+- Participants can express an "availability value" for each time slot.  
+- Organizer: can express a "relevance value" of each participant.  
+- The calendar displays the weighted availability of each time slot. The team will be provided the formulas, an d 
+options to select values and visualize the results in a time slot.  

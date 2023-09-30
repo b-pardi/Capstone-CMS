@@ -1,0 +1,5 @@
+The team shall develop control software for the robot addressing the specified challenge, as it gets further refined by  
+the organizers. Software will be developed using the API provided by the f arm-ng company (ROS -- robot operating  
+system). The robot will be retrofitted  with GPS receivers and Inertial Measurement Units ( IMUs ) to aid the navigation 
+task. For an assigned course to  follow, a performance of measure is the percentage that can be completed under 
+different operating scenarios.  

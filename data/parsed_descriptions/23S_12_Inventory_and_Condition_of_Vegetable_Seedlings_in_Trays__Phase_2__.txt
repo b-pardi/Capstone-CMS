@@ -1,0 +1,5 @@
+Develop software that will work with a series of cameras that can accurately count the number of usable plants per 
+order. There can be multiple orders in a greenhouse. The object ive of phase 2 is to:  
+• Identify trays, and cells within trays . 
+• Determine for each tray cell the status of the plant seedling (good, bad, multiple, no plant).  
+• Prepare the user interface to view and the data.  

@@ -1,0 +1,4 @@
+Omron team has already developed some algorithms to recover the robots out of a deadlock. But they don’t work for 
+all the scenarios. Deadlock prevention is even a tougher problem and there’s no solution for it yet.  
+Machine Learning/Reinforcement learning is one option that Omron team is considering to recover the robots 
+out of deadlocks.  

@@ -1,0 +1,2 @@
+Develop software that will work with a series of cameras that could accurately count the number of usable plants per  
+order. There could be multiple orders in a greenhouse.  

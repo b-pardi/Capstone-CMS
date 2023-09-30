@@ -1,0 +1,2 @@
+Mobile app for tracking valve on and off times and calculating durations. Integrat e with a map  interface so you can 
+see which irrigation checks are currently on/off and then be able to select the  check to see historical irrigation activity . 
