@@ -1,0 +1,18 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listRequest to write a code in C# that tracks the Bluetooth asset tag ( AoA – Angle of Arrival -- Beacon/moving device) 
+from an A oA Gateway (Locator/receiver/fixed position)  to a grid measured by feet (See reference “Hardware labels”  
+and “4x4 Grid”  in https://ucmerced.box.com/s/44n679xfchxbb27aqsj151z1jukmc5af ). The dimensions of the grid 
+can be of any length, as long as they are uniform.  
+Position readings would come from an A oA Beacon to the A oA Locator, to which the data will be extracted and 
+passed on to a PC (Windows 10/11 OS). The data extraction can be in string or int datat ypes.  
+Devices are from Dusun, which has open -source code samples that includes API that can be used for this project.  ### Assistant: Sure! Here are the programming knowledge requirements to complete the project as a numbered list:
+
+1. Familiarity with C# programming language: You will need to have a good understanding of C#, including its syntax, data types, control structures, and object-oriented programming concepts.
+2. Understanding of Bluetooth Low Energy (BLE) technology: BLE is the technology used for communication between the Bluetooth beacon and the AoA gateway. You will need to understand how BLE works, including the different roles of the beacon and gateway, and how to write code that can communicate with BLE devices.
+3. Knowledge of AoA (Angle of Arrival) concepts: To accurately determine the location of a moving device using AoA, you will need to understand the principles of AoA, including how it is calculated and how it can be affected by various factors such as signal strength and multipath interference.
+4. Familiarity with Windows 10/11 operating system: As the data collected by the AoA gateway will need to be processed and displayed on a PC running Windows 10/11, you will need to have some experience working with this operating system.
+5. Understanding of JSON (JavaScript Object Notation) data format: JSON is a lightweight data interchange format that is commonly used to transmit data between web servers and web applications. You will need to understand how to work with JSON data in C#.
+6. Familiarity with Dusun's open-source code samples: Dusun provides open-source code samples for their BLE modules, which you will need to use in your project. You should be familiar with how to integrate these code samples into your own application.
+7. Understanding of the 4x4 grid system: The AoA gateway will be measuring the distance between the beacon and the moving device using a 4x4 grid system. You will need to understand how this system works and how to calculate distances based on the measurements taken by the grid.
+8. Ability to write efficient and scalable code: As the AoA system will be tracking the location of multiple moving devices, you will need to write code that can efficiently handle large amounts of data and scale to accommodate more devices as needed.
+
+By possessing these programming knowledge requirements, you

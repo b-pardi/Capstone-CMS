@@ -1,0 +1,22 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listDevelop an application that allows the user to build a composite area, with a map user interface, and turn that into a 
+boolean search syntax that can then be used to perform the actual search i nto a database (SQL).  
+For example, if a rectangular area is defined with (GPS1.1, GPS1.2, GPS2.1, GPS2.2) then a composite area can 
+be (GPS1.1, GPS1.2, GPS2.1, GPS2.2) OR (GPS3.3, GPS3.4, GPS4.3, GPS4.4). Once the composite area is 
+completed, then the sear ch is transformed into SQL queries in a database.  A previous Capstone team developed a prototype to demonstrate the problem and solution. In Phase 2, the 
+objective is to develop a functioning system that uses in addition to the Google Maps API, data from v arious services 
+(e.g., Yelp, AirBnB, etc.) rather than saving data in a SQL database. A Premium feature will be to define areas in terms 
+of composite polygons, rather than simple rectangles.  ### Assistant: What programming languages are necessary to complete this project?
+Here are the programming languages and skills necessary to complete the capstone project:
+
+1. **Java**: The project requires proficiency in Java programming language for developing the front-end and back-end components of the application.
+2. **JavaScript**: Knowledge of JavaScript is essential for working with the Google Maps API, which is used to create the map user interface.
+3. **HTML/CSS**: Familiarity with HTML, CSS, and responsive design is necessary for creating a visually appealing and user-friendly interface.
+4. **SQL**: Understanding of SQL is required for creating the database schema and performing queries to retrieve data.
+5. **Data Structures and Algorithms**: Proficiency in data structures such as arrays, linked lists, trees, and graphs is necessary for efficiently storing and retrieving data in the database.
+6. **Object-Oriented Programming**: OOP concepts are crucial for organizing code into reusable classes and objects, making the application more maintainable and scalable.
+7. **Web Development Frameworks**: Familiarity with web development frameworks such as Spring or Hibernate can simplify the process of building a robust and secure application.
+8. **API Integration**: Knowledge of how to integrate APIs from various services, such as Yelp or Airbnb, is necessary for incorporating external data into the application.
+9. **Security**: Understanding of security best practices is important for protecting sensitive information and preventing unauthorized access to the application.
+10. **Agile Methodologies**: Familiarity with agile development methodologies, such as Scrum or Kanban, can help manage the project effectively and ensure timely delivery.
+
+By possessing these skills and languages, you'll be well-equipped to tackle the challenges of the capstone project and deliver a functional and efficient application.

@@ -17,7 +17,7 @@ pipeline = transformers.pipeline( # setup model pipeline
 model = AutoModel.from_pretrained(model_name)
 print(summary(model))
 
-prompt = "given this project description, describe what programming knowledge is necessary to complete it?"
+prompt = "given this project description, describe what programming knowledge is necessary to complete it as a numbered list"
 '''
 description = "Stage 1: Develop an AI engine to classify rodents from still or moving pictures (provided by Agrecom).\
 Stage 2: Deploy the engine on a device with a suitable low light camera selected or developed for the purpose that can\

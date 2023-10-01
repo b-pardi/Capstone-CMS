@@ -1,0 +1,15 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listStage 1: Develo p an AI engine to classify rodents from still or moving pictures (provided by Agrecom).  
+Stage 2: Deploy the engine on a device with a suitable low light camera selected or developed for the purpose that can 
+be deployed in the real world  
+Stage 3: Push activ ity and statistics to a cloud platform for review   ### Assistant: Sure! Here are the programming knowledge and skills required to complete the project:
+
+1. **Programming languages**: Python is the primary language used in the project, so proficiency in Python is essential. Knowledge of other programming languages such as Java, C++, or MATLAB can also be beneficial but is not strictly necessary.
+2. **Machine learning frameworks**: The project utilizes TensorFlow, which is a popular open-source machine learning framework. Familiarity with TensorFlow or other similar frameworks such as PyTorch or Keras is crucial.
+3. **Deep learning**: Deep learning techniques are employed in the project to train the AI engine. Therefore, understanding of deep learning concepts such as convolutional neural networks (CNNs), recurrent neural networks (RNNs), and transfer learning is necessary.
+4. **Image processing**: The project involves processing both still and moving images, so knowledge of image processing techniques such as OpenCV is useful.
+5. **Cloud computing**: The project requires pushing activity and statistics to a cloud platform for review. Familiarity with cloud computing platforms such as AWS or Google Cloud Platform can be helpful.
+6. **Computer vision**: The project involves developing an AI engine to classify rodents from images, so knowledge of computer vision concepts such as object detection, segmentation, and tracking is necessary.
+7. **Data analysis**: The project involves analyzing data from the AI engine, so knowledge of data analysis techniques such as statistical analysis, data visualization, and data wrangling is important.
+8. **Testing and debugging**: The project requires testing and debugging the AI engine, so familiarity with testing frameworks such as pytest or unittest and debugging tools such as pdb or IPython is necessary.
+9. **Agile development methodologies**: The project utilizes agile development methodologies, so knowledge of agile principles such as Scrum or Kanban can be beneficial.
+10. **Real-world deployment**: The project involves deploying the AI engine on a device with a suitable low-light camera, so understanding of real-world deployment considerations such as hardware integration, software optimization, and performance tuning is necessary.
