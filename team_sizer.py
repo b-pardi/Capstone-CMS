@@ -24,6 +24,7 @@ def size_teams(students, projects):
 
     return teams
 
+
 def size_teams_with_labs(lab_populations, num_projects, base_team_size):
     # can do teams of 4 or 5        
     num_teams_per_lab = []
