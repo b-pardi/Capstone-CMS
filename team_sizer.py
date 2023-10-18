@@ -25,21 +25,32 @@ def size_teams(students, projects):
 
     return teams
 
+''' Team size distribution algorithm
+Params:
+    - lab_populations: 1D list with numbers corresponding to size of each lab
+    - num_projects: number of projects available directly correlates to total number of teams
+    - base_team_size: will either be a 4 or 5 which provides us with 2 options to choose
+'''
 def size_teams_with_labs(lab_populations, num_projects, base_team_size):
-    # can do teams of 4, 5, or 6
-    num_teams_per_lab = []
+    num_teams_per_lab = [] # can do teams of 4, 5, or 6
+    # use lab populations and base team size to find how many teams each lab will have
     for pop in lab_populations:
         num_teams_per_lab.append(pop // base_team_size)
+    
+    # 
     team_sizes = {}
-    for i, num_teams in enumerate(num_teams_per_lab):
-        team_sizes[f'lab-0{i+2}L'] = [base_team_size] * num_teams
+    for i, num_teams in enumerate(num_teams_per_lab): # using newly found number of teams per lab...
+        #               \/   corresponds to lab 'name' i.e. lab02L
+        team_sizes[f'lab-0{i+2}L'] = [base_team_size] * num_teams # init list for dict to be num_teams in size with vals base_team_size
+        # residuals from integer division earlier go to 'remaining' to be distributed among teams
         remaining = lab_populations[i] - num_teams * base_team_size
-        while remaining > 0:
+        
+        while remaining > 0: # distributing residuals
             for j in range(len(team_sizes[f'lab-0{i+2}L'])):
                 team_sizes[f'lab-0{i+2}L'][j] += 1
                 remaining -= 1
                 if remaining == 0:
-                    break
+                    break # break when no more residuals to distribute
 
     total_teams = np.sum(num_teams_per_lab)
     diff = np.abs(total_teams - num_projects)

@@ -14,9 +14,13 @@ class Project:
         self.assigned = False
         self.top_diff = np.inf
 
-'''
-Lab assignment algorithm
+''' Lab assignment algorithm
 - relies on project scores for each lab being previously sorted
+
+params: 
+    lab_sizes_dict: num of teams in each lab (counting length of list from size_teams_with_labs())
+    projects: list of Project objects instantiated in main given project's their names and sorted scores dict/list
+    num_projects: number of projects available for assignment
 '''
 def assign_projects_to_labs(lab_sizes_dict, projects, num_projects):
     cycler = itertools.cycle(projects) # cycle indefinitely through projects list
