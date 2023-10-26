@@ -1,0 +1,26 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listObjective is to design and function tool that can help the company to identify and delete, modify, fix this bad data, 
+gaps in data, and eliminate a large amount as per user requirement. This will reduce manual work related to fixing this 
+bad data.    
+ 
+Standard features:  
+• Ability to read various formats of data (xml, csv, pdf etc.;) and display in rows and columns.  
+• Give the user the ability to define each row or column of data according to the user’s preference. And modify or 
+display the data that is not according to the defined parameters. Preferably in GUI for a layman to use it.  
+• Combine different sets of data of same format into one set and customize as per user requirements.  
+• Ability to export into different formats as per user needs.  
+ 
+Bonus features:  
+• Identify duplicate data in different formats, errors such as wrong address format, punctuation , spellings, and 
+address styles. Filter the data and display the rows and columns with these discrepancies.  
+• Creating visuals from the data . ### Assistant: Thank you for providing me with the project description. Based on the information provided, here are the programming knowledge areas that would be helpful for completing this project:
+
+1. Data Structures and Algorithms: Understanding data structures like arrays, linked lists, trees, and graphs, as well as algorithms like sorting, searching, and manipulating data, will be crucial for organizing and processing the data.
+2. Programming Languages: Proficiency in at least one programming language, such as Python, Java, or C++, is required for developing the tool. Each language has its own strengths and weaknesses, so choosing the right language based on the project's requirements is essential.
+3. Data Manipulation: The tool must be able to read, write, and manipulate data in various formats, including XML, CSV, PDF, and others. Knowledge of data manipulation libraries and frameworks will be useful.
+4. User Interface Design: A user-friendly interface is essential for a tool that needs to be used by non-technical users. Familiarity with UI design principles, widgets, and frameworks like Tkinter, PyQt, or wxPython will help create an intuitive interface.
+5. Database Management: The tool may need to interact with databases to store and retrieve data. Understanding database concepts like SQL, CRUD operations, and database design will be beneficial.
+6. Error Handling and Debugging: Writing robust code that can handle errors and exceptions is crucial for any software development project. Knowledge of error handling techniques and debugging tools like pdb, inspector, and logging will help identify and fix issues quickly.
+7. Version Control Systems: Collaborative development requires using version control systems like Git to manage code changes and track revisions. Familiarity with Git commands and workflows will help manage the project effectively.
+8. Web Development: If the tool needs to be accessible over the web, knowledge of web technologies like HTML, CSS, JavaScript, and frameworks like Flask or Django will be useful.
+9. Security: Depending on the type of data being processed, security considerations may arise. Familiarity with security protocols like SSL/TLS, encryption, and access control will help protect sensitive data.
+10. Testing and Quality Assurance: To ensure the tool works correctly, a thorough testing and quality ass

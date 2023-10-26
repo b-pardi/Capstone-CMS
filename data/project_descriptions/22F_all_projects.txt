@@ -1,0 +1,489 @@
+CSE 120 Project Summaries  
+Fall 2022  
+ 
+ 
+1. Metric Sync Engine  
+ 
+Background  
+Sweep  designs and manufactures industrial wireless meters and big data workflow software for real -time equipment 
+monitoring. We have recently launched the SweepAPI, a simple cloud -based data gathering platform for storing and 
+analyzing time series data in a scal able fashion  
+ 
+Problem(s)  
+When there is no available external access to the SweepAPI  due to an outage, external services depending on receiving 
+vital time metric data within an organization run the risk of data loss if not properly stored and accounted for before 
+access is restored. This problem can be mitigated by developing an in -memory /file (sqlite3) DB solution that can 
+buffer SweepAPI REST requests for stored metric data and replay them in -order once an internet connection is 
+available again. This Metric Sync Engine  should be available as a library to an engineer to buffer and upload SweepAPI 
+metric requests once an internet connection is available. Engineers using these functions must be able to set custom 
+callbacks that allow for extended functionality that can trigger before or after a metric or set of metrics are sent.  
+ 
+Objectives  
+Team will develop a software library that will allow an engineer to buffer time series metric API requests when an 
+internet connection is lost. Engineers must be able to allow for custom callbacks that can occur before and/or after 
+data is sent or if data must be modified in some way before sending. The sync engine will be tested against a server 
+providing metric data to the team's application. Once internet connection is re -established, the goal will be to send 
+these buffered metric elements to the SweepAP I and confirm that the buffered data is uploaded and that the local 
+copy of the data is removed upon confirmation. Engineers must be able to install these packages through NPM 
+package manager and/or PIP.  
+Extended goal if time permits would be to provide a  one-page dashboard that provides simple metrics about 
+current size of the REST API metric buffer, past buffering activity. (i.e., is the buffer currently in use, how many 
+successful sent buffer events have occurred in the last day, average event downtime,  any reported errors sending 
+buffers).  
+ 
+2. Training Monitoring App  
+ 
+Background   
+Western Digital Corporation  (WDC) is an American computer hard disk drive (HDD) and solid -state drive (SSD) 
+manufacturer and data storage company. The Flash SSD engineering department is located in Milpitas, California. We 
+design, develop and test world class flash memory products.  
+ 
+Problem(s)  
+WDC hires many new engineers each year in the Silicon Technology and Manufacturing (STM) department for 
+various functions within the department. Their training involves various sessions/classes/courses for different 
+functions in STM. New hires  are recruited at different times, so it is generally not possible to perform group training.  
+In order to  formalize and streamline the training program, WDC would like to have a Web -based App where 
+managers can assign different online training classes to new hires. Upon finishing their classes, the new hire employees 
+should be able to  demonstrate their comple tion of the training.  
+ 
+Objectives  
+The web app should provide a login interface for managers and new hire employees. Managers should be able to 
+create (or import) a list of online classes that are internal to the STM department. The app should allow the set up of 
+different departments or functions for different managers and employees to choose from. Managers should be able to 
+choose 10 -20 courses from a set of ~200 to assign to new hires. Managers should be able to define the start and finish 
+dates. Upon comp letion of the classes, the new hire employee should be able to demonstrate their completion of 
+classes by answering questions or presenting their understanding to the manager. Once a new hire employee indicates completion of a course, the manager should be  able to confirm this after reviewing the answers or presentations. Each 
+function and each department should be able to summarize the statistical data on employee completion dates from 
+start to finish. The app should also be able to display an overview of how many managers are training how many 
+employees and a chart of how  many trainees are in progress.  
+ 
+3. DevTracker  
+ 
+Background  
+Western Digital  (WDC) is a data infrastructure company producing hard disk drives (HDDs), solid -state drives 
+(SSDs) and other flash memory -based data storage products, headquartered in San Jose, California. It designs, 
+manufactures, and sells data technology products, including storage devices, data center systems and cloud storage 
+services. WDC�s engineering organization u tilizes Apache Subversion (SVN) for software versioning and revision 
+control for different projects, and in different departments.  
+ 
+Problem(s)  
+Management needs to have data about the engineer development activities among different projects so they can make  
+better decisions about the resource planning for current and future projects. The aim is for WDC�s engineering 
+organization to improve resource planning for future projects and have a better understanding of actual resources 
+spent on currently active proj ects. 
+ 
+Objectives  
+The team is requested to develop a web application to enable gathering of data about the code check -in activities in 
+SVN for each project and generate key performance indicator (KPI) reports for management to have a better 
+understanding o f resource allocation.  
+At the end of this project, WDC would like to see a workable web application that can get data from SVN and 
+generate KPI reports. A responsive web user interface to provide users with the correct KPI result is expected.  
+ 
+4. Training Matrix  
+ 
+Background   
+Betts Company  is a sixth-generation  family -owned manufacturer and supplier of springs and heavy -duty truck parts 
+located in Fresno, CA. In order to ensure a safe and productive work environment, the company needs to ensure all 
+employees are properly trained for the tasks they are assigned.  
+ 
+Problem(s)  
+Betts Company would like to see a software solution created to collect, warehouse, and perform data analytics for the 
+training required throughout the organization. Today the ability of the organization to understand the training of each 
+indivi dual is difficult to manage. The information is collected, but it is difficult  to sort out who is trained, what skill 
+level they possess, and when training needs to reoccur.  
+ 
+Objectives  
+We need a database (SQL) solution that can be housed on Microsoft Shar ePoint. The software needs a friendly user  
+interface to allow HR to input new records. It also needs an interface for other designated users to retrieve operator  
+training records. The software should be able to provide notification of employee training requirements. We should be  
+able to analyze who is trained in a specific work center or what training is required for an operator to work in a work  
+center.  
+ 
+5. Motion Tracking by Virtual Reality  
+ 
+Background  
+Valley Children's Hospital  (VCH) is a healthcare institution located in the central valley of California. VCH 
+provides excellent healthcare service to all the children in the central valley. This project will focus on the neurological 
+examination using virtual reality.  
+ 
+Problem(s)  
+There is a need for improving the accuracy of the neurological exam. In order to enhance virtual medicine services  (telemedicine, remote services) this project will explore the use of Virtual Reality (VR) to track movement during 
+neurological examinations.  
+ 
+ 
+Objectives  
+The goal is to obtain precisely quantifiable data that can inform our understanding of the relationship between visual 
+and motor processes during task performance.  The objective of this project is to create a VR environment to analyze 
+elbow flexion and extension, and to extract the data regarding  eye-tracking and motion -capture. As a premium 
+objective, the team will analyze the velocity and the coordination of that movement in VR.  
+ 
+6. Loading Assistant  
+ 
+Background   
+As the preferred leader in  temperature -controlled warehousing and logistics services, United States Cold Storage  
+(USCS) offers highly reliable, cost -effective and environmentally sustainable solutions for the frozen and refrigerated 
+food industries. Our approach is to build high -quality warehouses equipped with the newest, most efficient 
+refrigeration technology available and engage strong local management teams who continuously measure and improve 
+performance. USCS manages more than 376 million cubic feet of temperature -controlled warehouse and distribution 
+space in 42 facilities located across the United States. USCS is the third largest public refrigerated warehousing (PRW) 
+logistics provider in North America and employs more than 3,500 service professionals.  
+USCS also offers logi stics and transportation services. Our consolidation programs are the best in the U.S. - 
+building full trucks from less than truckload (LTL) shipments and helping our customers be more efficient. We have 
+nationwide coverage and a flexible distribution mode l that fits many business needs. Goods get to market efficiently, 
+consistently, and most importantly - safely.  
+Our transportation management system (TMS) interfaces with all USCS operating systems to access customer 
+order information, deliver electronic da ta interchange (EDI) transaction sets and update reporting needs for every 
+stage of the transportation management process.  
+ 
+Problem(s)  
+USCS loads many trucks throughout the day. Loading can require varying degrees of skill, depending on weight, 
+product dim ensions, pallet weights, pallet counts, and various other factors. At times, there are other components 
+which need to be additionally taken into account, such as truck tare weight, fuel levels, etc.  
+Most times, loading a truck with proper weight distribution is a skill that can be learned with time and experience. 
+As we are facing tougher times in the industry, and noticing a higher turnover, we would like to see if we can expedite 
+this process and provide a suggested loading pattern to users base d on key components of the order and truck. (May 
+need two input screens for order info/truck info? - open to ideas on this).  
+When trucks are loaded, there are two weights to consider - Gross weight (total truck weight) or Axle weight 
+(weight which is allowed on certain axles of the trailer). We would like this tool to focus on the Axle weight overages. 
+By law in California, we m ust abide by the following axle weight restrictions when loading a truck: 12,000lbs - Nose, 
+34,000 lbs - Middle and 34,000 lbs - Tail. See here for more information about proper axle distribution:  
+- https://proxy.qualtrics.com/proxy/?url=https%3A%2F%2Fdot.ca.gov%2F -%2Fm edia%2Fdot -
+media%2Fprograms%2Ftraffic -operations%2Fdocuments%2Ff0019537 -axle-group -graphic -
+a11y.pdf&token=m28G4zRbflUiMqGKTagkWAu2IFgmEjg1UcWKgMAPU0Y%3D  
+- https://proxy.qualtrics.com/proxy/?url=https%3A%2F%2Fdot.ca.gov%2Fprograms%2Ftraffic -
+operations%2Flegal -truck -access%2Fweight -
+limitation&token=7mI if2QYxyoleg%2BETTy%2F662iVIxAlDzkReFDYFYW8C8%3D   
+Our operations are always looking to improve on efficiencies. Currently we have several facilities who face many 
+challenges with loading over axles because of the variables and constant influx of new associa tes. We hope by 
+introducing a tool to help distinguish correct loading patterns, we can reduce the need to rework trucks, thus 
+eliminating unnecessary labor and or wasted time.  
+ 
+Objectives  
+We would like this tool to be user friendly, quick, and efficient ( should not take longer than 5 mins to input 
+information and receive loading pattern). We are open to design ideas and welcome the students to try to come up 
+with something that falls into line with our organization and industry (warehousing and logistics).  For output we are open to ideas on what the output actually looks like but  thinking since we would need to give 
+out to the warehouse for loading, a printed paper loading pattern would be best.  
+We would like to see a functioning website or application wher e key truck and order information can be entered. 
+Based on the entries a loading pattern should be provided as the expected output.  
+We will measure the success of the tool by tracking how many trucks are returned to be re -worked vs how many 
+are loaded corr ectly with no weight issues (i.e., overweight). We can also monitor weight on the scales of the trailer.  
+ 
+7. TA Allocation Algorithm Implementation  
+ 
+Background  
+The client is the Computer Science & Engineering Department  at UC Merced. Our business is to teach 
+Computer Science, and we are located at the heart of the Central Valley, in the bustling little town of Merced. A major 
+component of effective Computer Science education is practical laboratory sessions, and we rely heavily on Teaching 
+Assistants (TAs) to run those activities.  
+TAs are selected from the pool of graduate students in our department, but since there may often be more 
+graduate students than the number of TA positions available, this means that not every gr aduate student is guaranteed 
+a TA position. When this situation arises, it is necessary to allocate the TAs based on a strict set of rules that the 
+department has agreed upon, so that everyone is onboard.  
+ 
+Problem(s)  
+The department has developed a formula for determining TA eligibility and priority, based on several factors, 
+including experience in TAing courses, evaluations, etc. Applying the formula by hand is an extremely cumbersome, 
+and error prone process, sometimes resulting in unfair allocations.  
+Automating the process is essential, especially given the growth of the department, in terms of both faculty, as 
+well as graduate and undergraduate students.  
+ 
+Objectives  
+If a team takes on this project, they are asked to develop a database -driven web appli cation that allows the user to see 
+TA allocation history, current eligibility and priority scores for each graduate student and faculty member, as well as 
+the ability to create an allocation, based on faculty and student preferences.  
+The application should  be accessible via a web interface, with data stored on some server (preferably some SQL  
+flavor). Since the data is sensitive, security would be of utmost importance.  
+There is currently a prototype application already developed, which can be used as inspir ation for the project, but 
+the prototype lacks a lot of necessary features as it is just a proof -of-concept.  
+If a team takes on this project, more specific details will be provided, especially around the allocation formula,  
+necessary for computing eligibil ity and priority.  
+ 
+8. Smart Rodent Detection  
+ 
+Background  
+Agrecom  is a biosecurity solutions company founded in 1995. Initially focused on service and sales into the poultry  
+industry, it now specializes in water treatment, sanitation, vector control and innovation in the live production 
+agricultural  
+sector  
+ 
+Problem(s)  
+We need to be able to assess the impacts of rodents easily, and automatically on a premise. Traditional manual 
+observations require night visits and estimated assessment of a mammal prone to  hiding from humans. Deployment 
+of automated camera systems that can detect, count and communicate activity and statistical data for the size and 
+frequency of rodent activity will be a vast improvement of the current status quo.  
+ 
+Objectives  
+Stage 1: Develo p an AI engine to classify rodents from still or moving pictures (provided by Agrecom).  
+Stage 2: Deploy the engine on a device with a suitable low light camera selected or developed for the purpose that can 
+be deployed in the real world  
+Stage 3: Push activ ity and statistics to a cloud platform for review   
+9. Relevance -Weighted Meeting Scheduler  
+ 
+Background  
+In the Software Capstone - Innovate to Grow program we aim to develop multiple modules that will combine to 
+address problems and user needs while searching and organizing information to create new knowledge. Previous 
+projects included aggregation of data f rom multiple apps, merging selected results from multiple searches, 
+constructing composite time ranges and geographic areas for a search. These projects are supported by 
+Veracruz.Ventures , a company based in Portugal that focuses on smart farms, applying a nd developing cutting -edge 
+technology including data management.  
+ 
+Problem(s)  
+Available technologies to find meeting times assume that every participant:  
+- has the same relevance to the meeting;  
+- must be present to the whole meeting;  
+- can't make time available or change mind about it.  
+As a result, meetings may be canceled, postponed to infinity, or lacking key participants. The most popular such 
+services include Doodle and When2Meet.  
+ 
+Objectives  
+Build an app similar to When2Meet, but with the following  differences.  
+- Participants can express an "availability value" for each time slot.  
+- Organizer: can express a "relevance value" of each participant.  
+- The calendar displays the weighted availability of each time slot. The team will be provided the formulas, an d 
+options to select values and visualize the results in a time slot.  
+ 
+10. Constructing Composite Geographical Areas for a Search - Phase 2  
+ 
+Background  
+In the Software Capstone - Innovate to Grow program we aim to develop multiple modules that will combine to 
+address problems and user needs while searching and organizing information to create new knowledge. Previous 
+projects included aggregation of data from multiple apps, merging selected results from multiple searches, 
+constructing composite time ranges an d geographic areas for a search. These projects are supported by 
+Veracruz.Ventures , a company based in Portugal that focuses on smart farms, applying and developing cutting -edge 
+technology including data management.  
+ 
+Problem(s)  
+Typical "advanced" search systems enable users to select or enter keywords in selected database fields, and sometimes 
+provide limited support for boolean operators. Creating boolean searches is time consuming and error prone when 
+involving logic across different f ields (e.g., what -where -when -who), and can lead to the need to reconstruct and rerun 
+a whole search. It would be desirable to construct the logic of a boolean search prior to running the search: in this 
+project we narrow the focus to geography (where).  
+If a user searches for something in an area of interest that is not rectangular, and they use typical map search support, 
+they still receive unneeded results outside their area of interest, or they have to repeat the search in multiple smaller 
+areas. Let's  consider this example: the user wants to find a rental right on the ocean beachfront somewhere in 
+Southern California. To achieve that objective with current searches, the user would have to repeat the instance of the 
+same search by following the coastlin e and zooming in to see results that are right on the beach. Similar problems can 
+be identified in searching by other criteria. It would be very helpful for users to be able to construct ranges with 
+boolean operators, and then perform the search in those r anges, rather than constructing multiple searches.  
+ 
+Objectives  
+Develop an application that allows the user to build a composite area, with a map user interface, and turn that into a 
+boolean search syntax that can then be used to perform the actual search i nto a database (SQL).  
+For example, if a rectangular area is defined with (GPS1.1, GPS1.2, GPS2.1, GPS2.2) then a composite area can 
+be (GPS1.1, GPS1.2, GPS2.1, GPS2.2) OR (GPS3.3, GPS3.4, GPS4.3, GPS4.4). Once the composite area is 
+completed, then the sear ch is transformed into SQL queries in a database.  A previous Capstone team developed a prototype to demonstrate the problem and solution. In Phase 2, the 
+objective is to develop a functioning system that uses in addition to the Google Maps API, data from v arious services 
+(e.g., Yelp, AirBnB, etc.) rather than saving data in a SQL database. A Premium feature will be to define areas in terms 
+of composite polygons, rather than simple rectangles.  
+ 
+11. Bottling Change Part Wear Measuring Tool  
+ 
+Background  
+E & J G allo Winery 's bottling facility in Modesto California produces several million cases annually. Most of these 
+cases are produced in glass bottles. These bottles need to be transferred smoothly inside filling, capping, and corking 
+equipment to maintain quali ty. Typically, plastic change parts are used in this application.  
+ 
+Problem(s)  
+The plastic used to transfer and position bottles wears over time. As the plastic wears the pocket that these bottles fit 
+into enlarge allowing for unwanted bottle movement. If t he pocket becomes too large, quality defects can be 
+introduced on the finished product.  
+ 
+Objectives  
+Design a tool that can be used to measure the pocket size in a variety of change parts. The goal is to have a tool that is 
+operational with one hand, provid es repeatable measurements independent of the person using the tool, and measures 
+down to 10 thousandth of an inch. Tool should be designed for 750ml and 1.5L bottles.  
+ 
+12. Counting Vegetable Seedlings  
+ 
+Background  
+California Transplants  is a nursery that p roduces vegetable seedlings for professional growers throughout 
+California. Located in Newman, CA and primarily known for growing tomato seedlings, we now are producing many 
+different species of plants for growers the entire year. This project falls under software and hardware.  
+ 
+Problem(s)  
+We currently manually count germination rates or usable plants per order as a percentage. That data then is entered 
+into our system manually which gives us the best estimate of our inventory per order. We are looking for a system that 
+can scan the greenhouse and count the number of viable plants per order and produce a report. We are looking for 
+technology to help us get an accurate inventory report to determine needs or changes downstream.  
+ 
+Objectives  
+Develop software that will work with a series of cameras that could accurately count the number of usable plants per  
+order. There could be multiple orders in a greenhouse.  
+ 
+13. Inventory of Trees - Phase 2: Size and Alive  
+ 
+Background  
+In the Engineering Capstone - Innovate to Grow program we identify market needs and develop project ideas that 
+can lead to new products and services. Previous projects included off -ground drying of harvested almonds, and 
+identification of bareroot trees, in collaboration with partnerin g farms. This project will partner with UC Merced 
+Experimental Farm . 
+ 
+Problem(s)  
+Farms take inventory of thousands of trees across hundreds of acres by manually counting and measuring them. This 
+process is very labor -intensive and repetitive. Innovate to G row saw this problem as an opportunity. In a previous 
+Capstone project, teams were tasked to develop vision and learning software to identify a tree and its grafting point, 
+and mapping the inventory of trees.  
+ 
+Objectives  
+In this Phase 2, the objective is t o build on the previous software and to develop a system that identifies whether the 
+tree is alive, and computes its size (trunk width above grafting point, and size of canopy).  14. Automated Barcode Scanning of Containers in an Outdoor Warehouse  
+
+14. Automated Barcode Scanning of Containers in an Outdoor Warehouse
+
+Backgrou nd 
+The Morning Star Company  accounts for over 30% of the California processing tomato production, supplying 40% 
+of the U.S. ingredient tomato paste and diced tomato markets, with industrial sales of approximately $350 million. 
+Morning Star is a vertically integrated company with business units supplying and servicing all aspects of the tomato 
+industry from seeding and growing in the green house to processing and canning at our factories. The harvest and 
+factory production seasons are most heavily concentrat ed between July and October. During this time period, 
+between our 3 factories we store 1 million+ bulk containers of tomato ingredients (55 -gallon drums and 300 -gallon 
+bags) in outside warehouses, stacked 4 -5 high in rows 14 -30 deep (56' -120'), with a few inches between rows. These 
+products are then available for shipment 12 months of the year. This project focuses on improving the product -
+putaway process, though the technology, if successful, could also be used to improve the shipping process as well.  
+ 
+Problem(s)  
+Currently we stack our containers 2 -high on a mule train for transport to the warehouse. The forklift operators need 
+to get off their forklifts and use industrial scanners to scan each of these labels from a distance of 2 � � 6� away. This is 
+sometimes geographically far from the putaway location as forklift operators will seek out a shaded area to prevent the 
+glare of the sun on the labels from interfering with the scan. The operators then manually input into the scanners 
+where they plan to store the containers (section and row). Human errors, or scanner errors can result in some 
+containers being scanned with an invalid container number, not being scanned at all, or being scanned to the wrong 
+section/row. Throughout the yea r, distribution colleagues will pull these containers from the warehouse and prepare 
+them for shipment. Their efficiency is reduced when they need to search for containers that were not properly 
+scanned. Our inventory accuracy and forklift driver productiv ity both during putaway and shipping will be improved 
+if we can very reliably scan containers automatically from the forklift.  
+Constraints:  
+- Specified hardware would need to be robust enough to endure the rough handling inherent in our operation.  
+- Full implementation would preferentially be able to use existing forklift -mounted computer hardware, but 
+separate hardware/software could be an option or preferable for proof -of-concept.  
+ 
+Objectives  
+As the forklift approaches a container to pick it up, or alter nately as is backs away from a container after it sets the  
+container down, a camera could capture and accurately read the container ID and queue each ID for transaction to a  
+location (section, row) specified by a forklift driver. There may be functionally equivalent alternatives to this process 
+that the team can identify.  
+The most critical technology to develop is a robust ability to capture and read the barcode labels under a variety 
+of conditions. A user -friendly interface that is intuitive, robust, and e fficient would be important as well. Additional 
+functionality to apply the core technology to additional use cases (shipping, etc.) would be a bonus, as would any work 
+to pave the way for this functionality to be easily integrated with existing information  systems (e.g., make it easier to 
+go from prototype to full implementation). One way to measure performance would be the expected ROI ... what 
+would we expect the full implementation to cost, compared to the expected value of improved productivity and 
+inventory accuracy.  
+ 
+15. Vision System to Detect Product Loss in Tomato Harvesting  
+ 
+Background  
+The Morning Star Company  accounts for over 30% of the California processing tomato production, supplying 40% 
+of the U.S. ingredient tomato paste and diced tomato markets, with industrial sales of approximately $350 million. 
+Morning Star is a vertically integrated company with business units supplying and servicing all aspects of the tomato 
+industry from seeding and growing in the green house to processing an d canning at our factories.  
+ 
+Problem(s)  
+California Sun Grower Services (CSGS) is a business unit within Morning Star that provides custom tomato 
+harvesting services. Between the Months of July and November, CSGS harvests production tomatoes across 
+Californ ia to supply fresh high -quality tomatoes to our factories for use in products such as tomato paste, ketchup, 
+and salsa. CSGS provides a custom harvesting service for growers and farmers who have contracted with Morning Star to grow tomatoes for the factori es. In providing this service, CSGS is committed to performing a high -quality 
+harvest with the goals of minimal product loss, cleanly harvested loads, and high productivity.  
+ 
+Objectives  
+To improve harvester drivers� abilities to meet these goals, CSGS woul d like to implement cameras connected to 
+computers with object detection software on to the harvesters with the ability to identify tomatoes that have been left 
+on the ground behind it. The AI vision system could provide real -time feedback to the harvester  drivers by identifying 
+the product and classifying the condition it is in, such as its size, location on the bed, or relative intactness. All of 
+these could help the driver to know when a problem is occurring and what corrective actions they should take. Along 
+with feedback, the classifications could be stored, and reports generated to give insights to product loss, and compare 
+the quality of harvesting between machines.  
+ 
+16. Autonomous Vehicle User Interface and Data System  
+ 
+Background  
+With the onset of autonomous vehicles inside nearly every facet of life there is at least one underdeveloped section of 
+industry. The industrial sector, in our case material handling in factories, has been extremely underdeveloped for the 
+use of autonomous  vehicles. The environment in which they must operate in is highly variable, differentiating terrain, 
+and must interact with the users throughout the day. This user interaction is the area of interest in this project by 
+Milano Technical Group  (MTG) and can  have profound effects on the industry of autonomy.  
+ 
+Problem(s)  
+The user interaction between current machine operators and autonomous vehicles is a problem yet to be tackled by 
+larger robotics companies in the warehouse and factory settings. This software suite will interact with the shift 
+supervisors, warehouse workers, and machine operators. It will perform asset tracking and performance metric 
+reporting. solving the problem of underutilization in autonomy.  
+ 
+Objectives  
+We will be exploring and hopefully p roductizing a user interaction suite that engages both the autonomous fleet 
+supervisors and the current machine operators. The system will be operating on multiple user interfaces and will 
+control the fleet through a novel fleet management software that MT G has been developing for the past several years.  
+The user interactions suite will consist of a front -end web -app UI that will allow different personnel to interact 
+with the autonomous fleet, a telematics server to keep track of the status of the vehicle a nd update the requested 
+paths, and a route planner to command the fleet.  
+The web -app UI will have different pages with separate features for each of the roles in the warehouse. For fleet 
+integration, a map drawing page is required to recreate the warehouse layout with different pickup and drop -off 
+locations. Once the warehouse layout is created, the potential paths the vehicles can take will be added to the map. 
+These paths will be created as binary trees consisting of different nodes and branches. The UI needs to visualize the 
+vehicle paths within the warehouse map. The fleet s upervisors will have access to a page that allows them to create 
+pickup and drop -off schedules and enter information about the transported goods. The user interface needs to have a 
+limited functionality section for the warehouse workers and the machine ope rators that display the status of the 
+vehicle and the materials that need to be loaded to it. Once the vehicle is loaded, the workers need to have a way of 
+signaling the task is completed and that the vehicle can move to the next task.  
+The telematics serv er will be responsible for the cooperation of the vehicles and the warehouse workers. It will 
+contain the status of each of the vehicles by storing position, battery percentage, loaded inventory and the list of target 
+nodes. The server needs to handle all the information used by the UI and allow the UI to display the status of all the 
+vehicles at once. The telematics server will receive constant updates from the vehicles and will also update the tasks 
+that the vehicles need to perform. The communication bet ween the vehicles and the telematics server will be done 
+using the REST API.  
+The last part of the user interaction suite will be the path planning and route scheduling module. It will take the 
+input given by the fleet supervisor and plan the required actio ns needed to be taken by the vehicles and the warehouse 
+workers. This module will generate a list of the nodes the vehicle needs to visit in order and estimate the time of 
+arrival to each node based on the path length and expected time to load the vehicle.  The module can use tree traversal 
+methods to generate the most optimum path.  
+Our team at MTG is ready to assist in any way possible.  
+ 17. Automated Inspection Using Artificial Intelligence  
+ 
+Background  
+Omron Robotics and Safety Technologies  (ORT) designs and manufactures new robot and safety sensor products. 
+Headquartered in Pleasanton, California, a diverse team of electrical, manufacturing, mechanical, quality, software, 
+systems, and test engineers work with business partners to identify new markets for which we invent our next -
+generation technologies.  
+ 
+Problem(s)  
+Inspection is labor -intensive. Automating inspection results in cost savings for ORT. Without inspection, there is a 
+risk that defective products may reach customers. Developing a machine learni ng approach to automate, with high 
+certainty, what is a defect and what is acceptable is valuable for ORT.  
+ 
+Objectives  
+Evaluate examples of visual defects per predefined inspection criteria using a machine learning algorithm/artificial 
+intelligence that re duces inspection time and increases inspection accuracy. This will be achieved using a stationary 
+camera & the camera's UI to capture images of defects on robotic parts of various sizes. Students are expected to 
+develop an application utilizing ML algorith m/AI to ensure that defects are correctly identified under standard work 
+cell lighting conditions.  
+ 
+18. Vision -Based Estimation of Basil Yield  
+ 
+Background  
+SupHerb Farms  is a company located in Turlock, CA; whose primary business is contracting culinary herb 
+production, processing of those herbs, and sales of the finished products around the world. The primary herbs 
+produced by SupHerb Farms are Basil, Cilantro and Parsle y. 
+ 
+Problem(s)  
+SupHerb  Farms would like to be able to accurately determine harvestable pounds of herbs from each production field 
+prior to harvest. Herb crops grow every day and maintaining a schedule is difficult for SupHerb as we visually 
+estimate fields and often make errors  in our estimation. These errors either cause plant downtime due to lack of crop 
+or they cause collisions between different fields that produce more pounds than were estimated. These occurrences 
+cause product quality issues and potentially plant equipment downtime because we try to push processing machinery 
+above its intended productivity.  
+ 
+Objectives  
+First experiment will be executed at the UC Merced Experimental Farm Greenhouse in collaboration with SupHerb 
+Farms:  the capstone software team's objective i s to develop a vision/learning system to detect basil leaves and 
+estimate volume of leaves in an area planted with basil, by taking images every day as the basil grows. The weight is 
+calculated by the Farm Manager after every mow.  
+This phase of the project  is to utilize cameras to see if they can provide accurate measurements of the crop mass 
+of basil in the area that is photographed. Herbs are grown primarily for their leaves and the focus of this work should 
+be to identify the total pounds of plant materi al that would be harvested from the area but to also identify the weight 
+of unusable stems and the weight of usable leaves. It should be understood that we try to harvest stems not longer 
+than 15 inches; if a plant were to have two stems and the longest is  22 inches and the shorter stem is 17 inches, the 
+22-inch stem will have the top 15 inches cut off and the shorter stem will be cut off at the same so only 10 inches 
+would be harvested.  Basil is normally harvested 4 times in Central California with the fi rst harvest starting when the 
+total length of average stems are 20 inches from the ground to the tip, thus leaving 5 inches of stubble from which the 
+next cutting grows.  On the next cut we would let the basil reach 21 inches of length and cut 6 inches fro m the 
+ground, so we do not harvest the woody stubble. The 3rd and 4th cuts continue up 1 inch each.  

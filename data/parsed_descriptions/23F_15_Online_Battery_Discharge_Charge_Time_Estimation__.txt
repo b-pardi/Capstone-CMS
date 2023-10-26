@@ -1,0 +1,5 @@
+Estimate the remaining discharge time/charge time based on current as well as from the previous data.  
+• Multiple standard methods need to be identified both deterministic and probabilistic methods.  
+• These methods should be evaluated to identify the best estimation method.  
+• Limitations and assumptions associated with these methods should be established.  
+Test formulated method on batteries with different chemistry (Li -ion based)"  

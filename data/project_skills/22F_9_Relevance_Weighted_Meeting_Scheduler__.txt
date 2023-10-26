@@ -1,0 +1,16 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listBuild an app similar to When2Meet, but with the following  differences.  
+- Participants can express an "availability value" for each time slot.  
+- Organizer: can express a "relevance value" of each participant.  
+- The calendar displays the weighted availability of each time slot. The team will be provided the formulas, an d 
+options to select values and visualize the results in a time slot.  ### Assistant: Sure! Here are the programming knowledge requirements to complete this project:  
+1. Familiarity with JavaScript or TypeScript for building the frontend and backend of the application.  
+2. Understanding of HTML, CSS, and how to structure a website using a framework like React or Angular.  
+3. Knowledge of how to create a RESTful API using Node.js and Express.js or another backend framework.  
+4. Familiarity with MongoDB or another NoSQL database to store user data and preferences.  
+5. Experience with a state management library like Redux or MobX to manage the application's state.  
+6. Understanding of how to use React hooks or other state management techniques to manage state in a React application.  
+7. Familiarity with how to handle events and form submissions in a web application.  
+8. Knowledge of how to use a package manager like npm or yarn to install and manage dependencies.  
+9. Understanding of how to use a build tool like Webpack or Rollup to optimize and bundle code for production.  
+10. Familiarity with how to deploy a web application to a hosting platform like Heroku or AWS.  
+These are just some of the programming knowledge requirements for completing this project. Depending on your team's experience and skill level, you may need to brush up on certain areas or learn new technologies to complete the project successfully.

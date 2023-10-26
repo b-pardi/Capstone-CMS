@@ -1,0 +1,4 @@
+The students will be asked to use open -source  Regional Convolutional Neural Network (R -CNN) based deep learning 
+to do image data processing. The main purpose is to identify very faint defects in the silicon wafer image.  In order to 
+enhance the defect image, a diff image has to be made in comparison  to a perfect wafer image. The project  has three 
+parts:  

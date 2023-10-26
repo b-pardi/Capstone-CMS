@@ -1,0 +1,3 @@
+1. Create a web site that takes the publicly available informat ion about creek and river levels and forecasts, dam status 
+and fill forecasts as well as current weather and consolidate this into an easy to use site that can show multiple data 
+points. Adding and removing data points should be fairly easy from  an administrative  perspective.  

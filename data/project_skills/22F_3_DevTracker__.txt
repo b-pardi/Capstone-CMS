@@ -1,0 +1,16 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listThe team is requested to develop a web application to enable gathering of data about the code check -in activities in 
+SVN for each project and generate key performance indicator (KPI) reports for management to have a better 
+understanding o f resource allocation.  
+At the end of this project, WDC would like to see a workable web application that can get data from SVN and 
+generate KPI reports. A responsive web user interface to provide users with the correct KPI result is expected.  ### Assistant: Sure! Based on the project description provided, here are the necessary programming knowledge and skills required to complete the project:
+
+1. **Web Development**: The project involves developing a web application, so proficiency in web development technologies such as HTML, CSS, JavaScript, and frameworks like React or Angular is essential.
+2. **SVN Integration**: The project requires integrating with Subversion (SVN) to retrieve data about code check-ins. Therefore, knowledge of SVN and how to interact with its API is crucial.
+3. **Data Analysis**: The project involves generating KPI reports based on data collected from SVN. As such, familiarity with data analysis techniques, including data visualization and statistical analysis, is necessary.
+4. **Database Management**: The project will involve storing and retrieving data from a database, so understanding of database management systems such as MySQL or MongoDB is required.
+5. **Backend Development**: Developing the backend of the web application requires knowledge of server-side programming languages such as Node.js, Python, or Ruby.
+6. **Frontend Development**: In addition to web development technologies, experience with frontend development tools such as Bootstrap or Materialize is also helpful.
+7. **Agile Methodologies**: The project is likely to use Agile methodologies, so familiarity with Scrum or Kanban principles and practices is beneficial.
+8. **Testing**: Testing the application to ensure it works correctly and meets requirements is an essential part of the project. Knowledge of testing frameworks and methodologies such as Selenium or JMeter is therefore important.
+9. **Version Control**: Version control systems such as Git are used to manage code changes, so experience with using Git and other version control systems is necessary.
+10. **Project Management**: As the project involves managing multiple components and stakeholders, experience with project management tools and methodologies such as Trello or Asana is useful.

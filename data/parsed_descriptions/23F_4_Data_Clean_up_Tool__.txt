@@ -1,0 +1,15 @@
+Objective is to design and function tool that can help the company to identify and delete, modify, fix this bad data, 
+gaps in data, and eliminate a large amount as per user requirement. This will reduce manual work related to fixing this 
+bad data.    
+ 
+Standard features:  
+• Ability to read various formats of data (xml, csv, pdf etc.;) and display in rows and columns.  
+• Give the user the ability to define each row or column of data according to the user’s preference. And modify or 
+display the data that is not according to the defined parameters. Preferably in GUI for a layman to use it.  
+• Combine different sets of data of same format into one set and customize as per user requirements.  
+• Ability to export into different formats as per user needs.  
+ 
+Bonus features:  
+• Identify duplicate data in different formats, errors such as wrong address format, punctuation , spellings, and 
+address styles. Filter the data and display the rows and columns with these discrepancies.  
+• Creating visuals from the data . 

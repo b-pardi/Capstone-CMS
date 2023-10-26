@@ -1,0 +1,3 @@
+The objective is to consolidate systems and have one central database that can host and manage members, member 
+renewals, and member communication all in one system that can be on our website. The task at hand is to develop 
+two separate websites that will b e linked with one central database that has been built by last year’s  capstone team.  

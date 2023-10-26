@@ -1,0 +1,27 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listFirst experiment will be executed at the UC Merced Experimental Farm Greenhouse in collaboration with SupHerb 
+Farms:  the capstone software team's objective i s to develop a vision/learning system to detect basil leaves and 
+estimate volume of leaves in an area planted with basil, by taking images every day as the basil grows. The weight is 
+calculated by the Farm Manager after every mow.  
+This phase of the project  is to utilize cameras to see if they can provide accurate measurements of the crop mass 
+of basil in the area that is photographed. Herbs are grown primarily for their leaves and the focus of this work should 
+be to identify the total pounds of plant materi al that would be harvested from the area but to also identify the weight 
+of unusable stems and the weight of usable leaves. It should be understood that we try to harvest stems not longer 
+than 15 inches; if a plant were to have two stems and the longest is  22 inches and the shorter stem is 17 inches, the 
+22-inch stem will have the top 15 inches cut off and the shorter stem will be cut off at the same so only 10 inches 
+would be harvested.  Basil is normally harvested 4 times in Central California with the fi rst harvest starting when the 
+total length of average stems are 20 inches from the ground to the tip, thus leaving 5 inches of stubble from which the 
+next cutting grows.  On the next cut we would let the basil reach 21 inches of length and cut 6 inches fro m the 
+ground, so we do not harvest the woody stubble. The 3rd and 4th cuts continue up 1 inch each.  ### Assistant: Okay, I understand. To summarize, the capstone project involves developing a computer vision system to estimate the volume of basil leaves in a greenhouse. The system will take images of the basil plants daily and use machine learning algorithms to analyze the images and determine the weight of the basil leaves. Is that correct?
+
+Programming knowledge necessary to complete this project:
+
+1. Python programming language: The capstone project will involve working with Python, which is a popular and versatile programming language used in data analysis, machine learning, and web development.
+2. Machine Learning libraries: To build the machine learning models required for this project, you will need to have knowledge of popular Python libraries such as TensorFlow, Keras, Scikit-learn, and PyTorch.
+3. Computer Vision libraries: You will also need to have knowledge of computer vision libraries such as OpenCV, Pillow, and scikit-image, which will allow you to process and analyze images of the basil plants.
+4. Data Analysis tools: You will need to have knowledge of data analysis tools such as NumPy, pandas, and Matplotlib, which will allow you to manipulate and visualize the data collected from the greenhouse.
+5. Web Development frameworks: If you want to create a user interface for the system, you will need to have knowledge of web development frameworks such as Flask or Django.
+6. Database management systems: You may also need to know how to interact with a database management system (DBMS) such as MySQL or PostgreSQL, depending on how you plan to store and retrieve data.
+7. Cloud computing platforms: Depending on the scale of your project, you may need to use cloud computing platforms such as AWS or Google Cloud Platform to handle large amounts of data and run complex machine learning models.
+8. Containerization technologies: Containerization technologies such as Docker can help you manage and deploy your application in a more efficient and scalable way.
+9. Testing frameworks: Knowledge of testing frameworks such as Pytest or Unittest will be helpful in ensuring that your code is reliable and functions correctly.
+10. Agile methodologies: Familiarity with agile methodologies such as Scrum or Kanban can help you manage your project more effectively and work collaboratively with your team.

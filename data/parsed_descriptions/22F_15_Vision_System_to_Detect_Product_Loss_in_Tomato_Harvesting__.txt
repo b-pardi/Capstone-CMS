@@ -1,0 +1,7 @@
+To improve harvester drivers� abilities to meet these goals, CSGS woul d like to implement cameras connected to 
+computers with object detection software on to the harvesters with the ability to identify tomatoes that have been left 
+on the ground behind it. The AI vision system could provide real -time feedback to the harvester  drivers by identifying 
+the product and classifying the condition it is in, such as its size, location on the bed, or relative intactness. All of 
+these could help the driver to know when a problem is occurring and what corrective actions they should take. Along 
+with feedback, the classifications could be stored, and reports generated to give insights to product loss, and compare 
+the quality of harvesting between machines.  

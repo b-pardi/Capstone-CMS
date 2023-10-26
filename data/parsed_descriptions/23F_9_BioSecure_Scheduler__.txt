@@ -1,0 +1,6 @@
+Objec tives of this project are as follows:  
+• Taking in a list of technicians, their capabilities, and customers and their job requests, create a weekly /monthly 
+work schedule that strictly follows biosecurity quarantine requirements.  
+• Taking into account expected job duration , suggest route optimization for each technician maximizing their day.  
+• Allow the addition of jobs to the schedule and suggest which technicians are quarantined enough to do the work, 
+and what jobs could be impacted by it – shuffling the work and schedule as needed to fit it in.  

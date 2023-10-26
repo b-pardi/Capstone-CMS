@@ -1,0 +1,4 @@
+Create a construction project visualization dashboard and companion mobile app that provides location and condition 
+data for multiple jobsite assets (tools, equipment, materials). The visualization must allow for toggle between macro 
+and micro site  views with drill down options. Sensor accuracy, user -defined geo -fence and alert notification, and ease 
+of navigation are all highly valued by the client.  

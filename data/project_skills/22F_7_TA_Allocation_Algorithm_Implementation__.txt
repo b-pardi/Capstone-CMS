@@ -1,0 +1,20 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listIf a team takes on this project, they are asked to develop a database -driven web appli cation that allows the user to see 
+TA allocation history, current eligibility and priority scores for each graduate student and faculty member, as well as 
+the ability to create an allocation, based on faculty and student preferences.  
+The application should  be accessible via a web interface, with data stored on some server (preferably some SQL  
+flavor). Since the data is sensitive, security would be of utmost importance.  
+There is currently a prototype application already developed, which can be used as inspir ation for the project, but 
+the prototype lacks a lot of necessary features as it is just a proof -of-concept.  
+If a team takes on this project, more specific details will be provided, especially around the allocation formula,  
+necessary for computing eligibil ity and priority.  ### Assistant: Sure, I'd be happy to help! Based on the project description you provided, here are the necessary programming knowledge areas to complete the project:
+
+1. **Databases**: The application needs to store and retrieve data from a database, so proficiency in database management systems such as MySQL, PostgreSQL, or MongoDB is essential.
+2. **Web Development**: The application needs to be accessible via a web interface, so knowledge of web development technologies such as HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue.js is necessary.
+3. **Python**: The project prototype uses Python, so proficiency in this language is recommended. However, other programming languages like Java, C++, or PHP could also be used depending on the team's preference.
+4. **Security**: As the data is sensitive, the application needs to have robust security measures in place to protect it. Knowledge of security protocols and practices such as SSL/TLS encryption, authentication, and authorization is crucial.
+5. **Algorithms and Data Structures**: To compute eligibility and priority scores, the application needs to use algorithms and data structures such as linear regression, decision trees, or hash tables. Familiarity with these concepts is essential.
+6. **User Interface Design**: A user-friendly interface is important for the success of the application, so experience in designing intuitive interfaces using tools like Adobe XD, Figma, or Sketch is beneficial.
+7. **Agile Methodologies**: The project requires working closely with stakeholders to gather requirements and deliver a functional product within a tight timeline. Familiarity with agile methodologies such as Scrum or Kanban can help streamline the development process.
+8. **Testing and Debugging**: To ensure the application works correctly, testing and debugging skills are crucial. Knowledge of testing frameworks like Selenium or JMeter and debuggers like Chrome DevTools or PyCharm can help identify and fix issues quickly.
+9. **Version Control**: As the application is being developed collaboratively, understanding version control systems like Git is essential to manage code changes and track revisions.
+10. **Communication**: Finally, effective communication between team members, stakeholders, and end-users is vital throughout the development

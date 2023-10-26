@@ -1,0 +1,9 @@
+The web app should provide a login interface for managers and new hire employees. Managers should be able to 
+create (or import) a list of online classes that are internal to the STM department. The app should allow the set up of 
+different departments or functions for different managers and employees to choose from. Managers should be able to 
+choose 10 -20 courses from a set of ~200 to assign to new hires. Managers should be able to define the start and finish 
+dates. Upon comp letion of the classes, the new hire employee should be able to demonstrate their completion of 
+classes by answering questions or presenting their understanding to the manager. Once a new hire employee indicates completion of a course, the manager should be  able to confirm this after reviewing the answers or presentations. Each 
+function and each department should be able to summarize the statistical data on employee completion dates from 
+start to finish. The app should also be able to display an overview of how many managers are training how many 
+employees and a chart of how  many trainees are in progress.  

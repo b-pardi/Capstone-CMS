@@ -1,0 +1,7 @@
+Gradient Crop Yield Solutions is interested in creating a web platform that displays processed NDVI/NDRE images 
+using Sentinel 2 images. Grower fields will be mapped using a list of coordinates stored as a KML file. The ideal 
+design would be a web platform  that accepts a KML file and returns the most recent processed Sentinel 2 satellite 
+image using the NDVI or NDRE algorithm. The web platform needs to have a front -end and back -end that interact 
+with each other. The front -end should have an option to upload  KML files, while the back end will process the file to 
+get the most recent Sentinel 2 image.  After processing, the front -end should render a map with the most recent 
+satellite image overlayed on top of the map.  

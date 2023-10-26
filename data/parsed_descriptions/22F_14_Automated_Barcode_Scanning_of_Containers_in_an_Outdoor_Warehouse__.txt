@@ -1,0 +1,11 @@
+As the forklift approaches a container to pick it up, or alter nately as is backs away from a container after it sets the  
+container down, a camera could capture and accurately read the container ID and queue each ID for transaction to a  
+location (section, row) specified by a forklift driver. There may be functionally equivalent alternatives to this process 
+that the team can identify.  
+The most critical technology to develop is a robust ability to capture and read the barcode labels under a variety 
+of conditions. A user -friendly interface that is intuitive, robust, and e fficient would be important as well. Additional 
+functionality to apply the core technology to additional use cases (shipping, etc.) would be a bonus, as would any work 
+to pave the way for this functionality to be easily integrated with existing information  systems (e.g., make it easier to 
+go from prototype to full implementation). One way to measure performance would be the expected ROI ... what 
+would we expect the full implementation to cost, compared to the expected value of improved productivity and 
+inventory accuracy.  

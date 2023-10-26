@@ -1,0 +1,7 @@
+Request to write a code in C# that tracks the Bluetooth asset tag ( AoA – Angle of Arrival -- Beacon/moving device) 
+from an A oA Gateway (Locator/receiver/fixed position)  to a grid measured by feet (See reference “Hardware labels”  
+and “4x4 Grid”  in https://ucmerced.box.com/s/44n679xfchxbb27aqsj151z1jukmc5af ). The dimensions of the grid 
+can be of any length, as long as they are uniform.  
+Position readings would come from an A oA Beacon to the A oA Locator, to which the data will be extracted and 
+passed on to a PC (Windows 10/11 OS). The data extraction can be in string or int datat ypes.  
+Devices are from Dusun, which has open -source code samples that includes API that can be used for this project.  

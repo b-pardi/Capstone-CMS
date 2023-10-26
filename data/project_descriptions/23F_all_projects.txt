@@ -1,0 +1,541 @@
+CSE 120 Project Summaries  
+Fall 2023  
+ 
+ 
+1. Identification of Pathogens in Image Library  
+ 
+Background  
+Sunburst Agribiotech Solutions , LLC  (SAS)  is located at Turlock, CA. We do plant/ soil/water diagnostics for 
+diseases caused by agronomically important plant pathogens. The specific activity will be using AI in identifying plant 
+pathogens from microscopic  images . 
+ 
+Problem(s)  
+To identify plant pathogens in a non -subjective manner using software  that is backed up by AI using the real images 
+of the pathogen as seen under the microscope . 
+ 
+Objectives  
+Use the pathogen images files and create an algorithm and a software program that can now be used to ID plant 
+pathogens . 
+ 
+2. Capstone Purchasing App 
+ 
+Background   
+The School  of Engineering  (SoE)  Instructional Lab Services  at UC Merced  provides support to Capstone 
+students in terms of providing training and access to instructional equipment, specialized lab spaces, and handling 
+Capstone purchasing requests.  
+ 
+Problem(s)  
+The problem is to streamline the purchasing process for capstone teams which involves 1) submission of purchase 
+requests by capstone teams to the teaching faculty 2) review and approval of the purchase requests by teaching faculty 
+3) tracking team budget/e xpenses for faculty to consider during the approval and 4) submission of the approved 
+purchase requests to SoE Instructional Staff.  
+ 
+Objectives  
+The objective of the project is to develop an APP to streamline the capstone purchasing process to get timely 
+approval from the faculty and reduce the staff time. Complete capstone purchasing process involves:  
+1) Purchase request submission, approval, budget tracking, maintaining inventory of purchases.  
+2) Placing the order using CBS2/Oracle system.  
+3) Getting tracking/delivery updates to the Campus  
+4) Delivering the items to various teams  
+ 
+Minimum viable product should include the following items:  
+1) Submission of purchase requests by capstone teams to the teaching faculty: SoE Staff will provide a sample 
+purchase request form along with data verification criteria for various fields. Once the form is submitted by a 
+Team, teaching faculty should be noti fied of the submission.  
+2) Tracking team budget/expenses for faculty to consider during the approval: Team’s expenses should be tracked 
+against the allotted budget for each team. This information should be available to the teaching faculty with each 
+purchase request submission.  
+3) Review and approval of the purchase requests by teaching faculty: Reminders should be sent to the faculty until 
+the approval process has been completed. If the request has been rejected, the reason for the rejection should be 
+communicated back to the team along with suggestions from the faculty.  
+4) Submission of the approved purchase requests to SoE Instructional Staff: If the request has been approved, the 
+approved purchase request form should be submitted to SoE staff for processing.  
+5) A running inventory of all the approved items should be available for SoE staff and teaching faculty to keep track 
+of purchases and flag items for retrieval at the end of the semester.  
+ Add-ons: 
+1) Placing the order using CBS2/Oracle system: This will require communication between APP and Oracle API 
+(involves campus level permissions).  
+2) Getting tracking/delivery updates to the Campus: This will require getting relevant information using Oracle API 
+based on the Purchase Order number.  
+3) Delivering the items to various teams: This will require identifying the delivery boxes by scanning labels. Once the 
+team is identified, a custom message is sent to the team regarding the delivery place and time.  
+4) Making instructional equipment requests: The App should provide a way for student teams to make equipment 
+requests to the Instructional Team. The request should first be approved by the instructor before being routed to 
+the Instructional team (email will b e provided).  
+5) Making lab access requests: The App should provide a way for student teams to make lab space requests to 
+Instructional Team. The request should first be approved by the instructor before being routed to the 
+Instructional team (email will be provided).  
+6) Safety training report: The App should allow the instructor to upload student roster along with team information 
+(team numbers, team members, roles). Each student should be able to upload their safety certificates to the app. 
+The App should be able to gene rate a report indicating which students have completed the training and which are 
+still pending . 
+ 
+3. Employee Coaching and Development Tracking Page  
+ 
+Background  
+As the preferred leader in temperature -controlled warehousing and logistics services, United States Cold Storage  
+(USCS)  offers highly reliable, cost -effective, and environmentally sustainable solutions for the frozen and refrigerated 
+food industries. Our approach is to build high -quality warehouses equipped with the newest, most efficient 
+refrigeration technology available  and engage strong local management teams who continuously measure and improve 
+performance.  
+USCS manages more than 376 million cubic feet of temperature -controlled warehouse, and distribution space in 
+42 facilities located across the United States. USCS is the third largest  public refrigerated warehousing  (PRW ) logistics 
+provider in North America and employs more than 3,500 service professionals. USCS also offers logistics and 
+transportation services. Our consolidation programs are the best in the U.S. - building full trucks from less than 
+truckload (LTL) shipments and helping our customers be more efficient. We have nationwide coverage and a flexible 
+distribution model that fits many business needs. Goods get to the market efficiently, consistently, and most 
+importantly - safely.  
+Our transportation management system  (TMS  interfaces with all USCS operating systems to access customer 
+order information, deliver  electronic data interchange  (EDI) transactions sets and update reporting needs for every 
+stage of the transportation management process . 
+ 
+Problem(s)  
+The current observations page on Performance Plus (USCS Labor Management System) is designed and aligned with 
+an older process of performing coaching and observations. Over the last 6 years, with changes in customers and 
+processes, there have been massive changes in observations and coaching processes. This demands a revamp of the 
+observation page in Performance Plus that assists the new coaching processes and efficient tracking.  
+ 
+Objectives  
+Provide a better and efficient coaching and observation tracker webpage to eliminate the need for manually tracking 
+follow -ups. This will be relevant to the new coaching process. This will give ability for the company to sustain the new 
+coaching process an d utilize it to make LMS proficient and promote a productive work environment.  
+ 
+Standard Features:   
+• Different display pages based on type of coaching (skill and behavioral).  
+• Drop down option for task type, date user, observer. Check marks for list of skills to select.  
+• Date drop down for follow -up date.  
+• Display interactive KTS (training documentation) with check marks.  
+• As each check mark gets selected, it gets quantified (score) based on skills, behavior, and safety.  
+• Option to attach any documents.  
+• Ability to link original (parent) observation if this is a follow -up using observation ID no.  • Once it is linked, the page should show the history from the previous one.  
+Bonus Features:  
+• Provide analytics on based KTS score, performance correlation.  
+• Show trends from previous parent observations along the follow -up ones.  
+• SMS or email as reminder of the follow -up. 
+ 
+4. Data Clean -up Tool  
+ 
+Background   
+As the preferred leader in temperature -controlled warehousing and logistics services, United States Cold Storage  
+(USCS)  offers highly reliable, cost -effective, and environmentally sustainable solutions for the frozen and refrigerated 
+food industries. Our approach is to build high -quality warehouses equipped with the newest, most efficient 
+refrigeration technology available  and engage strong local management teams who continuously measure and improve 
+performance.  
+USCS manages more than 376 million cubic feet of temperature -controlled warehouse, and distribution space in 
+42 facilities located across the United States. USCS is the third largest  public refrigerated warehousing  (PRW ) logistics 
+provider in North America and employs more than 3,500 service professionals. USCS also offers logistics and 
+transportation services. Our consolidation programs are the best in the U.S. - building full trucks from less than 
+truckload (LTL) shipments and helping our customers be more efficient. We have nationwide coverage and a flexible 
+distribution model that fits many business needs. Goods get to the market efficiently, consistently, and most 
+importantly - safely.  
+Our transportation management system  (TMS interfaces with all USCS operating systems to access customer order 
+information, deliver  electronic data interchange  (EDI) transactions sets and update reporting needs for every stage of 
+the transportation management process . 
+ 
+Problem(s)  
+The presence of large amounts of bad data which does not comply with the required format, currently not relevant 
+and that has been entered into the warehouse management system  (WMS ) incorrectly and cannot be utilized for any 
+purpose. This data always causes hinderance in many daily activities, become hurdles when the company transitions to 
+a new WMS and most importantly occupies huge amounts of memory in the server systems. A tool wh ich can help 
+identify this bad data, modify it to required format and delete gaps,  if necessary, can help resolve many of the 
+forementioned issues . 
+ 
+Objectives  
+Objective is to design and function tool that can help the company to identify and delete, modify, fix this bad data, 
+gaps in data, and eliminate a large amount as per user requirement. This will reduce manual work related to fixing this 
+bad data.    
+ 
+Standard features:  
+• Ability to read various formats of data (xml, csv, pdf etc.;) and display in rows and columns.  
+• Give the user the ability to define each row or column of data according to the user’s preference. And modify or 
+display the data that is not according to the defined parameters. Preferably in GUI for a layman to use it.  
+• Combine different sets of data of same format into one set and customize as per user requirements.  
+• Ability to export into different formats as per user needs.  
+ 
+Bonus features:  
+• Identify duplicate data in different formats, errors such as wrong address format, punctuation , spellings, and 
+address styles. Filter the data and display the rows and columns with these discrepancies.  
+• Creating visuals from the data . 
+ 
+5. Camera to Robot Calibration  
+ 
+Background  
+Omron Robotics and Safety Technologies , Inc. (ORT)  is an automation technology development company 
+focused on robotics design and manufacturing. Omron is the leader in the field of industrial automation with 
+operations in over 40 countries and 150 locations worldwide. Our company is unique in that it devel ops new electronics, mechanics, and software for an exceptionally broad spectrum of robotics - including Selective Compliance 
+Articulated Robot Arm  (SCARA ), articulated, parallel link, cobots, and autonomous mobile robots - for the global 
+market . 
+ 
+Problem(s)  
+ORT  designs and manufactures, among other things, non -mobile Robots, or Robotic ‘arms’. They are configured to 
+run with a PC controller that can also drive cameras and part moving equipment such as part feeders and conveyor 
+belts. The software that configures and runs on the PC and robot is called ACE (Automation Control Environment).   
+These robotic arms can be used to move pieces from one part line to a different place (pick and place). To enable 
+seamless object detection and precise robot positioning, the ACE software relies on camera -to-robot calibration. This 
+process involves converting camera coordinate positions into the robot's own X -Y-Z coordinate system.   
+ACE software system has the ability to locate objects in the real world using either 2 D or 3D cameras. In some 
+instances, the camera can be mounted to a part of the Robot’s arm.   
+ACE requires the ability to obtain a robot  coordinate position from a position located in any newly obtained 
+image or point -cloud (Camera coordinate system). This ability is referred to as camera to robot calibration.  The 
+calibration procedure happens through a series of pictures from a given camera position and interactive robot arm tip 
+real world placements.  A real world “calibration object” (3 D printed piece) is in some cases placed in the images them 
+and is easily recognized by ACE. The user moves the robot to touch the tip of the object. There are slightly different 
+calibration methods in use currently depending on if the camera is arm mounted, etc.    
+Currently, there are some shortcomings to the process.  Calibration may need to be redone several times until a 
+reasonable accuracy is achieved.  The user input is critical,  and errors are easily introduced. A lot of positioning is 
+involved,  and the right positions must be chosen.   
+A single robot to world 3D translation is generated from the procedure. The precision of a given translation 
+conversion may be off by several mm . 
+ 
+Objectives  
+We would like to improve the accuracy of the robot positions estimated from the camera by replacing the calibration 
+method that does the conversion and/or the process to obtain it.  
+The UC Merced team is embarking on an exciting opportunity to revolutionize the field of robotics by enhancing 
+camera -to-robot calibration for Omron's Industrial Fixed Position Robots, powered by the cutting -edge ACE 
+software. We are seeking passionate and  innovative students to collaborate with us in developing groundbreaking 
+algorithms and C# .dll files that will redefine the precision of robot positions estimated from camera inputs.  
+By joining our team, you will have the chance to explore advanced techniques for calibrating camera vision 
+coordinates to robot coordinates, working with both 2D and 3D images/point clouds. This is a unique opportunity to 
+dive into the fascinating world of  robotics, combining computer vision and automation to create real -world impact.  
+Throughout this collaborative project, you will work closely with industry experts from the ACE team, gaining 
+invaluable insights into the state -of-the-art technologies used in industrial robotics. Your contributions will be 
+instrumental in pushing the bou ndaries of calibration accuracy, revolutionizing the way robots perceive and interact 
+with their environment.  
+Not only will you have the chance to pioneer innovative solutions, but your work will also be evaluated for its 
+precision and usability. We aim to develop a calibration method that is not only highly accurate but also user -friendly, 
+ensuring seamless integ ration within the ACE software ecosystem.  
+ 
+6. WDTrainTrack  
+ 
+Background   
+The client is Western Digital  Corporation  (WDC) . Western Digital Corporation is an American computer hard disk 
+drive manufacturer and data storage company that provides cost -effective solutions for storing, generating, and 
+accessing data. It designs, manufactures, and sells data technology products, in cluding storage devices, data center 
+systems, and cloud storage services. The client for this project is R&D global teams, located in different countries. 
+This project focuses on training management.  
+ 
+Problem(s)  
+The limitations of current manual, labor -intensive training management methods result in suboptimal learning 
+outcomes and inefficient use of resources. Commercial solutions often fall short due to lack of customization options 
+and adaptability to specific organizational needs. Our proposed application provides a tailored solution that boosts the efficiency and effectiveness of training, ultimately impacting overall organizational performance. By automating and 
+digitizing training processes, we empower managers to devise custom training plans, automatically track progress, and 
+provide real -time upd ates, enabling quicker decision -making and resource allocatio n. 
+ 
+Objectives  
+The primary deliverable will be the fully functioning web -based application. This includes:  
+• User Interface (UI): A user -friendly, intuitive, and responsive web interface for employees, managers, and 
+administrators.  
+• Backend Server: A secure and efficient server setup to handle requests and provide services such as user 
+management, progress tracking, and notification management.  
+• Database: A well -structured database to store all relevant data.  
+ 
+7. DocGPT  
+ 
+Background  
+Sweep  designs big data workflow software that is used for processing different types of data such as images, text and 
+machine data. Using the Sweep API, a simple cloud -based data gathering platform for storing and analyzing time 
+series data in a scalable fashio n, we work with customers to provide custom workflow solutions. Large Language 
+Models have the potential to change the landscape of what it means to be a knowledge worker and revolutionize the 
+way we collect, analyze, and understand data.  
+ 
+Problem(s)  
+Company knowledge is often times available only through PDFs within an internal internet. In many cases, when too 
+many PDFs exist, information can become lost due to the sheer volume of documents created by the company on a 
+regular basis. We would like to develop a simple tool that will allow us to read the contents of a PDF  and create 
+machine readable text that summarizes the information in the document for further processing in a custom workflow. 
+Using a readily available open -source large language model or online API, you will develop a software tool that will 
+interact wit h either local PDF documents in a shared network filesystem or within a local web intranet.  
+ 
+Objectives  
+Develop a JSON schema that summarizes the contents of the PDF  using a large language model. For example, if 
+presented with a table on a page, attempt to transform that table into a JSON formatted table object. JSON Schema 
+can be predefined by the team. This includes defining what summary questions will need to be as ked to complete an 
+analysis of a PDF . Software workflow must be able to process at least 10 PDF s per minute. Must be able to query 
+compiled PDF  JSON data through a REST API. You’re  able to use either a locally hosted large language model or an 
+online API to generate the machine -readable JSON data.  
+ 
+8. Satellite Imagery Web Application  
+ 
+Background  
+The Morning Star Company’s subsidiary company , Gradient Crop Yield Solutions (Gradient) , provides technical 
+services to tomato, pistachio, and almond growers primarily in the California Central Valley.  One of these services is 
+crop health images. Previously, Gradient would provide crop health images to growers using drones. Unfortunately, a s 
+the number of acres Gradient covered grew, the expense in imaging increased exponentially as well. As a result, 
+Gradient moved to using satellite imagery to provide crop health images to growers. Even though the imaging cost 
+was reduced by switching to s atellite images, Gradient is looking to further reduce the cost by creating its own 
+platform to process and view images.  
+ 
+Problem(s)  
+Currently, Gradient is hiring a third -party company, EOS, to download the dataset of the most recent publicly 
+available satellite imagery from Sentinel 2. EOS then uses a Keyhole Markup Language (KML) file, containing latitude 
+and longitude coordinates, su bmitted by Gradient to find the grower fields in the satellite imagery data. Afterwards, 
+EOS processes the images using band wavelength manipulation to create the popular crop health monitoring 
+algorithms such as NDVI and NDRE. After the images are process ed, they are displayed on a web platform for our 
+growers to view the images.  
+ Objectives  
+Gradient Crop Yield Solutions is interested in creating a web platform that displays processed NDVI/NDRE images 
+using Sentinel 2 images. Grower fields will be mapped using a list of coordinates stored as a KML file. The ideal 
+design would be a web platform  that accepts a KML file and returns the most recent processed Sentinel 2 satellite 
+image using the NDVI or NDRE algorithm. The web platform needs to have a front -end and back -end that interact 
+with each other. The front -end should have an option to upload  KML files, while the back end will process the file to 
+get the most recent Sentinel 2 image.  After processing, the front -end should render a map with the most recent 
+satellite image overlayed on top of the map.  
+ 
+9. Bio-Secure Scheduler  
+ 
+Background  
+Agrecom  provides a spectrum of solutions in the areas of water treatment and sanitation, targeting clients in 
+agriculture, residential, and commercial sectors. However, this project is being sponsored by Agrecom as a community 
+service.  As a sponsor Agrecom has already communicated with county officials about this project and  will facilitate 
+introductions to all the necessary public agencies.  
+ 
+Problem(s)  
+The majority of our customers have stringent biosecurity controls on the technician’s  ability to visit their site, and 
+then go to another site. Scheduling is manual, and time consuming . We have tried commercial solutions, but none can 
+manage the customer biosecurity restrictions, and the schedule has to be manually redone anyway.  
+ 
+Objectives  
+Objec tives of this project are as follows:  
+• Taking in a list of technicians, their capabilities, and customers and their job requests, create a weekly /monthly 
+work schedule that strictly follows biosecurity quarantine requirements.  
+• Taking into account expected job duration , suggest route optimization for each technician maximizing their day.  
+• Allow the addition of jobs to the schedule and suggest which technicians are quarantined enough to do the work, 
+and what jobs could be impacted by it – shuffling the work and schedule as needed to fit it in.  
+ 
+10. PhoenixSync: Remote Firmware Management for IoT  
+ 
+Background  
+TC IoT Solutions is the  Original Design Manufacturer  (ODM ) Services and Custom Device Lifecycle Management 
+engine of Telit Cinterion , the Western leader in secure global digital transformation and Industrial IoT. The 
+company’s secure -by-design products and services enable business operating in Security and Surveillance, Energy and 
+Utilities, Telematics and Tracking, Healthcare and Wellness, and Mobile Broadband.   
+ 
+Problem(s)  
+The IoT Solutions Business Unit is currently constrained by manual management of firmware -over-the-air (FOTA) 
+updates to customer IoT devices deployed in the field. These factors are limiting the business’ opportunities to service 
+new customers and harming the business’ reputation and bottom line. Whatever solution is adopted must be simple to 
+deploy, easy to use, and built to scale. It must be able to work within the existing environment.  
+ 
+Objectives  
+The PhoenixSync Project Team will be tasked with the creation  of a robust and user -friendly web -based application to 
+track devices and seamlessly manage FOTA updates. The application and visualization dashboard will offer a 
+comprehensive set of features to streamline the firmware update process, enhance security, and provide valuable 
+insights into de vice performance.  
+ 
+11. Virtual Warehouse  
+ 
+Background  
+Nutstar Software LLC  is a Merced based software company.  We have been building software for the Tree Nut 
+Industry for 15 years. We value our client base and want to continue to innovate technology to further improve the 
+industry and its efficiency.  Problem(s)  
+We have created virtual warehouse software and technology that will allow for inventory to be handled  without 
+human scanning. While we have engineered an initial product, it has proven to be costly and difficult to implement.  
+We are planning to replace a portion of our technology with Bluetooth and gateway equipment.  
+ 
+Objectives  
+Request to write a code in C# that tracks the Bluetooth asset tag (AoA  – Angle of Arrival -- Beacon/moving device) 
+from an A oA Gateway (Locator/receiver/fixed position)  to a grid measured by feet (See reference “Hardware labels”  
+and “4x4 Grid”  in https://ucmerced.box.com/s/44n679xfchxbb27aqsj151z1jukmc5af ). The dimensions of the grid 
+can be of any length, as long as they are uniform.  
+Position readings would come from an A oA Beacon to the A oA Locator, to which the data will be extracted and 
+passed on to a PC (Windows 10/11 OS). The data extraction can be in string or int datatypes.  
+Devices are from Dusun, which has open -source code samples that includes API that can be used for this project.  
+ 
+12. Defect Detection on Silicon Wafer Using Neural Network  
+ 
+Background  
+Western Digital Corporation (WDC)  is an American computer drive manufacturer and data storage company, 
+headquartered in San Jose, California. It designs, manufactures,  and sells data technology products, including hard 
+drives and Flash Memory Solid State drives (SSD). SSD has been widely used in data centers, cell phones etc. Western 
+Digital is one of the world’s  5 manufacturers  of Flash  memory. The Flash memory is silicon based nonvolatile storage 
+which was manufactured in Japan.  Our Milpitas, CA facility is engaged in advanced technology development of flash 
+memory development and manufacture.  
+ 
+Problem(s)  
+When the silicon wafer is manufactured, there are thousands of different steps, such as etch and deposition, polishing 
+etc.  Every step has very sophisticated machines in high grade clean room.  But still many defects will be created 
+because of dust or res idues of chemical materials.  Each defect will eventually result in electrical malfunction in the 
+final products.  Therefore, it is very critical to detect the defects in every step of the process steps, instead of waiting 
+until the wafer processing comple tion many months later.  But some defects are very hard to be detected by human 
+eyes due to the faint nature of the optical image.  This project is using advanced neural network model to make a delta 
+image by diff the defected image versus defect -less imag e. 
+ 
+Objectives  
+The students will be asked to use open -source  Regional Convolutional Neural Network (R -CNN) based deep learning 
+to do image data processing. The main purpose is to identify very faint defects in the silicon wafer image.  In order to 
+enhance the defect image, a diff image has to be made in comparison  to a perfect wafer image. The project  has three 
+parts:  
+1. Generate ‘fake’ grayscale wafer images for training data: Currently, we use the real clean wafer image for this 
+purpose, but it can be done computationally, and it will help to generalize our final model. This will be the 
+minimum goal.  
+2. Add random defects and generate training labels for step 1.  
+3. Train a U -net model to denoise the image. Again, we can add flexibility depending on the skill level. Students  can 
+write it from scratch or  revise an open -source  code. We will give the specification for the final outcome.  
+ 
+13. Digital AI Backpack - Backpack Opportunities Crawler  
+ 
+Background  
+Students will work on a project that involves two companies: Conectado  and Linker Finance .  
+Conectado is a venture revolutionizing approaches to Latino inclusion in STEAM, emphasizing technology. We 
+are committed to empowering Latinos to succeed by building safer, simpler, and more sustainable connections from 
+the classroom to career to the board room. Conectado is a virtual platform that brings together educational 
+institutions, social impact organizations, and private and public businesses, all working together to increase the 
+representation of Latinos in tech. At Conectado, users can access boot  camps and certifications that will allow them to 
+reskill or upskill, connect with educational institutions and potential employers, develop a strategic network, meet 
+mentors, and access career readiness resources.  Linker Finance is an embedded finance platform that expedites the launch of modern FinTech and Bank -like 
+Mobile and Web apps & services within weeks. The platform offers front -end Turnkey solutions, Front -End SDKs, 
+and middleware with over 30+ integrations  for card issuing, deposits, bank connection, ID verification (KYC), 
+business verification (KYB), automatic money movement, financial insights, analytics, CRM, and more. We empower 
+companies to unlock additional revenue streams and essential financial insi ghts, enabling them to deliver exceptionally 
+tailored and personalized services.  
+For this project, students will focus on our Digital AI Backpack project. The Digital AI Backpack seeks to create 
+a centralized, structured database of financial, educational, and professional opportunities that Conectado users can 
+access. Linker Finance i s developing an App that can allow Conectado users to access a centralized database of 
+resources and opportunities available in the Conectado platform.  
+ 
+Problem(s)  
+There is no centralized, standardized, structured database of opportunities for students, and they are all managed by 
+different organizations; some of them have APIs, some of them are posted in Content Management Systems, some 
+even on an image or document format such as JPG and PDF. Coordinating this effort would be prohibitive, yet the 
+information is available, making it an interesting task for applying AI methods.  
+ 
+Objectives  
+Extract and store inside a structured database a set of opportunities for students (i.e., internships, jobs, gigs, 
+scholarships, grants), including important metadata such as name, description, URL for applying, application deadline 
+or deadlines, and impor tant dates. The algorithm should also create meta tags relevant to the opportunity, which can 
+be later used by a recommender algorithm matching opportunities to specific students.  
+This project is recommended for a student and/or group of students interested in Artificial Intelligence (AI) fields 
+such as Text Recognition, OCR, LLMs (e.g., ChatGPT).  
+ 
+14. Taxiline Detection Using Machine Learning  
+ 
+Background  
+Omron Robotics and Safety Technologies , Inc. (ORT)  is an automation technology development company 
+focused on robotics design and manufacturing. Omron is the leader in the field of industrial automation with 
+operations in over 40 countries and 150 locations worldwide. Our company is unique in that it devel ops new 
+electronics, mechanics, and software for an exceptionally broad spectrum of robotics - including Selective Compliance 
+Articulated Robot Arm  (SCARA ), articulated, parallel link, cobots, and autonomous mobile robots - for the global 
+market . 
+ 
+Problem(s)  
+Omron’s Autonomous Mobile Robots are connected to a central system called Fleet Manager (FM). The robots 
+connected to the same FM operate as a single fleet. These robots perform obstacle avoidance and intelligent 
+multirobot collision avoidance behaviors wh ile navigating on the map, by extensively sharing data among themselves.  
+Taxiline is a feature in these mobile robots’ navigation framework and runs on each individual robot every cycle. 
+The primary function of this feature is to determine whether the robot needs to re -path plan around a stopped robot 
+in its path. The feature e nsures that if the leading robot is obstructed by an obstacle, the following robot that shares a 
+similar path does not attempt to replan their path around the leading robot. Instead, it stops and waits for the leading 
+robot to move. When a fleet of robots share a similar path, they essentially start queuing up which forms a “Taxiline”. 
+The feature avoids unnecessary replanning that could result in chaotic behavior, and promotes efficient, cleaner and 
+orderly navigation.  
+ 
+Objectives  
+So given all the required data, the Taxiline algorithm essentially finds out whether the given robot is taxilining with the 
+robot in the front and feeds  the result to the replanner. The existing algorithm, which is deterministic and rule -based, 
+has many unaddressed edge cases. To  handle all the edge cases and to improve the accuracy, we are considering a 
+machine learning based approach.   
+ 
+Following is a real example:  In the above picture, the paths for 5 robots are shown: Robot R1 (pink), R2 (red), R3 
+(yellow), R4 (green) and R5 (Orange). Ignore all other robots. R1 to R4, even though they are going to different final 
+goals, since their paths are similar, they all just  queue up behind one another without trying to replan around. But if 
+you look at R5, its original path (straight dotted orange line) is obstructed by R1 and it replans around R1 as R5 is not 
+“Taxilining” with R1 i.e., R1’s path is not similar to R5’s.  
+ 
+15. Online Battery Discharge/ Charge Time Estimation  
+ 
+Background  
+Omron Robotics and Safety Technologies , Inc. (ORT)  is an automation technology development company 
+focused on robotics design and manufacturing. Omron is the leader in the field of industrial automation with 
+operations in over 40 countries and 150 locations worldwide. Our company is unique in that it devel ops new 
+electronics, mechanics, and software for an exceptionally broad spectrum of robotics - including Selective Compliance 
+Articulated Robot Arm  (SCARA ), articulated, parallel link, cobots, and autonomous mobile robots - for the global 
+market . 
+ 
+Problem(s)  
+Mobile robot charge/discharge time is an important parameter customers use to select a robotics supplier.  Our 
+current estimation method could be improved using data that can be gathered from the robot power station including:  
+• State of Charge  
+• Instantaneous Charge Current  
+• Instantaneous Discharge Current  
+• Remaining Battery Capacity  
+• Max/Min Temperature  
+ 
+Objectives  
+Estimate the remaining discharge time/charge time based on current as well as from the previous data.  
+• Multiple standard methods need to be identified both deterministic and probabilistic methods.  
+• These methods should be evaluated to identify the best estimation method.  
+• Limitations and assumptions associated with these methods should be established.  
+Test formulated method on batteries with different chemistry (Li -ion based)"  
+ 
+16. Deadlock Prevention/ Recovery for Mobile Robot Fleets  
+ 
+Background  
+Omron Robotics and Safety Technologies , Inc. (ORT)  is an automation technology development company 
+focused on robotics design and manufacturing. Omron is the leader in the field of industrial automation with 
+operations in over 40 countries and 150 locations worldwide. Our company is unique in that it develops new 
+electronics, mechanics, and software for an exceptionally broad spectrum of robotics - including Selective Compliance 
+Articulated Robot Arm  (SCARA ), articulated, parallel link, cobots, and autonomous mobile robots - for the global 
+market . 
+ 
+Problem(s)  
+A deadlock in a fleet of autonomous mobile robots (AMRs) refers to a situation where two or more robots are unable 
+to move due to mutual blocking, which means each robot is blocking the path of another robot. This results in a state 
+of the system where non e of the robots can move forward and continue their jobs, and the entire system is stuck in a 
+deadlock. When a deadlock happens in Omron AMRs, it requires manual intervention. This not only affects the 
+production  cycle time and efficiency of the fleet, but it  also makes the “intelligent” robots look dumb.  
+Deadlock recovery is a mechanism used in robotics to resolve deadlocks by identifying them and taking 
+appropriate actions, such as modifying the trajectories of one or more robots that are stuck in the deadlock.  
+Deadlock prevention is a mechanism where the deadlocks are predicted beforehand,  and the robots’ trajectories 
+are modified in such a way that the deadlocks don’t happen in the first place. One other way to predict and prevent 
+deadlocks is to change the order of jobs that are picked by the robots.  
+ 
+Objectives  
+Omron team has already developed some algorithms to recover the robots out of a deadlock. But they don’t work for 
+all the scenarios. Deadlock prevention is even a tougher problem and there’s no solution for it yet.  
+Machine Learning/Reinforcement learning is one option that Omron team is considering to recover the robots 
+out of deadlocks.  
+ 
+17. Building a Database for Community and Mentors Engagement  
+ 
+Background  
+INNOVIT  is the premier Italian Innovation and Culture Hub, promoted by Italy’s Ministry of Foreign Affairs and 
+International Cooperation and coordinated by the Consulate General of Italy in San Francisco and the Embassy of 
+Italy in Washington DC. Located in the h eart of San Francisco, INNOVIT embodies Italy’s long -term commitment 
+to technological innovation and to strengthening ties with the Bay Area and the US ecosystem.  Through acceleration 
+programs, strategic partnerships, and international initiatives, INNOVI T connects the vital resources of Silicon Valley 
+with the best opportunities offered by Italian businesses. We are the bridge that links Italian excellence in 
+entrepreneurship, culture, research, and technology to the global future.  INNOVIT designs and de livers acceleration 
+and innovation services for Italian companies, startups, universities, and scientific centers.  
+ 
+Problem(s)  
+This project is focusing on designing and building the INNOVIT community database, with a specific focus on 
+mentors and community. The Mentors database is critical to deliver startup acceleration programs, while the 
+Community Database is critical for launc hing marketing and engagement activities.  Without a well-designed  database 
+the operational activities of a strategic project like INNOVIT cannot run properly as the program is scaling rapidly.  
+During the last 6 months  alone, more than 3.000 people have joined +40 events, while more than 60 startups have 
+participated in 2 acceleration programs involving more than 100 mentors.  
+Negotiable constraints are related to INNOVIT team support, data entry, deadlines,  and project expansion to 
+other areas like Visitors registrations, Sales and Booking systems.  
+Non-negotiable  constraints  are mostly centered around users’  experience and key requirements.  
+ 
+Objectives  
+The team is asked to perform interviews, requirements analysis, and implementation.  At the end of the semester,  we 
+are expecting to have a fully implemented database with a user-friendly  UI. 
+ 
+18. CTTA Member Database Management and Automation  
+ 
+Background  
+Founded in 1969, the California Tow Truck Association (CTTA)  represents professional towing operators 
+statewide. Created by and for towing company owners, CTTA provides unparalleled solutions and resources that 
+empower towing companies to be more professional and progressive within the industry while serving the mo toring public. The mission of the California Tow Truck Association is to cultivate a community of professionals able to 
+provide the highest caliber of towing and emergency road service -related solutions for the motoring public and the 
+communities of our state.  
+ 
+Problem(s)  
+Currently, our database system does not function appropriately to manage members, and the data  entered does not 
+transfer to our other systems. Data is lost and membership renewals and communications get lost.  
+ 
+Objectives  
+The objective is to consolidate systems and have one central database that can host and manage members, member 
+renewals, and member communication all in one system that can be on our website. The task at hand is to develop 
+two separate websites that will b e linked with one central database that has been built by last year’s  capstone team.  

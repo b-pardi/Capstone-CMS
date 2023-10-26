@@ -1,0 +1,10 @@
+So given all the required data, the Taxiline algorithm essentially finds out whether the given robot is taxilining with the 
+robot in the front and feeds  the result to the replanner. The existing algorithm, which is deterministic and rule -based, 
+has many unaddressed edge cases. To  handle all the edge cases and to improve the accuracy, we are considering a 
+machine learning based approach.   
+ 
+Following is a real example:  In the above picture, the paths for 5 robots are shown: Robot R1 (pink), R2 (red), R3 
+(yellow), R4 (green) and R5 (Orange). Ignore all other robots. R1 to R4, even though they are going to different final 
+goals, since their paths are similar, they all just  queue up behind one another without trying to replan around. But if 
+you look at R5, its original path (straight dotted orange line) is obstructed by R1 and it replans around R1 as R5 is not 
+“Taxilining” with R1 i.e., R1’s path is not similar to R5’s.  

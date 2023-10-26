@@ -1,0 +1,559 @@
+CSE 120 Project Summaries  
+Spring  2023 
+ 
+ 
+1. Can Damage Detection by Vision  
+ 
+Background  
+Throughout the yea r, Neil Jones Food Company  (NJFC ) plants produce a variety of California tomato and Pacific 
+Northwest fruit  products for industrial, foodservice and retail customers. Our Northwest Packing facility has been  
+canning Pacific Northwest fruit and providing industrial juices, purees and blends since the 1970s. Our  TomaTek 
+facility, built from the ground up in the 1980s, quickly became a leader in aseptic technology  supplying fresh -pack 
+California tomatoes in industrial sizes and convenient #10 equivalent pouches. San  Benito Foods has been a 
+preeminent packer of fresh, vivid, vine -ripened California tomatoes for over  100 years. Located in Hollister California , 
+our his toric 1915 cannery is the ultimate example of what it  looks like to produce a high-quality  product that will 
+stand the test of time. Because freshness and  quality are our primary goals, we work long hours to ensure every 
+product meets not only our strict  quality standards, but more importantly – yours.  
+The customer list at the Neil Jones Food Company is diverse – from the finest independent restaurants  in the 
+country, to children’s lunch trays across the U.S. We also customize products for food  manufacturer s, chain 
+restaurants, healthcare facilities, juice manufacturers, and cruise lines around the  world. Whether you’ve known it or 
+not, you’ve probably enjoyed our fine products in your favorite  retail private label brands, or enjoyed them in fine 
+restaurants  throughout North America.  
+ 
+Problem(s)  
+Due to unpredictable and uncontrollable challenges, the can lid placement and sea ling process  creates a seal problem 
+with the cans. The cans are flipped after the top lid has been placed and the  rims rolled to seal the product in. 
+Sometime the lids are placed  so far off that there is a large offset  in the lid and the top of the can itse lf. This will cause 
+the product to run out after the cans are  flipped over and run along the can lines.  Secondly, if the seamer goes out of 
+tune or is not properly set up , it will roll the lid and can lips  improperly and will cause the cans to be just sligh tly taller. 
+This extra height in the cans will cause  issues in the next processing equipment.  
+Currently, we do not have any detection or rejection system to pick up these improperly process  cans and 
+remove them from our processing lines.  
+ 
+Objectives  
+Develop a (vision -based ) solution that will detect the dented cans, offset lids, and too tall cans and reject the cans  
+from the process lines.  
+ 
+2. TA Allocation Algorithm Implementation  
+ 
+Background   
+The client is the Computer Science & Engineering Department  at UC Merced. Our business is to teach 
+Computer Science, and we are located at the heart of the Central Valley, in the bustling little town of Merced. A major 
+component of effective Computer Scien ce education is practical laboratory sessions, and we rely heavily on Teaching 
+Assistants (TAs) to run those activities.  
+TAs are selected from the pool of graduate students in our department, but since there may often be more 
+graduate students than the num ber of TA positions available, this means that not every graduate student is guaranteed 
+a TA position. When this situation arises, it is necessary to allocate the TAs based on a strict set of rules that the 
+department has agreed upon, so that everyone is o nboard.  
+ 
+Problem(s)  
+The department has developed a formula for determining TA eligibility and priority, based on several factors, 
+including experience in TAing courses, evaluations, etc. Applying the formula by hand is an extremely cumbersome, 
+and error pr one process, sometimes resulting in unfair allocations.  
+Automating the process is essential, especially given the growth of the department, in terms of both faculty, as 
+well as graduate and undergraduate students.  
+ Objectives  
+If a team takes on this project, they are asked to develop a database -driven web appli cation that allows the user to see 
+TA allocation history, current eligibility and priority scores for each graduate student and faculty member, as well as 
+the ability to create an allocation, based on faculty and student preferences.  
+The application should  be accessible via a web interface, with data stored on some server (preferably some SQL  
+flavor). Since the data is sensitive, security would be of utmost importance.  
+There is currently a prototype application already developed, which can be used as inspir ation for the project, but 
+the prototype lacks a lot of necessary features as it is just a proof -of-concept.  
+If a team takes on this project, more specific details will be provided, especially around the allocation formula,  
+necessary for computing eligibil ity and priority.  
+ 
+3. Bottling Change Part Wear Measuring Tool - Phase 2  
+ 
+Background  
+E & J G allo Winery 's bottling facility in Modesto California produces several million cases annually. Most of these 
+cases are produced in glass bottles. These bottles need to be transferred smoothly inside filling, capping, and corking 
+equipment to maintain quali ty. Typically, plastic change parts are used in this application.  
+ 
+Problem(s)  
+The plastic used to transfer and position bottles wears over time. As the plastic wears the pocket that these bottles fit 
+into enlarge allowing for unwanted bottle movement. If t he pocket becomes too large, quality defects can be 
+introduced on the finished product.  
+ 
+Objectives  
+Design a tool that can be used to measure the pocket size in a variety of change parts. The goal is to have a tool that is 
+operational with one hand, provid es repeatable measurements independent of the person using the tool, and measures 
+down to a high precision . The tool  should be designed for 750ml and 1.5L bottles.  
+ 
+4. Planter Revitalization & Modernization  App 
+ 
+Background   
+The UC Merced Experimental Smart Farm (ESF)  is under development. A  part of the ESF’s  responsibilities is to 
+manage the existing UC Merced Irrigated Pastures. The pastures  are irrigated us ing a century -old irrigation system that 
+delivers water using gravity and valves. Each  valve is tied to an irrigation check and the checks are separated by  small 
+borders/berms.  
+ 
+Problem(s)  
+Keeping track of valves is a pain. Currently a Microsoft Form is used to track the start of irrigation  activities that feeds 
+an Excel table, but to finish the activities, you have to manually update the  Excel table and calculate how ma ny hours 
+it ran.  
+ 
+Objectives  
+Mobile app for tracking valve on and off times and calculating durations. Integrat e with a map  interface so you can 
+see which irrigation checks are currently on/off and then be able to select the  check to see historical irrigation activity . 
+ 
+5. Using Sensors to Collect Road User Data 
+ 
+Background  
+The Merced Bicycle Coalition  (MBC ) is a group of bicycle activists  looking to make Merced a mor e bicycle friendly 
+city. We educate community members about bicycle safety and try to convince our local government to implement 
+safe bike infrastructure.  
+Part of our mission is to promote bicycling and some of our members are on the city bicycle advisory  commission 
+to support efforts for bicycle planning. Planning and advising on bicycle infrastructure and problems needs to be 
+backed by road user data, which this project is aimed at. It is a practical research project including research, building,  
+and test ing of a specialized bike counting sensor.  
+ Problem(s)  
+In December 2021 the California Department of Transportation (Caltrans) officially adopted a complete streets 
+policy. This policy states that ‘all transportation projects funded or overseen by Caltrans will provide comfortable, 
+convenient, and connected co mplete streets facilities for people walking, biking, and taking transit or passenger rail’ 
+(https://dot.ca.gov/ -/media/dot -media/programs/sustainability/documents/dp -37-complete -streets -a11y.pdf ). 
+Similarly, the Merced Bicycle and Pedestrian Advisory Commission has recently discussed a potential proliferation of 
+electric skateboards, scooters, and bicycle use. For city planners and contracted engineers to plan a complete street 
+infrastructure, data about frequency and classification of traffic is essential.  
+Existing solutions of vision -based traffic counters do not automatically classify e -scooters (only p edestrians and 
+bicyclists). The alternative, manually working though visual data, is costly and inefficient, because of the labor is takes 
+to classify. An automated vision -based traffic counter will help facilitate traffic planning by providing the necessa ry 
+road user classification.  
+ 
+ 
+Objectives  
+Develop a working prototype for a vision -based traffic counter.  Write software that analyzes the visual data to 
+automatically count and classify road users (e -scooters, bicycles, and pedestrians).  
+ 
+6. Farm Robotics Challenge - Autonomy/Course Navigation  
+ 
+Background   
+A consortium of academic and commercial institutions based in California has created the "Farm Robotics 
+Challenge".  Quoting the material provided by the organizers, the challenge is "a 3 -months robotics development 
+challenge for  student teams to develop a novel farm robot to perform and automate an essential farm function on any 
+crop or farm  using the Farm -Ng robotics pl atform". The organizers are lending to UC Merced  a Farm -Ng platform 
+free of charge  (more details about the robot can be found on https://farm -ng.com/ ). The organizers further specify 
+that, "specific  challenges will be pre -identified for teams to choose fro m, or teams may choose to create additional or 
+custom  functionality to solve a self -identified challenge".  
+ 
+Problem(s)  
+One of the challenge categories identified by the organizers is “Autonomy/Course Navigation". The ability to 
+autonomously navigate through a preassigned path (e.g., via GPS waypoints) is a fundamental competence to enable  
+many other farm relevant tasks. The robot shall be able to safely follow the path, where "safely" here means being 
+able to recognize when ve ering off -course and either correcting the course or stopping.  
+ 
+Objectives  
+The team shall develop control software for the robot addressing the specified challenge, as it gets further refined by  
+the organizers. Software will be developed using the API provided by the f arm-ng company (ROS -- robot operating  
+system). The robot will be retrofitted  with GPS receivers and Inertial Measurement Units ( IMUs ) to aid the navigation 
+task. For an assigned course to  follow, a performance of measure is the percentage that can be completed under 
+different operating scenarios.  
+ 
+7. Farm Robotics Challenge - Artificial Intelligence (Vision and Sensing, Dataset 
+collection)  
+ 
+Background  
+A consortium of academic and commercial institutions based in California has created the "Farm Robotics 
+Challenge".  Quoting the material provided by the organizers, the challenge is "a 3 -months robotics development 
+challenge for  student teams to develop a novel farm robot to perform and automate an essential farm function on any 
+crop or farm  using the Farm -Ng robotics pl atform". The organizers are lending to UC Merced  a Farm -Ng platform 
+free of charge  (more details about the robot can be found on https://farm -ng.com/ ). The organizers further specify 
+that, "specific  challenges will be pre -identified for teams to choose fro m, or teams may choose to create additional or 
+custom  functionality to solve a self -identified challenge".  
+ 
+ 
+ Problem(s)  
+One of the challenge categories identified by the organizers is "Vision and sensing, dataset collection". Autonomous  
+data collection at scale is instrumental to implement precision -ag practices. Robotized data collection includes the  
+ability of identify ing relevant areas (e.g., via image processing), approaching th e location, and collecting data. At this  
+stage it is anticipated that data collection will be limited to RGB cameras and/or video.  
+ 
+Objectives  
+The team shall develop control software for the robot addressing the specified challenge, as it gets further refined by  
+the or ganizers. Software will be developed using the API provided by the farm -ng company (ROS -- robot operating  
+system), as well as libraries such as OpenCV or similar. The robot will be retrofitted  with cameras and GPS receivers. 
+A measure of performance is the amount of relevant data collected by the robot.  
+ 
+8. Virtual Warehouse  
+ 
+Background  
+Nutstar  Software LL C is a Merced based software company. We have been building software for the Tree Nut 
+Industry for 15 years. We value our client base and want to continue to innovate technology to  further improve the 
+industry and its efficiency.  
+ 
+Problem(s)  
+We have created virtual  warehouse software and technology that will allow for inventory handled without human 
+scanning. While we have engineered an initial product, it has proven to be costly and difficult to implement. We are 
+planning to replace a portion of our technology with Bluetooth  and gateway equipment.  
+ 
+Objectives  
+Request to write a code in C# that tracks the Bluetooth asset tag ( AoA – Angle of Arrival -- Beacon/moving device) 
+from an A oA Gateway (Locator/receiver/fixed position)  to a grid measured by feet (See reference “Hardware labels”  
+and “4x4 Grid”  in https://ucmerced.box.com/s/44n679xfchxbb27aqsj151z1jukmc5af ). The dimensions of the grid 
+can be of any length, as long as they are uniform.  
+Position readings would come from an A oA Beacon to the A oA Locator, to which the data will be extracted and 
+passed on to a PC (Windows 10/11 OS). The data extraction can be in string or int datat ypes.  
+Devices are from Dusun, which has open -source code samples that includes API that can be used for this project.  
+ 
+9. EZFileTrail  
+ 
+Background  
+Western Digital Corporation  (WDC ) is an American computer hard disk drive (HDD) and Solid State Drive (SSD) 
+manufacturer  and data storage company.  Our organization works on designing and delivering product solutions to 
+bring technology to end  products. We are located in Milpitas, CA. We are R&D engineers. This project will help us to 
+manage our critical  documents more effec tively and improve our productivity.  
+ 
+Problem(s)  
+We have a large number of documents/spec/files from different sources: created by ourselves, shared by our 
+colleagues, and  shared by our customers or vendors. They could be located in different places, our PC, box, MS team, 
+ShareP oint, and  email. It is very challenging to track where are the files and which one is the latest one.  
+The goal is to design and deliver a web application that allows each user to keep a record of all his/her files and 
+their locations so that they can find them easily in the future. This solution will improve the productivity of all teams.  
+There are no constraints for this project.  
+ 
+Objectives  
+Develop a Web appl ication  with the following:  
+1. Each user has his/her own account and their data is only be visible to them  
+2. Key features  
+• Add a new record: File name, link to file, label, comments, rev, source, and other information.  
+• Edit existing record.  
+• Display all records: Sortable by a ll fields.  • Search from all records: by created date, tag, source, by file name.  
+• Export all records to Excel . 
+ 
+10. Relevance Weighted Multiple Meeting Scheduler  
+ 
+Background  
+In the Softw are Capstone - Innovate to Grow  (I2G) program we develop multiple modules that shall combine to 
+address  problems and user needs while searching and organizing information to create new knowledge.  Previous 
+projects  included aggregation of data from multiple apps , merging selected results from multiple searches, 
+constructing  composite time ranges and geographic areas for a search .  
+ 
+Problem(s)  
+Available technologies to find meeting times have the following problems that cause meetings to be canceled,  
+postponed to infinity or  lacking key participants  (these problems are evident in the most popular services su ch Doodle  
+and When2Meet ): 
+• Assuming that every participant has the same relevance to the meeting . 
+• Participants can't change their mind about availability . 
+• Do not consider participation in person versus virtually (which may significantly change the time to join, and 
+therefore  the availability) . 
+• Participant  slots are unavailable by default, which influences participants to only express their preferred time . 
+A previous Capstone team developed a first prototype to demonstrate the concepts of a solution, with respect to  
+services like Doodle or When2Meet:  
+• Participants can express an "availability value" for each time slo t. 
+• Organizer  can express a "relevanc e value" of each participant.  
+• The calendar displays the weighted availability of each time slot.  
+The problem can be extended to the creation of multiple meetings with groups of participants. For instance, the  
+Innovate to Grow program ’s design reviews need  to be scheduled for each team with the respective clients and  
+participants. It is hard to find a schedule that accommodates the schedules of students' classes and busy invitees.  
+ 
+Objectives  
+Build an app that enables entering availabilities and relevanc es of groups and  see in real time the variations for group  
+scheduling to inform the optimal final schedule.  
+Organizer:  
+• Define time slots on a calendar (matrix of slots) for one or more meetings . 
+• List of participants: to one meeting, or to groups and respective meeting s. 
+• For each participant in a group/meeting, express a "relevance value" for that group/meeting . 
+• For each participant also express the requirement: in person, virtual, or either . 
+• Define whether the participants shall start as totally available (participa nts have to turn off unavailable slots) or  
+unavailable (participants turn on available slots) . 
+• View whether participants responded or not . 
+• View the result for each time slot, the weighted group availability (number + color) . 
+• View real time changes with variations of availabilities and relevances.  
+Participants:  
+• See the respective matrix with the following starting options in all time slots: black (not considered for meeting) – 
+green  (available) - red (unavailable) . 
+• Can change each slot, expressing the " availability value" ( e.g., in the range red=0.0  to green=10.0) . 
+• Can modify the availability of each slot or groups of slots viewing the matrix change in real time (number - color).  
+• "Commit" their availability when ready.  
+Requirements - in order of impor tance:  
+• Find a color palette that provides a good user experience to represent availability, relevance, and the resulting  
+relevance weighted group availabilities . 
+• The change in availability (participant) or relevance (organizer) must change the colors/values of the respective 
+slots in  the matrix in *real time* . • Deployment on a web server, so that the choices and user experience of the organizer and multiple parti cipants 
+are visible in real time.  
+• Organizer can add participants – groups . 
+• Participants can change and recommit their availability . 
+• Integration of the above features with other common calendar features . 
+ 
+11. GUI for an Image Recognition and Classification Open-Source  Software  
+ 
+Background  
+Western Digital Corporation  (WDC ) is an American computer hard disk drive (HDD) and Solid State Drive (SSD) 
+manufacturer  and data storage company. The Flash SSD engineering department is located in Milpitas, California. We 
+design,  develop and test world  class flash memory products.  
+ 
+Problem(s)  
+3D NAND has many memory holes . The shape of the se memory holes determines  the property of the memory cells. 
+We use the open -source  AI/ML software to identify the quality of the memory holes and classi fy it. Engineers would 
+like to have an easy GUI interface to make the software usage and parameter tweaking more user friendly.  
+ 
+Objectives  
+Build a GUI interface in Linux environment to help to enter parameters to adjust the AI/ML models to fit our needs.  
+Additional details can be found at https://ucmerced.box.com/s/c2smom9uimk6kz5g77uiokce7hrihy6n . 
+ 
+12. Inventory and Condition of Vegetable Seedlings in Trays - Phase 2  
+ 
+Background  
+California Transplants  is a nursery that p roduces vegetable seedlings for professional growers throughout 
+California. Located in Newman, CA and primarily known for growing tomato seedlings, we now are producing many 
+different species of plants for growers the entire year. This project falls under software and hardware.  
+ 
+Problem(s)  
+We currently manually count germination rates or usable plants per order as a percentage. That data then is entered  
+into our system manual ly which gives us the best estimate of our inventory per order. We are looking for a system that  
+could scan the greenhouse and count the number of viable plants per order and produce a report. We are looking for  
+technology to help us get an accurate invent ory report to determine needs or changes downstream.  
+ 
+Objectives  
+Develop software that will work with a series of cameras that can accurately count the number of usable plants per 
+order. There can be multiple orders in a greenhouse. The object ive of phase 2 is to:  
+• Identify trays, and cells within trays . 
+• Determine for each tray cell the status of the plant seedling (good, bad, multiple, no plant).  
+• Prepare the user interface to view and the data.  
+ 
+13. Assessing and Grading Wood Bin Parts  
+ 
+Background  
+In 1970, Chris Rufer began Morning Star  as a one -truck owner -operator company in California’s Central Valley, 
+hauling tomatoes from fields to canneries. Today, Morning Star operates three factories with the largest production 
+scale in t he world, with resources solely dedicated to tomatoes. We supply over 40 percent of national markets with 
+ingredient tomato paste and diced tomatoes. We provide bulk -ingredient products to food manufacturers and pouch 
+and can ingredient and finished produc ts to the food service and retail trade. We are actively involved in the global 
+tomato industry and ongoing tomato research, and we have pioneered changes in production technology that have 
+helped increase efficiencies throughout the industry. Our sales of  tomato products are over $800 million annually. 
+And we still haul our tomatoes from the fields – just as our owner began his journey in 1970.  Our mission is, and has always been, to produce tomato products which consistently achieve the quality and servi ce expectations of our 
+customers in a cost -effective, environmentally responsible manner.  
+We have two processing plants near Los Banos, and a third in Williams, CA, in addition to a Tomato -Drying Yard 
+in Newman and Greenhouse Operation near Tracy. In our p rocessing facilities we convert fresh, ripened tomatoes 
+into shelf -stable tomato ingredients such as paste and diced, packaged in Aseptic bags within 50-gallon  drums and 
+300-gallon bins (wood / plastic / or metal). The largest secondary (outer) container i s the wood bin which collapses 
+into 6 subcomponents. This packaging configuration is environmentally friendly and cost effective as it is returned by 
+the customer and reused for 8 or more cycles. Customers return bin parts to us year -round and we operate t he bin 
+sort and repair operations accordingly.  
+ 
+Problem(s)  
+Morning Star Bin Sort and Repair colleagues perform a visual / tactile inspection of millions of bin parts between our 
+3 plants to grade parts based on whether they are good, repairable, or destroy / salvage. For repairable items they also 
+identify what needs to be done to remediate the part to ensure it becomes a good, usable part. We spend millions of 
+dollars annually to replace the small fraction of bin parts that are graded as unusable. Making consistently good 
+decisions in the grading process can avoid unnecessarily discarding usable components, while ensuring that approved 
+parts wi ll consistently perform their required duty cycle without failure and product loss. If an automated vision 
+system could be used to make more consistent, good decisions in this grading process, the average life cycle of bin 
+parts could be increased, which h as a significant economic and environmental benefit.  The system would need to be 
+capable of being successfully taught what constitutes good / repair / destroy components.  
+Reasonable and prudent capital / equipment costs beyond the default project budget can be negotiated to 
+enhance project success.  
+ 
+Objectives  
+The primary success factor is whether the vision system can be successfully taught to disc ern mechanically usable 
+components from a diverse range of part appearances (older / newer components), with one or more part types (the 
+six sides are comprised of 4 different part types with a couple  of variations). The year -round nature of our bin sort 
+operation would afford a motivated team the opportunity to tweak and optimize the algorithms to enhance 
+performance. In addition to the core functionality, some of the bonus features that would enhance value would 
+include:  
+• A functional system that can opera te in-line with current sort processes and provide near -real time feedback and 
+recommendations on the grading status (and would make it easier to populate the "teaching" library).  
+• Identifying the defect mode and / or the required repair.  
+• Keeping trac k of a parts count of each status.  
+• Picture retention of parts processed for future review, particularly in cases where the algorithm disagrees with the 
+sorting colleague (useful for training and gaining agreement / training on "borderline" parts).  
+ 
+14. Connec ted Construction  
+ 
+Backgrou nd 
+Telit Cinterion  Lend Lease  (TC) is a rapidly growing General Construction Contractor operating in the 
+Southwestern United States. The company manages large scale commercial construction projects including hi -rise 
+office buildings, retail a nd entertainment centers and sports arenas.  
+ 
+Problem(s)  
+The client’s growth is currently constrained by two factors: project execution delays and the loss of tools and materials 
+on the jobsite. These factors are harming the business’ reputation and bottom line. Whatever solution is adopted must 
+be simple to deploy, easy to use, and built to scale. It must be able to work within the existing envi ronment.  
+ 
+Objectives  
+Create a construction project visualization dashboard and companion mobile app that provides location and condition 
+data for multiple jobsite assets (tools, equipment, materials). The visualization must allow for toggle between macro 
+and micro site  views with drill down options. Sensor accuracy, user -defined geo -fence and alert notification, and ease 
+of navigation are all highly valued by the client.  
+ 15. Real -Time Optimization of Mobile Robot  Deceleration Profile  
+ 
+Background  
+Omron Robotics and Safety Technol ogies  (ORT ) is an automation technology development company focused on 
+robotics design and manufacturing. Omron is the leader in the field of industrial automation with operations in over 
+40 countries and 150 locations worldwide. Our company is unique in that it  develops new electronics, mechanics and 
+software for an exceptionally broad spectrum of robots – including SCARA, articulated, parallel link, cobots, and 
+autonomous mobile robots – for the global market. This project will support Omron’s mobile robot prod uct lines.  
+ 
+Problem(s)  
+Omron makes stock mobile robots with a well -tuned deceleration profile.  However, our customers may load the stock 
+mobile robots with differe nt weights and varying speeds as they approach their destinations.  The result is reduced 
+positional accuracy.  By applying an artificial intelligence/machine learning approach to optimize how the robot slows 
+down before stopping, students can improve the performance of our robots.  
+ 
+Objectives  
+The aim of this project is to train a neural network that will dictate the deceleration of a robot to execute smooth and 
+precise stopping.  We do not know the weight loaded on the robot nor the floor conditions, as some floors might be 
+slippery. The system will change commanded deceleration value based on a difference between commanded and 
+executed deceleration in the previous cycle. We assum e that at any time, we know the perfect distance between a 
+robot and a goal, and we can also measure executed deceleration perfectly. Students will use the reinforcement 
+learning approach to train the network and overcome combined issues that stem from noi se in the system, not 
+knowing the mass of the payload and surface quality of the floor.  
+1. Students will develop a simple physics engine.  
+2. Students  will develop a reward function that incorporates deceleration smoothness and final position precision.  
+3. They will tra in a neural network and demonstrate the progression of accuracy over the number of training 
+iterations. Finally, they will compare the final results to the vanilla straight -line deceleration method.  
+ 
+16. CTTA Member Database Management and Automation  
+ 
+Background  
+Founded in 1969, the California Tow Truck Association  (CTTA) represents professional towing operators 
+statewide.  Created by and for towing company owners, CTTA provides unparalleled solutions and resources that 
+empower towing  companies to be more professional and pro gressive within the industry while serving the motoring 
+public. The mission  of the California Tow Truck Association is to cultivate a community of professionals able to 
+provide the highest caliber  of towing and emergency road service -related solutions for the motoring public and the 
+communities of our state.  
+ 
+Problem(s)  
+Currently, our current database system does not function appropriately to manage members, and data entered does  
+not transfer to other of our systems. Data is lost and membership renewals and communicatio ns get lost.  
+ 
+Objectives  
+The objective is to consolidate systems and have one central database that can host and manage members, member  
+renewals, and member communication all in one system that can be on our website.  
+ 
+17. Smart Rodent Detection - Phase 2  
+ 
+Background  
+Agrecom  is a biosecur ity solutions company founded in 1995. Initially focused on service and sales into the poultry  
+industry, it now  provides a spectrum of solutions in the areas of water treatment and sanitation, targeting clients in 
+agriculture, residential, and commercial sectors.  
+ 
+Problem(s)  
+When a client reports a rodent issue at a facility, it is the job of the Agrecom's inspection team to determine how bad 
+the pro blem is. Agrecom has utilized game cameras in the past, but this relies on manual review and counting of the images captured. Agrecom partnered with UC Merced in the Fall of 2022 to develop an automated classification tool 
+based on Amazon's Machine Lear ning engine Rekognition so that once the game cameras are retrieved they can be 
+processed quickly.  
+ 
+Objectives  
+The goal of this project is to build on the work completed by the previous team:  
+1. To improve the image recognition algorithm to estimate species and age of the rodents detected.  
+2. Be able to create a map of the location of the camera deployments and create heatmaps and activity views over 
+time.  
+3. Be able to accept uploads of images to  process in the cloud.  
+4. (Stretch) Be able to automatically upload from a camera device . 
+ 
+18. Flood and Hydrology Alert and Monitoring System  
+ 
+Background  
+Agrecom  is a biosecur ity solutions company founded in 1995. Initially focused on service and sales into the poultry  
+industry, it now  provides a spectrum of solutions in the areas of water treatment and sanitation, targeting clients in 
+agriculture, residential, and commercial sectors.  
+ 
+Problem(s)  
+Merced recently experienced the highest levels of flooding in recorded history. During these unprecedented times, 
+there was a lot of different data from various agencies posting in different sites (Army Corp of Engineers, NOAA, 
+Merced Irrigation District, Merced County, Weather.gov, City / County GIS). It was up to the residents  of the county 
+to find, digest and process this  – and this created a situation where there was a lot of bad information or conclusions 
+being drawn c ausing panic – or even lack of concern for the serious situation. The county and cities were 
+communicating by social media, which does not necessary working to communicate with everyone.  
+ 
+Objectives  
+1. Create a web site that takes the publicly available informat ion about creek and river levels and forecasts, dam status 
+and fill forecasts as well as current weather and consolidate this into an easy to use site that can show multiple data 
+points. Adding and removing data points should be fairly easy from  an administrative  perspective.  
+2. Create an alert system that given the certain criteria (creek level, dam level) can create an electronic alarm when a 
+threshold is breached to be communicated automatically using social media, text or email.  Users can then subscribe 
+to these alerts.  
+3. (Stretch goal) Using GIS data, flood plain and maps, create a projection of impacts of levee riverbank or breaches 
+using street data from around the county.  
+ 
+19. Cilantro Yield Estimation  
+ 
+Background  
+SupHerb Farms  is a company located in Turl ock, CA; whose primary business is contracting culinary herb 
+production, processing of those herbs, and sales of finished  products around the world.  The primary herbs produced 
+by SupHerb Farms are Basil, Cilantro and Parsley.  
+ 
+Problem(s)  
+SupHerb Farms would like to be able to accurately determine harvestable pounds of herbs from each production field 
+prior to harvest. Herb crops grow every day and maintaining a schedul e is difficult for SupHerb as we visually 
+estimate fields and often make errors in our estimation. These errors either cause plant downtime due to lack of crop 
+or they cause collisions in between different fields that produce more pounds than were estimat ed, these occurrences 
+cause product quality issues and potentially plant equipment downtime because we try to push processing machinery 
+above its intended productivity.  
+ 
+Objectives  
+Experiment will be executed at the UC Merced Experimental Farm Greenhouse in collaboration with SupHerb 
+Farms . The capstone software team's objective is to develop a vision / learning system to detect cilantro leaves, and 
+estimate volu me of leaves in an area planted with cilantro, by taking images every day as the cilantro grows.  The weight is calculated after every mow. The first phase of this project is to utilize cameras to see if they can provide 
+accurate measurements of the crop m ass of cilantro in the area that is photographed.  Herbs are grown primarily for 
+their leaves and the focus of this work should be to identify the total pounds of plant material that would be harvested 
+from the area but to also identify the weight of unusa ble stems and the weight of usable leaves.  
+ 
+20. Student Experience Navigation  
+ 
+Background  
+Students at universities must navigate multiple websites containing specific in formation about the overall student 
+experience. This piecemeal information gathering is time -consuming, disconnected from context, and fragmented 
+understanding. Globidea  is an initiative of academics that are sharing the objective of making information e asier to 
+find and navigate.  
+ 
+Problem(s)  
+Gathering specific information across distributed websites related to the phases in a student journey, and presenting 
+them formatted appropriately on a centralized website is a manual process that is very time consuming. The problem 
+is that if information is modified in the original source, the centralized page remains outda ted. One way to help is to 
+create a link aggregation page: in this case the students have to follow each link and dig to find relevant information in 
+there. The solution for editors would be to select specific information across these linked sources and curate them, 
+while keeping them connected to and updated from the original source. In addition, editors should be able to tag 
+specific information on various pages as they were being developed so that it could automatically be brought to the 
+aggregated si te rather than requiring individuals to locate and then capture this information.  
+ 
+Objectives  
+The goal is to have information related to 5 phases of the student experience be shown on a centralized site, 
+connected to the original content on the other site, always be up dated if changes occur, and then gather additional 
+resources and information if new information is tagged on other sites related to a phase. Those phases are: Planning 
+to Attend, Getting Started, Making Progress, Finishing Up, and Moving Forward.  
+Specif ically, we would like a software that allows to copy snippets of information from different pages / sites, 
+pasting them into a curated web page, so that the pasted content links back to the original source. The system would 
+also check if content that was copied / linked into the curated page has changed, and would auto -update the curated 
+page, and/or alert of the change. As a bonus, the software would allow the curator to edit the formatting of the 
+aggregated content.  
+ 
+21. Training Matr ix - Phase 2  
+ 
+Background  
+Betts Company  is a sixth-generation family -owned manufacturer and supplier of springs and heavy -duty truck parts  
+located in Fresno, CA . In order to ensure a safe and productive work environment the company needs to ensure all 
+employees are properly trained for the tasks they are assigned.  
+ 
+Problem(s)  
+Betts Company would like to see a software solution created to collect, warehouse and perform data analytics for the 
+training required thro ughout the organization.  Today the ability of the organization to understand the training of each 
+individual is difficult to manage. The information is collected , but it is difficult to sort out who is trained, what skill 
+level they posse ss, and when training n eeds to reoccur.  
+ 
+Objectives  
+Expand the functionality of the Training Matrix program developed by UC Merced students during the 2022 school 
+year. How: Use the existing program platform as the starting point.  Ruby on Rails and SQL will be the primary tools. 
+Goals: Impro ved user interface, UI functionality on mobile devices, Additional SQL tables, Report Generation 
+capabilities, Scheduling and Reminders, Security features (MS Single sign -on), Deployment to Share Point 
+Environment.  
+ 
+ 
+ 22. Evaluation of Coordination Using VR Hand Controllers  
+ 
+Background  
+Valley Children's Hospital  (VCH) is a healt hcare institution located in the central valley of California. VCH 
+provides  excellent healthcare service to all the children in the central valley. This project will focus in the Neurological 
+examination using virtual reality.  
+ 
+Problem(s)  
+There is a need for improving the accuracy of the neurological exam. In order to enhance virtual medicine se rvices  
+(telemedicine, remote services) this project will explore the use of Virtual Reality (VR) to track movement during  
+neurological examinations.  
+ 
+Objectives  
+Task: Analyze movements of the arm with hand controllers.   
+Goal : Obtain precisely quantifiable data that can inf orm our understanding of the arm movements - motion ( using the 
+VR hand controller).  
+ 

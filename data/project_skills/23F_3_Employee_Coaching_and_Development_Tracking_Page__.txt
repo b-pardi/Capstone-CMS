@@ -1,0 +1,16 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listProvide a better and efficient coaching and observation tracker webpage to eliminate the need for manually tracking 
+follow -ups. This will be relevant to the new coaching process. This will give ability for the company to sustain the new 
+coaching process an d utilize it to make LMS proficient and promote a productive work environment.  
+ 
+Standard Features:   
+• Different display pages based on type of coaching (skill and behavioral).  
+• Drop down option for task type, date user, observer. Check marks for list of skills to select.  
+• Date drop down for follow -up date.  
+• Display interactive KTS (training documentation) with check marks.  
+• As each check mark gets selected, it gets quantified (score) based on skills, behavior, and safety.  
+• Option to attach any documents.  
+• Ability to link original (parent) observation if this is a follow -up using observation ID no.  • Once it is linked, the page should show the history from the previous one.  
+Bonus Features:  
+• Provide analytics on based KTS score, performance correlation.  
+• Show trends from previous parent observations along the follow -up ones.  
+• SMS or email as reminder of the follow -up. ### Assistant: How can I help you today?

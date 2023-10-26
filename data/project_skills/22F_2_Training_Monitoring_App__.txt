@@ -1,0 +1,19 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listThe web app should provide a login interface for managers and new hire employees. Managers should be able to 
+create (or import) a list of online classes that are internal to the STM department. The app should allow the set up of 
+different departments or functions for different managers and employees to choose from. Managers should be able to 
+choose 10 -20 courses from a set of ~200 to assign to new hires. Managers should be able to define the start and finish 
+dates. Upon comp letion of the classes, the new hire employee should be able to demonstrate their completion of 
+classes by answering questions or presenting their understanding to the manager. Once a new hire employee indicates completion of a course, the manager should be  able to confirm this after reviewing the answers or presentations. Each 
+function and each department should be able to summarize the statistical data on employee completion dates from 
+start to finish. The app should also be able to display an overview of how many managers are training how many 
+employees and a chart of how  many trainees are in progress.  ### Assistant: Thank you for providing the project description! Based on the requirements listed, here are the programming knowledge areas that may be necessary for completing the project:
+
+1. **JavaScript**: Since the web app will be built using HTML, CSS, and JavaScript, proficiency in this language is essential. You'll need to know how to write clean, modular, and well-structured code, as well as handle events, validate user input, and manipulate the DOM.
+2. **HTML/CSS**: A solid understanding of HTML and CSS is crucial for building a responsive and visually appealing web application. You should know how to structure your code using semantic HTML elements, create custom CSS styles, and implement CSS layouts.
+3. **Bootstrap**: Bootstrap is a popular front-end framework that provides pre-built components and CSS styles for quickly building responsive web applications. Familiarity with Bootstrap can help streamline your development process and ensure consistency in design.
+4. **Node.js**: Node.js is a server-side runtime environment that allows you to run JavaScript on the server. If you want to create a backend API for handling requests and responses between the client-side and server-side, you'll need to learn Node.js.
+5. **Express.js**: Express.js is a popular Node.js framework that simplifies the process of creating web applications. It provides middleware functions, templates, and other tools to help you build a robust and scalable backend API.
+6. **MongoDB**: MongoDB is a NoSQL database that allows you to store and retrieve data in a flexible and efficient manner. Knowledge of MongoDB can help you manage user accounts, track progress, and provide insights into employee completion rates.
+7. **Passport.js**: Passport.js is a strategic framework for authentication in Node.js applications. It helps you handle authentication sessions, password hashing, and other security-related tasks.
+8. **Socket.io**: Socket.io is a library that enables real-time communication between clients and servers. If you want to create a live update system that notifies managers and employees of changes in the training program, you'll need to understand how to use Socket.io.
+9. **Javascript frameworks**: There are several JavaScript frameworks available, such as React,

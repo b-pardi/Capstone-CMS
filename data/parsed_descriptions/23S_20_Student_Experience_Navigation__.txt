@@ -1,0 +1,9 @@
+The goal is to have information related to 5 phases of the student experience be shown on a centralized site, 
+connected to the original content on the other site, always be up dated if changes occur, and then gather additional 
+resources and information if new information is tagged on other sites related to a phase. Those phases are: Planning 
+to Attend, Getting Started, Making Progress, Finishing Up, and Moving Forward.  
+Specif ically, we would like a software that allows to copy snippets of information from different pages / sites, 
+pasting them into a curated web page, so that the pasted content links back to the original source. The system would 
+also check if content that was copied / linked into the curated page has changed, and would auto -update the curated 
+page, and/or alert of the change. As a bonus, the software would allow the curator to edit the formatting of the 
+aggregated content.  

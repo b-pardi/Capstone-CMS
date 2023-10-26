@@ -1,0 +1,22 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listThe goal is to have information related to 5 phases of the student experience be shown on a centralized site, 
+connected to the original content on the other site, always be up dated if changes occur, and then gather additional 
+resources and information if new information is tagged on other sites related to a phase. Those phases are: Planning 
+to Attend, Getting Started, Making Progress, Finishing Up, and Moving Forward.  
+Specif ically, we would like a software that allows to copy snippets of information from different pages / sites, 
+pasting them into a curated web page, so that the pasted content links back to the original source. The system would 
+also check if content that was copied / linked into the curated page has changed, and would auto -update the curated 
+page, and/or alert of the change. As a bonus, the software would allow the curator to edit the formatting of the 
+aggregated content.  ### Assistant: Here are some programming languages and technologies that may be relevant for completing the project:
+
+1. HTML/CSS: for creating the user interface and layout of the centralized site.
+2. JavaScript: for adding interactivity to the website, such as automatically updating the curated page when new content is added to the original sources.
+3. API (Application Programming Interface): for connecting to the original content on the other sites and retrieving the necessary information.
+4. React: a popular front-end library for building reusable UI components and managing state.
+5. Node.js: a server-side runtime environment for building scalable and efficient web applications.
+6. MongoDB: a NoSQL database for storing and retrieving data in a flexible and scalable manner.
+7. GraphQL: a query language for APIs that allows for more efficient data retrieval and manipulation.
+8. AWS (Amazon Web Services): a suite of cloud computing services that can be used for hosting and deploying the web application.
+9. Heroku: a cloud platform for deploying and scaling web applications.
+10. Git: a version control system for tracking changes to the codebase and collaborating with team members.
+
+These are just some examples of the programming knowledge and tools that could be useful for completing the project. Depending on the specific requirements and implementation details, additional technologies and skills may be necessary.

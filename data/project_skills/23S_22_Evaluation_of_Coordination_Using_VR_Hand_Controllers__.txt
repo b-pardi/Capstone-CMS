@@ -1,0 +1,17 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered listTask: Analyze movements of the arm with hand controllers.   
+Goal : Obtain precisely quantifiable data that can inf orm our understanding of the arm movements - motion ( using the 
+VR hand controller).  
+ ### Assistant: To complete this project, you will need the following programming knowledge:  
+1. Experience with Python programming language.  
+2. Familiarity with NumPy and Pandas libraries for data analysis.  
+3. Understanding of basic concepts in computer vision such as image processing, object detection, and tracking.  
+4. Knowledge of machine learning algorithms and their applications.  
+5. Familiarity with VR development frameworks such as Unity or Unreal Engine.  
+6. Experience with sensor integration and data acquisition from sensors such as accelerometers, gyroscopes, and magnetometers.  
+7. Understanding of signal processing techniques for filtering and feature extraction.  
+8. Familiarity with plotting and visualization tools such as Matplotlib and Seaborn.  
+9. Knowledge of statistics and statistical modeling techniques.  
+10. Experience with debugging and troubleshooting issues in code.
+
+
+

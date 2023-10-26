@@ -1,0 +1,5 @@
+The team is requested to develop a web application to enable gathering of data about the code check -in activities in 
+SVN for each project and generate key performance indicator (KPI) reports for management to have a better 
+understanding o f resource allocation.  
+At the end of this project, WDC would like to see a workable web application that can get data from SVN and 
+generate KPI reports. A responsive web user interface to provide users with the correct KPI result is expected.  

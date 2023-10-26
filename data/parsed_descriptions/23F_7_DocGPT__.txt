@@ -1,0 +1,6 @@
+Develop a JSON schema that summarizes the contents of the PDF  using a large language model. For example, if 
+presented with a table on a page, attempt to transform that table into a JSON formatted table object. JSON Schema 
+can be predefined by the team. This includes defining what summary questions will need to be as ked to complete an 
+analysis of a PDF . Software workflow must be able to process at least 10 PDF s per minute. Must be able to query 
+compiled PDF  JSON data through a REST API. You’re  able to use either a locally hosted large language model or an 
+online API to generate the machine -readable JSON data.  

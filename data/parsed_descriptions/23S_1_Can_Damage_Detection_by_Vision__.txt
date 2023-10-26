@@ -1,0 +1,2 @@
+Develop a (vision -based ) solution that will detect the dented cans, offset lids, and too tall cans and reject the cans  
+from the process lines.  

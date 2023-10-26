@@ -1,0 +1,13 @@
+### Human: given this project description, describe what programming knowledge is necessary to complete it as a numbered list1. Create a web site that takes the publicly available informat ion about creek and river levels and forecasts, dam status 
+and fill forecasts as well as current weather and consolidate this into an easy to use site that can show multiple data 
+points. Adding and removing data points should be fairly easy from  an administrative  perspective.  ### Assistant: Of course! Here are the programming knowledge areas you'll need to complete the project as a numbered list:
+
+1. **HTML/CSS**: You'll need to create the structure and layout of the website using HTML and CSS. This will involve creating tables, dividers, and other elements to organize the information on the page.
+2. **JavaScript**: You'll need to use JavaScript to retrieve data from external sources (such as API endpoints) and manipulate it on the page. You may also need to use JavaScript to create interactive features like dropdown menus or sliders.
+3. **Databases**: Depending on the amount of data you need to store, you may need to use a database management system like MySQL or MongoDB. You'll need to know how to design and implement a database schema, as well as how to write queries to retrieve and manipulate data.
+4. **APIs**: To fetch data from external sources, you'll need to know how to make HTTP requests using JavaScript. This will involve understanding how to construct URLs, send HTTP requests, and parse response data.
+5. **Web frameworks**: Depending on your level of experience and the complexity of the project, you may want to use a web framework like React, Angular, or Vue.js to help manage the structure and logic of your website. These frameworks provide pre-built components and tools that can save time and effort when building complex web applications.
+6. **Server-side scripting**: If you want to add more advanced functionality to your website, such as user authentication or real-time updates, you may need to learn server-side scripting languages like PHP, Python, or Ruby. These languages allow you to create dynamic content and interact with databases directly from the server.
+7. **Testing and debugging**: Finally, you'll need to have some basic knowledge of testing and debugging techniques to ensure that your website works correctly and is free of errors. This may involve using tools like Selenium or Chrome DevTools to automate tests, or manually testing the website in different browsers and devices.
+
+I hope this helps! Let me know if you have any further questions.

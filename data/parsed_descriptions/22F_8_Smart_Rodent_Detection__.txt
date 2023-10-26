@@ -1,0 +1,4 @@
+Stage 1: Develo p an AI engine to classify rodents from still or moving pictures (provided by Agrecom).  
+Stage 2: Deploy the engine on a device with a suitable low light camera selected or developed for the purpose that can 
+be deployed in the real world  
+Stage 3: Push activ ity and statistics to a cloud platform for review   
