@@ -25,8 +25,11 @@ def size_teams(students, projects):
 
     return teams
 
+'''
+CHECK EDGE CASE FOR IF ANY TEAM SIZE > 6
+'''
 def size_teams_with_labs(lab_populations, num_projects, base_team_size):
-    # can do teams of 4, 5, or 6
+    # can do teams of 4, 5
     num_teams_per_lab = []
     for pop in lab_populations:
         num_teams_per_lab.append(pop // base_team_size)
@@ -59,6 +62,7 @@ if __name__ == '__main__':
     teams_dict = {}
     teams_dict['Option 1'] = size_teams_with_labs(lab_populations, num_projects, 4)
     teams_dict['Option 2'] = size_teams_with_labs(lab_populations, num_projects, 5)
+    teams_dict['Option 3'] = size_teams_with_labs(lab_populations, num_projects, 6)
 
     pprint(teams_dict)
 
