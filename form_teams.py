@@ -147,12 +147,12 @@ if __name__ == '__main__':
         case 2:
             team_sizes = teams_dict['Option 2']
 
-    team_sizes = {'lab-02L': [4,4], # TEMPORARY HARD CODED DICT UNTIL TEAM DIST FIX
+    '''team_sizes = {'lab-02L': [4,4], # TEMPORARY HARD CODED DICT UNTIL TEAM DIST FIX
               'lab-03L': [5, 5, 5, 5],
               'lab-04L': [5, 5, 5, 5, 5, 5],
               'lab-05L': [6, 6, 6, 5, 5],
               'lab-06L': [6, 5, 5, 5, 5],
-              'msg': '1 project(s) will be tabled'}
+              'msg': '1 project(s) will be tabled'}'''
     lab_sections = list(team_sizes.keys())[:-1]
     lab_sections = [lab[4:] for lab in lab_sections]
 
