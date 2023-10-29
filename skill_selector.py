@@ -18,12 +18,6 @@ model = AutoModel.from_pretrained(model_name)
 print(summary(model))
 
 prompt = "given this project description, describe what programming knowledge is necessary to complete it as a numbered list"
-'''
-description = "Stage 1: Develop an AI engine to classify rodents from still or moving pictures (provided by Agrecom).\
-Stage 2: Deploy the engine on a device with a suitable low light camera selected or developed for the purpose that can\
-be deployed in the real world\
-Stage 3: Push activity and statistics to a cloud platform for review"
-'''
 
 # load parsed project description files (extracted in parse_pdf.py)
 desc_path = "data/parsed_descriptions/"
