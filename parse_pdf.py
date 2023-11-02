@@ -1,4 +1,5 @@
 import PyPDF2
+import pandas as pd
 import re
 import os
 
@@ -49,9 +50,39 @@ def extract_objectives(proj_file):
         else:
             match_found_flag = False
 
+def table_skills():
+    pattern = r'\*\*(.*?)\*\*' # pattern to grab strings in double asterisks
+    alt_pattern = r'\d+\.\s*(.*?)(?=\d+\.\s*|\n|$)' # pattern to grab strings in numbered lists
+    data_path = "data/project_skills/"
+    files = os.listdir(data_path) # grab file paths
+    projects = [os.path.splitext(file)[0] for file in files] # extract fn from fps for df index
+    skill_idxs = [f"Skill {i+1}" for i in range(15)] # column headers
+    skills_df = pd.DataFrame(index=projects, columns=skill_idxs) # define dataframe
+
+    for i, project_skill_fp in enumerate(files): # iterate through files
+        with open(data_path+project_skill_fp, 'r') as project_skill_file:
+            file_text = project_skill_file.read()
+            skills = re.findall(pattern, file_text) # look for skills with regex pattern
+            
+            if not skills: # if no skills found with pattern...
+                print(f"**Using alt pattern for: {project_skill_fp}")
+                skills = re.findall(alt_pattern, file_text) # look for skills with alternate regex pattern
+                if not skills:
+                    print(f"*****Unable to prase skills for: {project_skill_fp}")
+            
+            for j, skill in enumerate(skills):
+                skills_df.loc[projects[i],skill_idxs[j]] = skill
+
+    print(skills_df)
+    return skills_df
+
+
 if __name__ == '__main__':
     semesters = ['23S', '23F', '22F']
-    for semester in semesters:
+    '''for semester in semesters:
         file = f"data/project_descriptions/{semester} CSE120 Project Summaries.pdf"
-        #parsePDF(file)
+        parsePDF(file)
         extract_objectives(f"data/project_descriptions/{semester}_all_projects.txt")
+    '''
+    skills_df = table_skills()
+    skills_df.to_csv("data/skill_table.csv")

@@ -37,7 +37,6 @@ def size_teams_with_labs(lab_populations, num_projects, base_team_size):
     for pop in lab_populations:
         num_teams_per_lab.append(pop // base_team_size)
     
-    # 
     team_sizes = {}
     for i, num_teams in enumerate(num_teams_per_lab): # using newly found number of teams per lab...
         #               \/   corresponds to lab 'name' i.e. lab02L
@@ -52,7 +51,16 @@ def size_teams_with_labs(lab_populations, num_projects, base_team_size):
                 if remaining == 0:
                     break # break when no more residuals to distribute
 
-    total_teams = np.sum(num_teams_per_lab)
+    # check for any teams of 6+
+    for lab in team_sizes.keys(): # labs are keys in dict, vals are list of team sizes
+        for i, size in enumerate(team_sizes[lab]): # entries in list
+            if size > 6: # if team size too big
+                team_sizes[lab][i] = size // 2 # split team size
+                team_sizes[lab].append(size // 2 + size % 2) # and add new team accounting for possible odd size
+
+    # flatten non homogenous list of lists and the len is number of team sizes
+    total_teams = len([size for team_list in list(team_sizes.values()) for size in team_list])
+    print(total_teams, num_projects)
     diff = np.abs(total_teams - num_projects)
     if total_teams > num_projects:
         team_sizes['msg'] = f"{diff} team(s) will have multiple projects"
@@ -63,23 +71,10 @@ def size_teams_with_labs(lab_populations, num_projects, base_team_size):
 
     return team_sizes
 
-if __name__ == '__main__':
-    #print(size_teams(59, 10))
-    lab_populations = [30, 15, 22, 28]
-    num_projects = 19
-    teams_dict = {}
-    teams_dict['Option 1'] = size_teams_with_labs(lab_populations, num_projects, 4)
-    teams_dict['Option 2'] = size_teams_with_labs(lab_populations, num_projects, 5)
-    teams_dict['Option 3'] = size_teams_with_labs(lab_populations, num_projects, 6)
-
-    pprint(teams_dict)
-
-
 
 if __name__ == '__main__':
-    #print(size_teams(59, 10))
-    lab_populations = [30, 15, 22, 28]
-    num_projects = 19
+    lab_populations = [8, 20, 30, 28,26]
+    num_projects = 22
     teams_dict = {}
     teams_dict['Option 1'] = size_teams_with_labs(lab_populations, num_projects, 4)
     teams_dict['Option 2'] = size_teams_with_labs(lab_populations, num_projects, 5)
