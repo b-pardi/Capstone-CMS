@@ -1,5 +1,7 @@
 uri.py
 __pycache__
 
+data/project_skills
+
 student_data/*
 !student_data/.gitkeep

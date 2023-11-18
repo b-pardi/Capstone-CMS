@@ -137,7 +137,6 @@ if __name__ == '__main__':
     teams_dict = {}
     teams_dict['Option 1'] = size_teams_with_labs(lab_populations, num_projects, 4)
     teams_dict['Option 2'] = size_teams_with_labs(lab_populations, num_projects, 5)
-    teams_dict['Option 3'] = size_teams_with_labs(lab_populations, num_projects, 6)
     pprint(teams_dict)
 
     # decide which of the two team distributions looks better
