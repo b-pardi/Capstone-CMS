@@ -1,5 +1,5 @@
 uri.py
 __pycache__
-
+/capstoneSurvey/node_modules
 student_data/*
 !student_data/.gitkeep
