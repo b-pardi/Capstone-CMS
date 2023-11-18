@@ -5,6 +5,7 @@ import itertools
 from collections import deque
 import random
 import copy
+import re
 
 from team_sizer import size_teams_with_labs
 
@@ -30,6 +31,39 @@ class Project:
     def weighted_sum(self, mean_weight=0.5, stddev_weight=0.5):
         self.project_permutation_score = mean_weight * self.project_permutation_mean + \
                                          stddev_weight * (1 / self.project_permutation_stddev)
+
+class Student:
+    def __init__(self):
+        self.fn = ''
+        self.ln = ''
+        self.email = ''
+        self.lab = ''
+        self.skills_ratings = {}
+        self.skills_weights = {}
+        self.preferences = {}
+        self.proficient = '' # not used for algorithm, but may be helpful for human intervention
+
+    def extract_student_info(self, df):
+        s.fn = df.at[i, 'First Name']
+        s.ln = df.at[i, 'Last Name']
+        s.email = df.at[i, 'Email']
+        s.lab = df.at[i, 'Lab']
+        s.proficient = df.at[i, 'Proficient']
+        
+        try: # special case where there is no survey data for given student
+            skills = re.sub(r'\([^)]*\)', '', df.at[i, 'Skills']).split(',') # remove examples in ( ) and split separate skills at commas
+        except TypeError as te:
+            print(f"*** WARNING: student {s.fn} {s.ln} has no skills listed for them")
+            no_survey_data_students.append((s.fn, s.ln))
+            skills = ['empty']
+        print(s.ln)
+        for skill in skills:
+            s.skills_ratings[skill] = 1 # all skills rated 1 for now until self rating survey implemented
+            s.skills_weights[skill] = 1 # skill weights 1 initially
+        print(s.skills_ratings, '\n', s.skills_weights)
+        for p in projects:
+            s.preferences[p.name] = df.at[i, p.name]
+        print(s.preferences)
 
 def assign_scores_dict(projects, lab_sections, df):
     #for p in projects:
@@ -128,6 +162,9 @@ def choose_best_assignment(lab_sizes_dict, projects, num_projects, lab_sections,
           f"StdDev: {best_project.project_permutation_stddev}" )
     
     return list(best_permutation)
+
+    def score_students_with_projects():
+        pass
         
 
 if __name__ == '__main__':
@@ -146,13 +183,7 @@ if __name__ == '__main__':
             team_sizes = teams_dict['Option 1']
         case 2:
             team_sizes = teams_dict['Option 2']
-
-    '''team_sizes = {'lab-02L': [4,4], # TEMPORARY HARD CODED DICT UNTIL TEAM DIST FIX
-              'lab-03L': [5, 5, 5, 5],
-              'lab-04L': [5, 5, 5, 5, 5, 5],
-              'lab-05L': [6, 6, 6, 5, 5],
-              'lab-06L': [6, 5, 5, 5, 5],
-              'msg': '1 project(s) will be tabled'}'''
+    
     lab_sections = list(team_sizes.keys())[:-1]
     lab_sections = [lab[4:] for lab in lab_sections]
 
@@ -184,5 +215,14 @@ if __name__ == '__main__':
                 output1_dict[cur] = p.assigned_lab
                 output2_dict[cur] = p.scores_per_lab_dict[p.assigned_lab]
     df_output = pd.concat([df, pd.DataFrame([output1_dict]), pd.DataFrame([output2_dict])], ignore_index=True)
-
     df_output.to_csv("student_data/2023-01-Spring-CSE-MASTER with Diff and output.csv",float_format='%.3f')
+
+    # making student objects extracting info from spreadsheet survey
+    student_df = pd.read_excel("student_data/2023-01-Spring-CSE-MASTER with Diff.xlsx", sheet_name='SURVEY NODU+STAT', index_col=None)
+    num_students = student_df.shape[0]
+    students = []
+    no_survey_data_students = []
+    for i in range(num_students):
+        s = Student()
+        s.extract_student_info(student_df)
+        students.append(s)
