@@ -67,6 +67,7 @@ class Student:
         self.lab = ''
         self.skills_ratings_dict = {key: 0 for key in SKILLS}
         self.skills_weights_dict = {key: 1 for key in SKILLS}
+        self.scores_per_project_dict = {}
         self.preferences = {}
         self.proficient = '' # not used for algorithm, but may be helpful for human intervention
 
@@ -119,12 +120,11 @@ def assign_scores_dict(projects, lab_sections, df):
         p.assigned_lab_score = -1
         p.assigned = False
 
-
     return projects
+
 
 ''' Lab assignment algorithm
 - relies on project scores for each lab being previously sorted
-
 params: 
     lab_sizes_dict: num of teams in each lab (counting length of list from size_teams_with_labs())
     projects: list of Project objects instantiated in main given project's their names and sorted scores dict/list
@@ -159,7 +159,6 @@ def assign_projects_to_labs(lab_sizes_dict, projects, num_projects):
 
 
 ''' Lab permutation for assignment algorithm
-
 Iterates through possible combinations of the lab lists
 lab assignment algorithm favors those projects earlier in the list,
 so this function repeats the lab assignment algorithm with each project being in the front of the list,
@@ -203,8 +202,11 @@ def choose_best_assignment(lab_sizes_dict, projects, num_projects, lab_sections,
     
     return list(best_permutation)
 
-    def score_students_with_projects():
-        pass
+def single_round_assignment(students, projects, labs):
+    for lab in labs: # students must be grouped into the same lab
+        for student in students:
+            for project in projects:
+                pass
         
 
 if __name__ == '__main__':
@@ -271,7 +273,9 @@ if __name__ == '__main__':
     print(students[0].email,best_project_assignment[0].name)
     for student in students:
         student.random_assignment()
-        print(f"{student.fn}: {student.skills_ratings_dict}, {student.skills_weights_dict}")
+        #print(f"{student.fn}: {student.skills_ratings_dict}, {student.skills_weights_dict}")
     for project in best_project_assignment:
         project.random_assignment()
-        print(f"{project.name}: {project.skills_dict}")
+        #print(f"{project.name}: {project.skills_dict}")
+
+    single_round_assignment(students, best_project_assignment, lab_sections)
