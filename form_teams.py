@@ -9,6 +9,15 @@ import re
 
 from team_sizer import size_teams_with_labs
 
+# set random seed for reproducibility
+random.seed(123)
+
+# list of possible skills students and projects can have
+# students and projects will have skill dict attrs
+# keys will be all possible skills, values will be rating/weights of skills (0 if none)
+with open("SKILLS_LIST.txt", 'r') as skill_file:
+    SKILLS = skill_file.read().splitlines()
+print(SKILLS)
 
 class Project:
     def __init__(self, name):
@@ -19,6 +28,9 @@ class Project:
         self.scores_per_lab_list = []
         self.assigned = False
         self.top_diff = np.inf
+
+        # dict of skills init to 0, will be updated in assignment algo with a 1 for skills needed
+        self.skills_dict = {key: 0 for key in SKILLS}
         
         # when choosing best project assignments with varying permutations,
         # these attr will contain the avg/stddev of the scores of each lab,
@@ -32,14 +44,29 @@ class Project:
         self.project_permutation_score = mean_weight * self.project_permutation_mean + \
                                          stddev_weight * (1 / self.project_permutation_stddev)
 
+    '''
+    takes skills from skill list and randomly distributes them to projects
+    gives projects 10 random skills
+    skill attrs are dicts with skill as key and value is boolean
+    skills required for project will be 1's and not required 0's
+    '''
+    def random_assignment(self):
+        random_skills = random.sample(SKILLS, 10)
+        for skill in random_skills:
+            self.skills_dict[skill] = 1
+
+    def reset_assignment(self):
+        self.skills_dict = {key: 0 for key in SKILLS}    
+
+
 class Student:
     def __init__(self):
         self.fn = ''
         self.ln = ''
         self.email = ''
         self.lab = ''
-        self.skills_ratings = {}
-        self.skills_weights = {}
+        self.skills_ratings_dict = {key: 0 for key in SKILLS}
+        self.skills_weights_dict = {key: 1 for key in SKILLS}
         self.preferences = {}
         self.proficient = '' # not used for algorithm, but may be helpful for human intervention
 
@@ -54,21 +81,35 @@ class Student:
             skills = re.sub(r'\([^)]*\)', '', df.at[i, 'Skills']).split(',') # remove examples in ( ) and split separate skills at commas
         except TypeError as te:
             print(f"*** WARNING: student {s.fn} {s.ln} has no skills listed for them")
-            no_survey_data_students.append((s.fn, s.ln))
+            #no_survey_data_students.append((s.fn, s.ln))
             skills = ['empty']
         print(s.ln)
-        for skill in skills:
-            s.skills_ratings[skill] = 1 # all skills rated 1 for now until self rating survey implemented
-            s.skills_weights[skill] = 1 # skill weights 1 initially
-        print(s.skills_ratings, '\n', s.skills_weights)
+        '''for skill in skills:
+            s.skills_ratings_dict[skill] = 1 # all skills rated 1 for now until self rating survey implemented
+            s.skills_weights_dict[skill] = 1 # skill weights 1 initially'''
+        #print(s.skills_ratings_dict, '\n', s.skills_weights_dict)
         for p in projects:
             s.preferences[p.name] = df.at[i, p.name]
-        print(s.preferences)
+        #print(s.preferences)
+
+    '''
+    takes skills from skill list and randomly distributes them to students
+    gives 10 random skills to students
+    skill attrs are dicts with skill as key and value is rating
+    rating for students is their self rated ability from 1-5 (also random in this function)
+    '''
+    def random_assignment(self):
+        random_skills = random.sample(SKILLS, 10)
+        for skill in random_skills:
+            rating = random.randint(1,5)
+            self.skills_ratings_dict[skill] = rating
+
+    def reset_assignment(self):
+        self.skills_ratings_dict = {key: 0 for key in SKILLS}
+        self.skills_weights_dict = {key: 1 for key in SKILLS}
+
 
 def assign_scores_dict(projects, lab_sections, df):
-    #for p in projects:
-        #print('**B', p.name, p.scores_per_lab_dict)
-
     for p in projects:
         for lab in lab_sections:
             p.scores_per_lab_dict[lab] = round(df.loc[lab, p.name],3) # assign scores from dataframe to projects
@@ -78,8 +119,7 @@ def assign_scores_dict(projects, lab_sections, df):
         p.assigned_lab_score = -1
         p.assigned = False
 
-    #for p in projects:
-        #print('**A', p.name, p.scores_per_lab_dict)
+
     return projects
 
 ''' Lab assignment algorithm
@@ -221,8 +261,17 @@ if __name__ == '__main__':
     student_df = pd.read_excel("student_data/2023-01-Spring-CSE-MASTER with Diff.xlsx", sheet_name='SURVEY NODU+STAT', index_col=None)
     num_students = student_df.shape[0]
     students = []
-    no_survey_data_students = []
     for i in range(num_students):
         s = Student()
         s.extract_student_info(student_df)
         students.append(s)
+
+    # now we have a list of student objects and project objects
+    # for testing purposes, randomly assign skills to each
+    print(students[0].email,best_project_assignment[0].name)
+    for student in students:
+        student.random_assignment()
+        print(f"{student.fn}: {student.skills_ratings_dict}, {student.skills_weights_dict}")
+    for project in best_project_assignment:
+        project.random_assignment()
+        print(f"{project.name}: {project.skills_dict}")
