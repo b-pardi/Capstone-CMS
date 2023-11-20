@@ -12,3 +12,11 @@ Database connection is setup first thing upon running, so check the terminal to 
 Window opens up with a list of projects and skills for each of them to be selected
 When selections are done, hit submit on the top left and they will be added to the database
 If selections need to be updated, the script checks if a project's collection is already in the db, and updates accordingly
+
+To run survey in localhost:
+1. Have node installed from https://nodejs.org/en
+2. Install React: npm install react 
+3. Install Dom: npm install react react-dom
+4. Install React scripts: npm install react react-dom react-scripts
+Start local server by: npm start
+If server doesn't open in web browser, navigate to http://localhost:3000/
