@@ -1,0 +1,54 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: The goal is to have information related to 5 phases of the student experience be shown on a centralized site, 
+connected to the original content on the other site, always be up dated if changes occur, and then gather additional 
+resources and information if new information is tagged on other sites related to a phase. Those phases are: Planning 
+to Attend, Getting Started, Making Progress, Finishing Up, and Moving Forward.  
+Specif ically, we would like a software that allows to copy snippets of information from different pages / sites, 
+pasting them into a curated web page, so that the pasted content links back to the original source. The system would 
+also check if content that was copied / linked into the curated page has changed, and would auto -update the curated 
+page, and/or alert of the change. As a bonus, the software would allow the curator to edit the formatting of the 
+aggregated content.  
+
+### Assistant: Please select the skills you think are most relevant for this project.

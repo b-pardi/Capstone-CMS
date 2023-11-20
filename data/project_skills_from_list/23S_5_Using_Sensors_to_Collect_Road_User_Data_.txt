@@ -1,0 +1,55 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: Develop a working prototype for a vision -based traffic counter.  Write software that analyzes the visual data to 
+automatically count and classify road users (e -scooters, bicycles, and pedestrians).  
+
+### Assistant: Which skills should the team of developers possess to complete this project?
+
+1. Python: As the project involves image processing and machine learning, Python is a crucial skill for the development of the project. Additionally, it provides numerous libraries such as OpenCV, NumPy, Pandas, and Scikit-image, which are essential for image processing and analysis.
+2. Machine Learning: The project requires developing algorithms and models to classify and count road users. Therefore, knowledge in machine learning is necessary to train and deploy models using frameworks like TensorFlow, Keras, or PyTorch.
+3. Computer Vision: The project involves analyzing visual data to detect and recognize road users. Therefore, proficiency in computer vision is required to develop software that can accurately identify and classify objects in images and videos.
+4. OpenCV: OpenCV is a popular computer vision library that provides a comprehensive set of functions for image and video processing, feature detection, and object recognition. Therefore, experience with OpenCV is vital for the project.
+5. NumPy and Pandas: These libraries provide efficient data manipulation and analysis capabilities, which are essential for preprocessing and post-processing the visual data.
+6. C/C++: Although not strictly necessary, having some knowledge of C/C++ can be beneficial for optimizing performance-critical parts of the project, such as real-time image processing.
+7.

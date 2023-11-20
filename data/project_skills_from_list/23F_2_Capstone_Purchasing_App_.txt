@@ -1,0 +1,102 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+APIâ€™s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: The objective of the project is to develop an APP to streamline the capstone purchasing process to get timely 
+approval from the faculty and reduce the staff time. Complete capstone purchasing process involves:  
+1) Purchase request submission, approval, budget tracking, maintaining inventory of purchases.  
+2) Placing the order using CBS2/Oracle system.  
+3) Getting tracking/delivery updates to the Campus  
+4) Delivering the items to various teams  
+ 
+Minimum viable product should include the following items:  
+1) Submission of purchase requests by capstone teams to the teaching faculty: SoE Staff will provide a sample 
+purchase request form along with data verification criteria for various fields. Once the form is submitted by a 
+Team, teaching faculty should be noti fied of the submission.  
+2) Tracking team budget/expenses for faculty to consider during the approval: Team’s expenses should be tracked 
+against the allotted budget for each team. This information should be available to the teaching faculty with each 
+purchase request submission.  
+3) Review and approval of the purchase requests by teaching faculty: Reminders should be sent to the faculty until 
+the approval process has been completed. If the request has been rejected, the reason for the rejection should be 
+communicated back to the team along with suggestions from the faculty.  
+4) Submission of the approved purchase requests to SoE Instructional Staff: If the request has been approved, the 
+approved purchase request form should be submitted to SoE staff for processing.  
+5) A running inventory of all the approved items should be available for SoE staff and teaching faculty to keep track 
+of purchases and flag items for retrieval at the end of the semester.  
+ Add-ons: 
+1) Placing the order using CBS2/Oracle system: This will require communication between APP and Oracle API 
+(involves campus level permissions).  
+2) Getting tracking/delivery updates to the Campus: This will require getting relevant information using Oracle API 
+based on the Purchase Order number.  
+3) Delivering the items to various teams: This will require identifying the delivery boxes by scanning labels. Once the 
+team is identified, a custom message is sent to the team regarding the delivery place and time.  
+4) Making instructional equipment requests: The App should provide a way for student teams to make equipment 
+requests to the Instructional Team. The request should first be approved by the instructor before being routed to 
+the Instructional team (email will b e provided).  
+5) Making lab access requests: The App should provide a way for student teams to make lab space requests to 
+Instructional Team. The request should first be approved by the instructor before being routed to the 
+Instructional team (email will be provided).  
+6) Safety training report: The App should allow the instructor to upload student roster along with team information 
+(team numbers, team members, roles). Each student should be able to upload their safety certificates to the app. 
+The App should be able to gene rate a report indicating which students have completed the training and which are 
+still pending . 
+
+### Assistant: Please select the skills that you think are most important for the development of this project.
+
+1. Python
+2. OpenCV / SimpleCV
+3. Machine Learning
+4. TensorFlow / Keras
+5. JavaScript
+6. MERN
+7. Data Management (SQL / NoSQL)
+8. Frontend Development (React, Angular, Vue)
+9. Backend Development (NodeJS, ExpressJS, Django, Flask)
+10. APIs
+11. Cloud Platforms (AWS, Google Cloud, Azure)
+12. Microcontrollers (Raspberry Pi, Arduino)
+13. Algorithms and Data Structures
+14. Networking
+15. Computer and Network Security
+16. Systems Programming (OS, Utility Programs, Device Drivers)
+17. Version Control (Git, GitHub)
+18. Other

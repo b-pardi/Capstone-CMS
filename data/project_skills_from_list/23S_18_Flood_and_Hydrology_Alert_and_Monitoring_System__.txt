@@ -1,0 +1,48 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: 1. Create a web site that takes the publicly available informat ion about creek and river levels and forecasts, dam status 
+and fill forecasts as well as current weather and consolidate this into an easy to use site that can show multiple data 
+points. Adding and removing data points should be fairly easy from  an administrative  perspective.  
+
+### Assistant: Based on the project description, which skills do you think a team of developers must possess to complete the project? Please select at most 5 skills from the list provided.

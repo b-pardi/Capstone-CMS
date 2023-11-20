@@ -1,0 +1,56 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+APIâ€™s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: Request to write a code in C# that tracks the Bluetooth asset tag (AoA  – Angle of Arrival -- Beacon/moving device) 
+from an A oA Gateway (Locator/receiver/fixed position)  to a grid measured by feet (See reference “Hardware labels”  
+and “4x4 Grid”  in https://ucmerced.box.com/s/44n679xfchxbb27aqsj151z1jukmc5af ). The dimensions of the grid 
+can be of any length, as long as they are uniform.  
+Position readings would come from an A oA Beacon to the A oA Locator, to which the data will be extracted and 
+passed on to a PC (Windows 10/11 OS). The data extraction can be in string or int datatypes.  
+Devices are from Dusun, which has open -source code samples that includes API that can be used for this project.  
+
+### Assistant: Please select the top 3 skills required to complete this project based on the provided information.
+
+1. **C#**: As the project requires developing a C# code to track the Bluetooth asset tag, this skill is a must-have for the development team.
+2. **Bluetooth Low Energy (BLE)**: Since the project involves tracking the Bluetooth asset tag using BLE technology, knowledge of BLE protocols and its implementation in C# is essential.
+3. **Data Extraction and Processing**: The project requires extracting data from the A oA Locator and passing it on to a PC for further processing. Therefore, skills in data extraction and processing using C# are crucial.

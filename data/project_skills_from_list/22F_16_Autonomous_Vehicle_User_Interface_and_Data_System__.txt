@@ -1,0 +1,72 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: We will be exploring and hopefully p roductizing a user interaction suite that engages both the autonomous fleet 
+supervisors and the current machine operators. The system will be operating on multiple user interfaces and will 
+control the fleet through a novel fleet management software that MT G has been developing for the past several years.  
+The user interactions suite will consist of a front -end web -app UI that will allow different personnel to interact 
+with the autonomous fleet, a telematics server to keep track of the status of the vehicle a nd update the requested 
+paths, and a route planner to command the fleet.  
+The web -app UI will have different pages with separate features for each of the roles in the warehouse. For fleet 
+integration, a map drawing page is required to recreate the warehouse layout with different pickup and drop -off 
+locations. Once the warehouse layout is created, the potential paths the vehicles can take will be added to the map. 
+These paths will be created as binary trees consisting of different nodes and branches. The UI needs to visualize the 
+vehicle paths within the warehouse map. The fleet s upervisors will have access to a page that allows them to create 
+pickup and drop -off schedules and enter information about the transported goods. The user interface needs to have a 
+limited functionality section for the warehouse workers and the machine ope rators that display the status of the 
+vehicle and the materials that need to be loaded to it. Once the vehicle is loaded, the workers need to have a way of 
+signaling the task is completed and that the vehicle can move to the next task.  
+The telematics serv er will be responsible for the cooperation of the vehicles and the warehouse workers. It will 
+contain the status of each of the vehicles by storing position, battery percentage, loaded inventory and the list of target 
+nodes. The server needs to handle all the information used by the UI and allow the UI to display the status of all the 
+vehicles at once. The telematics server will receive constant updates from the vehicles and will also update the tasks 
+that the vehicles need to perform. The communication bet ween the vehicles and the telematics server will be done 
+using the REST API.  
+The last part of the user interaction suite will be the path planning and route scheduling module. It will take the 
+input given by the fleet supervisor and plan the required actio ns needed to be taken by the vehicles and the warehouse 
+workers. This module will generate a list of the nodes the vehicle needs to visit in order and estimate the time of 
+arrival to each node based on the path length and expected time to load the vehicle.  The module can use tree traversal 
+methods to generate the most optimum path.  
+Our team at MTG is ready to assist in any way possible.  
+
+### Assistant: Based on the project description provided, which skills do you think are essential for a team of developers to possess to successfully complete this project? Please select the top 5 skills from the list above.

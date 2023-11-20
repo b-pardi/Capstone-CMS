@@ -1,0 +1,62 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: If a team takes on this project, they are asked to develop a database -driven web appli cation that allows the user to see 
+TA allocation history, current eligibility and priority scores for each graduate student and faculty member, as well as 
+the ability to create an allocation, based on faculty and student preferences.  
+The application should  be accessible via a web interface, with data stored on some server (preferably some SQL  
+flavor). Since the data is sensitive, security would be of utmost importance.  
+There is currently a prototype application already developed, which can be used as inspir ation for the project, but 
+the prototype lacks a lot of necessary features as it is just a proof -of-concept.  
+If a team takes on this project, more specific details will be provided, especially around the allocation formula,  
+necessary for computing eligibil ity and priority.  
+
+### Assistant: Based on the project description and the list of skills you provided, which skills do you think the team of developers should prioritize?
+
+I would suggest that the team of developers prioritize the following skills:
+
+1. **Python**: As the project requires developing a web application using a backend language, Python is a crucial skill to have. Additionally, many libraries and frameworks used in machine learning and data analysis are built on top of Python.
+2. **Flask/Django**: These are popular Python web frameworks that provide a solid foundation for building web applications. Flask is ideal for smaller projects, while Django is better suited for larger ones due to its robust feature set.
+3. **SQL/NoSQL**: As the application needs to store and manage large amounts of data, proficiency in SQL or NoSQL databases is essential. Both types of databases have their advantages and disadvantages, so it's important to understand when to use each one.
+4. **Machine Learning**: The project involves analyzing and predicting student and faculty performance, making machine learning a critical skill. PyTorch, TensorFlow, or Keras are popular choices for implementing machine learning models in Python.
+5. **OpenCV/SimpleCV**: Computer vision techniques can be applied to analyze and interpret visual data from various sources, such as images or videos. OpenCV is a powerful library for computer vision tasks,

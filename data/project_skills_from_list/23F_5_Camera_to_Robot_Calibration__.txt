@@ -1,0 +1,90 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: We would like to improve the accuracy of the robot positions estimated from the camera by replacing the calibration 
+method that does the conversion and/or the process to obtain it.  
+The UC Merced team is embarking on an exciting opportunity to revolutionize the field of robotics by enhancing 
+camera -to-robot calibration for Omron's Industrial Fixed Position Robots, powered by the cutting -edge ACE 
+software. We are seeking passionate and  innovative students to collaborate with us in developing groundbreaking 
+algorithms and C# .dll files that will redefine the precision of robot positions estimated from camera inputs.  
+By joining our team, you will have the chance to explore advanced techniques for calibrating camera vision 
+coordinates to robot coordinates, working with both 2D and 3D images/point clouds. This is a unique opportunity to 
+dive into the fascinating world of  robotics, combining computer vision and automation to create real -world impact.  
+Throughout this collaborative project, you will work closely with industry experts from the ACE team, gaining 
+invaluable insights into the state -of-the-art technologies used in industrial robotics. Your contributions will be 
+instrumental in pushing the bou ndaries of calibration accuracy, revolutionizing the way robots perceive and interact 
+with their environment.  
+Not only will you have the chance to pioneer innovative solutions, but your work will also be evaluated for its 
+precision and usability. We aim to develop a calibration method that is not only highly accurate but also user -friendly, 
+ensuring seamless integ ration within the ACE software ecosystem.  
+
+### Assistant: Based on the provided project description and skill list, which skills should a team of developers possess to complete the project?
+1. Computer Vision
+2. Machine Learning
+3. Object Detection
+4. Classification/Image Classification
+5. Regression Analysis
+6. Large Language Models
+7. Reinforcement Learning
+8. Generative AI
+9. App Dev (React Native, Swift, Flutter, Ionic)
+10. Web Dev
+11. Front End
+12. Backend
+13. Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+14. HTML/CSS
+15. Backend
+16. APIs
+17. Data Management
+18. SQL based (SQL, SQLite, PostgreSQL, etc)
+19. NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+20. Game Engine / XR (Unity, Unreal)
+21. GIS (Google Map API)
+22. Microcontrollers (Raspberry Pi/Arduino)
+23. Algorithms and Data Structures
+24. Networking
+25. Computer and Network Security
+26. Systems Programming (OS, Utility Programs, Device Drivers)
+27. Version Control (Git/GitHub)
+
+Based on the project description, the

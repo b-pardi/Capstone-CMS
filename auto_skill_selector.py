@@ -5,6 +5,7 @@ import torch
 import os
 
 # Model selection from hugging face transformers (question answering)
+print("Loading model...")
 model_name = "vishal0719/llama-fine-tuned-qa"
 #model_name = "PY007/TinyLlama-1.1B-Chat-v0.2"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -15,14 +16,21 @@ pipeline = transformers.pipeline( # setup model pipeline
     device_map="auto",
 )
 model = AutoModel.from_pretrained(model_name)
-print(summary(model))
+print(f"***Model loaded***")
 
-prompt = "given this project description, describe what programming knowledge is necessary to complete it as a numbered list"
+prompt = "given the following project description, and the following list of programming skills,"+\
+"choose skills, from the list of skills below, that a team of developers must possess to complete the project described"+\
+"please format your answers as a numbered list"
 
 # load parsed project description files (extracted in parse_pdf.py)
 desc_path = "data/parsed_descriptions/"
-skills_path = "data/project_skills/"
+skills_path = "data/project_skills_from_list/"
 projects = os.listdir(desc_path)
+with open("SKILLS_LIST.txt", 'r') as skill_file:
+    lines = skill_file.read()
+    skill_list = [line.strip() for line in lines]
+
+print(lines)
 
 # for each project in directory, feed its text as prompt into model
 for project in projects:
@@ -30,7 +38,7 @@ for project in projects:
         description = description_file.read()
     
     formatted_prompt = (
-        f"### Human: {prompt + description}### Assistant:"
+        f"### Human: {prompt}\nList of skills to choose from: {lines}\nProject Description: {description}\n\n### Assistant:"
     )
 
     sequences = pipeline(
@@ -40,7 +48,7 @@ for project in projects:
         top_p = 0.7,
         num_return_sequences=1,
         repetition_penalty=1.1,
-        max_new_tokens=500,
+        max_new_tokens=300,
     )
 
     # save generated text from model into project skills folder

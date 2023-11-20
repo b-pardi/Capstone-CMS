@@ -1,0 +1,61 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: The team shall develop control software for the robot addressing the specified challenge, as it gets further refined by  
+the or ganizers. Software will be developed using the API provided by the farm -ng company (ROS -- robot operating  
+system), as well as libraries such as OpenCV or similar. The robot will be retrofitted  with cameras and GPS receivers. 
+A measure of performance is the amount of relevant data collected by the robot.  
+
+### Assistant: Which skills are required to complete the project?
+
+Based on the project description and the listed skills, the following skills are required to complete the project:
+
+1. Python: As the primary language for developing the control software, proficiency in Python is essential.
+2. ROS (Robot Operating System): The team should have experience working with ROS, which provides an API for developing robot software.
+3. OpenCV or similar: The project involves image processing and computer vision tasks, so knowledge of OpenCV or similar libraries is necessary.
+4. C/C++: While not explicitly mentioned in the project description, having experience with C/C++ can be beneficial for optimizing performance-critical parts of the code.
+5. Data Management: The project requires collecting and processing large amounts of data, so familiarity with SQL-based and NoSQL databases is important.
+6. Machine Learning: The project involves training machine learning models to improve the robot's performance, so knowledge of machine learning frameworks like TensorFlow, PyTorch, or Keras is required.
+7. Object Detection and Classification: The project involves detecting and classifying objects in images, so expertise in object detection and classification algorithms is necessary.
+8. Web Development: Depending on the specific requirements of the project, web development skills may be useful for creating interfaces or visualizing data.
+9. APIs: Understanding

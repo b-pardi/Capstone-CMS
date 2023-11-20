@@ -1,0 +1,54 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: The web app should provide a login interface for managers and new hire employees. Managers should be able to 
+create (or import) a list of online classes that are internal to the STM department. The app should allow the set up of 
+different departments or functions for different managers and employees to choose from. Managers should be able to 
+choose 10 -20 courses from a set of ~200 to assign to new hires. Managers should be able to define the start and finish 
+dates. Upon comp letion of the classes, the new hire employee should be able to demonstrate their completion of 
+classes by answering questions or presenting their understanding to the manager. Once a new hire employee indicates completion of a course, the manager should be  able to confirm this after reviewing the answers or presentations. Each 
+function and each department should be able to summarize the statistical data on employee completion dates from 
+start to finish. The app should also be able to display an overview of how many managers are training how many 
+employees and a chart of how  many trainees are in progress.  
+
+### Assistant: Please select the top 3 skills from the list above that you think would be most important for completing this project.

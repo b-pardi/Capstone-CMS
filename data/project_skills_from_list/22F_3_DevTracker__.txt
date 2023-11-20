@@ -1,0 +1,59 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: The team is requested to develop a web application to enable gathering of data about the code check -in activities in 
+SVN for each project and generate key performance indicator (KPI) reports for management to have a better 
+understanding o f resource allocation.  
+At the end of this project, WDC would like to see a workable web application that can get data from SVN and 
+generate KPI reports. A responsive web user interface to provide users with the correct KPI result is expected.  
+
+### Assistant: Based on the project description, which of the listed skills are essential or highly desirable for the development team?
+
+1. Python: Given the project involves working with SVN and generating KPI reports, Python's popularity and versatility make it an essential skill for the development team.
+2. OpenCV / SimpleCV: Image processing and computer vision capabilities are crucial for extracting insights from the code check-in data, making OpenCV/SimpleCV highly desirable.
+3. NumPy: A powerful library for numerical computing, NumPy is useful for handling large datasets and performing complex calculations, making it a valuable skill for the project.
+4. Pandas: Data manipulation and analysis are vital aspects of the project, and Pandas provides efficient data structures and operations for these tasks, making it a highly desirable skill.
+5. Tkinter: A simple and easy-to-use GUI framework, Tkinter is useful for creating a responsive web user interface for the application, making it an essential skill.
+6. C/C++: While not strictly necessary, knowledge of C/C++ can be beneficial for optimizing performance-critical components of the application, such as image processing algorithms.
+7. Machine Learning: While not explicitly mentioned in the project description, machine learning techniques can be used to improve the accuracy of KPI predictions and enhance the overall performance of the application.
+8.

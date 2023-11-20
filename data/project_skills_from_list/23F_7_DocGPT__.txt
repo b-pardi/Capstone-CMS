@@ -1,0 +1,58 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+APIâ€™s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: Develop a JSON schema that summarizes the contents of the PDF  using a large language model. For example, if 
+presented with a table on a page, attempt to transform that table into a JSON formatted table object. JSON Schema 
+can be predefined by the team. This includes defining what summary questions will need to be as ked to complete an 
+analysis of a PDF . Software workflow must be able to process at least 10 PDF s per minute. Must be able to query 
+compiled PDF  JSON data through a REST API. You’re  able to use either a locally hosted large language model or an 
+online API to generate the machine -readable JSON data.  
+
+### Assistant: Which skills do you think are most important for completing this project?
+
+1. Machine Learning: The project involves training and using a large language model to extract information from PDFs, therefore, proficiency in machine learning is crucial.
+2. Data Structures and Algorithms: Understanding data structures and algorithms is essential for efficiently processing and manipulating large amounts of data, which is required for this project.
+3. Python: As the project uses Python for development, proficiency in the language is necessary.
+4. OpenCV/SimpleCV: If the project requires image processing, then knowledge of OpenCV or SimpleCV would be beneficial.
+5. Large Language Models: Knowledge of large language models is necessary to train and use the model to extract information from PDFs.
+6. REST API: Creating a REST API to query the compiled PDF JSON data is an important aspect of the project, so understanding how to build and use APIs is crucial.

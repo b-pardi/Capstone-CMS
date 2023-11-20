@@ -1,0 +1,59 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: Gradient Crop Yield Solutions is interested in creating a web platform that displays processed NDVI/NDRE images 
+using Sentinel 2 images. Grower fields will be mapped using a list of coordinates stored as a KML file. The ideal 
+design would be a web platform  that accepts a KML file and returns the most recent processed Sentinel 2 satellite 
+image using the NDVI or NDRE algorithm. The web platform needs to have a front -end and back -end that interact 
+with each other. The front -end should have an option to upload  KML files, while the back end will process the file to 
+get the most recent Sentinel 2 image.  After processing, the front -end should render a map with the most recent 
+satellite image overlayed on top of the map.  
+
+### Assistant: Based on the project description provided, which skills do you think are crucial for a team of developers to possess? Please rank them in order of importance.
+
+Assistant: Given the project description provided, here are the skills I believe are crucial for a team of developers to possess, ranked in order of importance:
+
+1. **Python**: As the project involves working with satellite imagery, processing large datasets, and developing a web platform, Python is an essential skill for this project. It provides efficient libraries such as NumPy, Pandas, and scikit-learn for data manipulation and analysis, as well as popular machine learning frameworks like TensorFlow and Keras.
+2. **Machine Learning**: The project requires applying machine learning algorithms to analyze satellite images and predict crop yields. Developers should have experience in implementing machine learning models using popular libraries like TensorFlow, Keras, PyTorch, or Scikit-Learn.
+3. **OpenCV/SimpleCV**: OpenCV is a computer vision library that provides efficient algorithms for image processing, feature detection, and object recognition. SimpleCV is a lightweight alternative to OpenCV that offers similar functionality. These libraries are necessary for preprocessing satellite images and extracting relevant features.
+4. **Web Development**: The project involves building a web platform that displays processed satellite images. Developers should have experience in front-end technologies like HTML, CSS, JavaScript

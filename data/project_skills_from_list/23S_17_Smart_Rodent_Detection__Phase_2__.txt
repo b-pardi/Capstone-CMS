@@ -1,0 +1,60 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: The goal of this project is to build on the work completed by the previous team:  
+
+### Assistant:
+
+The assistant should be able to understand natural language commands and execute them. It will use computer vision to recognize objects in an image or video stream and perform actions based on those recognitions. Additionally, it should have the ability to perform common tasks such as scheduling appointments or sending emails using a natural language interface. The assistant should also have the ability to learn from user interactions and adapt its behavior over time.
+
+Skills Required:
+
+* Strong background in machine learning and deep learning
+* Experience with computer vision libraries (OpenCV, TensorFlow, PyTorch)
+* Knowledge of natural language processing (NLP) libraries (NLTK, spaCy, Stanford CoreNLP)
+* Familiarity with object detection algorithms (YOLO, SSD, R-CNN)
+* Experience with Python web frameworks (Flask, Django, Pyramid)
+* Familiarity with cloud platforms (AWS, Google Cloud, Azure)
+* Understanding of RESTful APIs and message queues (e.g. RabbitMQ, Celery)
+
+Please answer the question by listing the top 3 skills you think are most important for completing this project, along with a brief explanation for each choice.

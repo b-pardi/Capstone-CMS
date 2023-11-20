@@ -1,0 +1,55 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+APIâ€™s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: Omron team has already developed some algorithms to recover the robots out of a deadlock. But they don’t work for 
+all the scenarios. Deadlock prevention is even a tougher problem and there’s no solution for it yet.  
+Machine Learning/Reinforcement learning is one option that Omron team is considering to recover the robots 
+out of deadlocks.  
+
+### Assistant: Which skills do you think are most important for a team of developers to possess in order to complete this project?
+
+1. Machine Learning/Reinforcement Learning - To develop algorithms that can prevent deadlocks in the robotic system.
+2. Python - As the primary language for developing and implementing machine learning models.
+3. OpenCV/SimpleCV - For image processing and computer vision tasks required for deadlock detection and prevention.
+4. NumPy/Pandas - For numerical computing and data manipulation in the machine learning framework.
+5. C/C++ - For developing high-performance, real-time applications required for robotics.

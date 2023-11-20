@@ -1,0 +1,64 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: Team will develop a software library that will allow an engineer to buffer time series metric API requests when an 
+internet connection is lost. Engineers must be able to allow for custom callbacks that can occur before and/or after 
+data is sent or if data must be modified in some way before sending. The sync engine will be tested against a server 
+providing metric data to the team's application. Once internet connection is re -established, the goal will be to send 
+these buffered metric elements to the SweepAP I and confirm that the buffered data is uploaded and that the local 
+copy of the data is removed upon confirmation. Engineers must be able to install these packages through NPM 
+package manager and/or PIP.  
+Extended goal if time permits would be to provide a  one-page dashboard that provides simple metrics about 
+current size of the REST API metric buffer, past buffering activity. (i.e., is the buffer currently in use, how many 
+successful sent buffer events have occurred in the last day, average event downtime,  any reported errors sending 
+buffers).  
+
+### Assistant: Based on the provided information, I would recommend the following skills for the development team to possess:
+
+1. **Python**: Given the project requirements, Python is a crucial skill for the development team to have, as it is used for both back-end and front-end development.
+2. **TensorFlow/Keras**: As the project involves machine learning, having knowledge of TensorFlow or Keras will help the team implement custom callbacks and perform data modification before sending metric API requests.
+3. **OpenCV/SimpleCV**: OpenCV is a computer vision library that can be useful for image classification tasks, which may arise during the project. While SimpleCV is not as powerful as OpenCV, it can still provide basic computer vision functionality.
+4. **NumPy**: NumPy is a fundamental library for scientific computing in Python, and it is often used for data manipulation and analysis.
+5. **Pandas**: Pandas is a popular library for data manipulation and analysis in Python, and it can be particularly useful for handling large datasets.
+6. **Tkinter**: Tkinter is a GUI library for Python, but it may not be essential for this project. However, having some knowledge of GUI development can be beneficial.
+7. **C/C++**: C and C++ are low-level programming languages that can be useful for developing high-performance applications.

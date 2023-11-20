@@ -1,0 +1,60 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: Expand the functionality of the Training Matrix program developed by UC Merced students during the 2022 school 
+year. How: Use the existing program platform as the starting point.  Ruby on Rails and SQL will be the primary tools. 
+Goals: Impro ved user interface, UI functionality on mobile devices, Additional SQL tables, Report Generation 
+capabilities, Scheduling and Reminders, Security features (MS Single sign -on), Deployment to Share Point 
+Environment.  
+
+### Assistant: Based on the provided project description and skill set, which skills are most relevant for this project?
+
+1. **Python**: As the primary tool for data analysis and machine learning in the project, Python is a crucial skill for completing this project.
+2. **SQL**: Given the project's focus on database management and reporting capabilities, proficiency in SQL is essential.
+3. **Ruby on Rails**: The existing program platform was built using Ruby on Rails, so familiarity with this framework is necessary to expand its functionality.
+4. **JavaScript**: With the inclusion of scheduling and reminders, JavaScript skills can help with front-end development.
+5. **Web Development**: The project involves deploying the application to a SharePoint environment, which requires knowledge of web development technologies like HTML, CSS, and frameworks like React, Angular, or Vue.
+6. **Databases**: In addition to SQL, other database skills like MongoDB, DynamoDB, or Firebase can be useful for storing and managing data.
+7. **Machine Learning**: Although not explicitly mentioned in the project description, ML skills can come in handy when developing predictive models or automating tasks.
+8. **Security**: With the emphasis on security features like MS Single sign-on, having experience in computer and network security can be beneficial.
+9. **DevOps**: Famil

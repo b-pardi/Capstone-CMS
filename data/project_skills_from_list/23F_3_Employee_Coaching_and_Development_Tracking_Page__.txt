@@ -1,0 +1,70 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+APIâ€™s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: Provide a better and efficient coaching and observation tracker webpage to eliminate the need for manually tracking 
+follow -ups. This will be relevant to the new coaching process. This will give ability for the company to sustain the new 
+coaching process an d utilize it to make LMS proficient and promote a productive work environment.  
+ 
+Standard Features:   
+• Different display pages based on type of coaching (skill and behavioral).  
+• Drop down option for task type, date user, observer. Check marks for list of skills to select.  
+• Date drop down for follow -up date.  
+• Display interactive KTS (training documentation) with check marks.  
+• As each check mark gets selected, it gets quantified (score) based on skills, behavior, and safety.  
+• Option to attach any documents.  
+• Ability to link original (parent) observation if this is a follow -up using observation ID no.  • Once it is linked, the page should show the history from the previous one.  
+Bonus Features:  
+• Provide analytics on based KTS score, performance correlation.  
+• Show trends from previous parent observations along the follow -up ones.  
+• SMS or email as reminder of the follow -up. 
+
+### Assistant: Please provide a list of skills that a team of developers must possess to complete the project described above. Please rank them in order of importance.
+
+1. Backend development (ExpressJS/NodeJS, Flask, ASP.NET, Django, Spring Boot, Ruby on Rails): These frameworks are necessary for creating the server-side logic, database integration, and API connectivity required by the project.
+2. Frontend development (React, Bootstrap, Angular, Ionic, Vue): A visually appealing and user-friendly interface is crucial for the success of the project.
+3. Python: Python is a versatile language used for data analysis, machine learning, and web development, which are essential components of the project.
+4. OpenCV / SimpleCV: Computer vision capabilities are necessary for the project's image classification and object detection features.
+5. Machine Learning: The project requires machine learning algorithms to analyze and improve the coaching process.
+6. Data Management: Proper data storage and retrieval are critical for the project's effectiveness, making SQL and NoSQL databases important skills to have.
+7. Web Development: Developers must be proficient in building web applications, including HTML, CSS, and JavaScript, to create the frontend of the project.
+8. TensorFlow/Keras: These frameworks are necessary for implementing and training machine learning models, which are a key feature of the project.

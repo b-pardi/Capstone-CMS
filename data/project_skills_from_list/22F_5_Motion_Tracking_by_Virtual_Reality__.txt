@@ -1,0 +1,57 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: The goal is to obtain precisely quantifiable data that can inform our understanding of the relationship between visual 
+and motor processes during task performance.  The objective of this project is to create a VR environment to analyze 
+elbow flexion and extension, and to extract the data regarding  eye-tracking and motion -capture. As a premium 
+objective, the team will analyze the velocity and the coordination of that movement in VR.  
+
+### Assistant: Which skills do you think are most important for this project?
+
+1. **Python**: Given the emphasis on data analysis and processing, Python's popularity in scientific computing and machine learning makes it an essential skill for this project.
+2. **OpenCV/SimpleCV**: Computer vision libraries like OpenCV/SimpleCV are crucial for analyzing elbow flexion and extension, as well as eye-tracking and motion capture data. These libraries provide efficient algorithms for image processing, feature detection, and object tracking.
+3. **NumPy**: NumPy is a fundamental library for scientific computing in Python, offering high-performance arrays and matrices, which will be useful for processing and manipulating large datasets.
+4. **Pandas**: Pandas is a powerful library for data manipulation and analysis, making it ideal for organizing and cleaning the data collected from the VR environment.
+5. **Tkinter**: Tkinter is a Python module for creating graphical user interfaces, which could be useful for developing a user interface for the VR environment.
+6. **C/C++**: Knowledge of C/C++ can be beneficial for optimizing the performance of the code, particularly when working with large datasets or real-time data processing.
+7. **Machine Learning**: Machine learning techniques can be applied to analyze the velocity and coordination of movements in VR. Famil

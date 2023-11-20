@@ -1,0 +1,55 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: Extract and store inside a structured database a set of opportunities for students (i.e., internships, jobs, gigs, 
+scholarships, grants), including important metadata such as name, description, URL for applying, application deadline 
+or deadlines, and impor tant dates. The algorithm should also create meta tags relevant to the opportunity, which can 
+be later used by a recommender algorithm matching opportunities to specific students.  
+This project is recommended for a student and/or group of students interested in Artificial Intelligence (AI) fields 
+such as Text Recognition, OCR, LLMs (e.g., ChatGPT).  
+
+### Assistant: Please select the top 3 skills that you think are most important for this project
+
+1. **Python**: This skill is essential for implementing the algorithm and interacting with various libraries like NumPy, Pandas, and OpenCV.
+2. **Machine Learning**: The project involves creating a recommender system, which is a fundamental aspect of Machine Learning.
+3. **Data Management**: Structuring and managing large datasets is crucial for this project, particularly in organizing and storing the opportunities for students.

@@ -1,0 +1,57 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: Task: Analyze movements of the arm with hand controllers.   
+Goal : Obtain precisely quantifiable data that can inf orm our understanding of the arm movements - motion ( using the 
+VR hand controller).  
+ 
+
+### Assistant: Based on the provided information, I would suggest the following skills are necessary for the development team to possess in order to complete the project:
+
+1. **Python**: This is the primary language used for developing the project, so proficiency in Python is essential.
+2. **OpenCV/SimpleCV**: OpenCV is a computer vision library used for image processing and analysis, which is crucial for analyzing the movements of the arm and hand. SimpleCV is a simpler alternative that can also be used.
+3. **NumPy**: NumPy is a library for efficient numerical computation in Python, which will be useful for handling large datasets related to the arm movements.
+4. **Pandas**: Pandas is a library for data manipulation and analysis, which will come in handy when working with the collected data.
+5. **Tkinter**: Tkinter is a GUI toolkit for creating graphical user interfaces in Python, which may be required for visualizing the results of the analysis.
+6. **C/C++**: Although not explicitly mentioned in the project description, having knowledge of C/C++ can be beneficial for optimizing performance-critical parts of the code.
+7. **MERN**: MERN (MongoDB, ExpressJS, React, NodeJS) is a popular stack for building web applications, which could be useful for deploying the project's

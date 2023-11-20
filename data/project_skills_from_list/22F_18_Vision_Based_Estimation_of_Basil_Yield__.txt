@@ -1,0 +1,59 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: First experiment will be executed at the UC Merced Experimental Farm Greenhouse in collaboration with SupHerb 
+Farms:  the capstone software team's objective i s to develop a vision/learning system to detect basil leaves and 
+estimate volume of leaves in an area planted with basil, by taking images every day as the basil grows. The weight is 
+calculated by the Farm Manager after every mow.  
+This phase of the project  is to utilize cameras to see if they can provide accurate measurements of the crop mass 
+of basil in the area that is photographed. Herbs are grown primarily for their leaves and the focus of this work should 
+be to identify the total pounds of plant materi al that would be harvested from the area but to also identify the weight 
+of unusable stems and the weight of usable leaves. It should be understood that we try to harvest stems not longer 
+than 15 inches; if a plant were to have two stems and the longest is  22 inches and the shorter stem is 17 inches, the 
+22-inch stem will have the top 15 inches cut off and the shorter stem will be cut off at the same so only 10 inches 
+would be harvested.  Basil is normally harvested 4 times in Central California with the fi rst harvest starting when the 
+total length of average stems are 20 inches from the ground to the tip, thus leaving 5 inches of stubble from which the 
+next cutting grows.  On the next cut we would let the basil reach 21 inches of length and cut 6 inches fro m the 
+ground, so we do not harvest the woody stubble. The 3rd and 4th cuts continue up 1 inch each.  
+
+### Assistant: Which skills do you think are most important for the team to possess in order to complete this project? Please rank them in order of importance.

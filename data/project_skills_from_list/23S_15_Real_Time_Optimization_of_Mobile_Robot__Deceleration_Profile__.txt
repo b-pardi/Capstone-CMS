@@ -1,0 +1,52 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: The aim of this project is to train a neural network that will dictate the deceleration of a robot to execute smooth and 
+precise stopping.  We do not know the weight loaded on the robot nor the floor conditions, as some floors might be 
+slippery. The system will change commanded deceleration value based on a difference between commanded and 
+executed deceleration in the previous cycle. We assum e that at any time, we know the perfect distance between a 
+robot and a goal, and we can also measure executed deceleration perfectly. Students will use the reinforcement 
+learning approach to train the network and overcome combined issues that stem from noi se in the system, not 
+knowing the mass of the payload and surface quality of the floor.  
+
+### Assistant: Please select the top 3 skills that you think are most important for this project, given the listed programming skills and the project description.

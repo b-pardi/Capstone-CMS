@@ -1,0 +1,63 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: Develop an application that allows the user to build a composite area, with a map user interface, and turn that into a 
+boolean search syntax that can then be used to perform the actual search i nto a database (SQL).  
+For example, if a rectangular area is defined with (GPS1.1, GPS1.2, GPS2.1, GPS2.2) then a composite area can 
+be (GPS1.1, GPS1.2, GPS2.1, GPS2.2) OR (GPS3.3, GPS3.4, GPS4.3, GPS4.4). Once the composite area is 
+completed, then the sear ch is transformed into SQL queries in a database.  A previous Capstone team developed a prototype to demonstrate the problem and solution. In Phase 2, the 
+objective is to develop a functioning system that uses in addition to the Google Maps API, data from v arious services 
+(e.g., Yelp, AirBnB, etc.) rather than saving data in a SQL database. A Premium feature will be to define areas in terms 
+of composite polygons, rather than simple rectangles.  
+
+### Assistant: Based on the provided information, I would recommend the following skills for the development team to possess:
+
+1. **Python**: This language is widely used in web development, scientific computing, data analysis, and machine learning. It's essential for building the application's core functionality and integrating various APIs.
+2. **JavaScript**: For developing the front-end of the application, including the map user interface and boolean search syntax conversion.
+3. **SQL**: To interact with the database and perform the actual search operations. Knowledge of SQL is crucial for querying and manipulating data.
+4. **MongoDB**: As a NoSQL database, MongoDB is ideal for storing and managing large amounts of unstructured data, such as maps and search results.
+5. **Tkinter**: For creating the map user interface, Tkinter is a lightweight and easy-to-use Python library.
+6. **OpenCV** or **SimpleCV**: For image processing and object detection tasks, OpenCV or SimpleCV are powerful libraries.
+7. **NumPy**: For numerical computations and data analysis, NumPy is an essential library in Python.
+8. **Pandas**: For data manipulation and analysis, Pandas is a powerful library that provides efficient data structures and operations.
+9. **React Native** or **Swift** or **Flutter** or **

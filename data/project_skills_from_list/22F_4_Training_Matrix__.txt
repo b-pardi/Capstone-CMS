@@ -1,0 +1,67 @@
+### Human: given the following project description, and the following list of programming skills,choose skills, from the list of skills below, that a team of developers must possess to complete the project describedplease format your answers as a numbered list
+List of skills to choose from: Python
+Pytorch/Tensorflow/Keras
+OpenCV / SimpleCV
+Numpy
+Pandas
+Tkinter
+C/C++
+C#
+Java
+Machine Learning
+Object Detection
+Classification / Image Classification
+Regression Analysis
+Large Language Models
+Reinforcement Learning
+Generative AI
+App Dev (React Native, Swift, Flutter, Ionic)
+Web Dev
+Front end
+Frameworks (React, Bootstrap, Angular, Ionic, Vue)
+HTML/CSS
+Back end
+Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
+API’s 
+Both
+Javascript
+MERN
+Cloud platforms (Google Cloud, Azure, AWS)
+Data management
+SQL based (SQL, SQLite, PostgreSQL, etc)
+NoSQL (MongoDB, DynamoDB, Firebase, etc.)
+Game Engine / XR (AR, VR, MR) 
+Unity
+Unreal
+GIS (Google Map API)
+Microcontrollers (Raspberry Pi/Arduino)
+Algorithms and data structures
+Networking
+Computer and network security
+Systems programming (OS, utility programs, device drivers)
+Version control (git / GitHub)
+other
+Project Description: We need a database (SQL) solution that can be housed on Microsoft Shar ePoint. The software needs a friendly user  
+interface to allow HR to input new records. It also needs an interface for other designated users to retrieve operator  
+training records. The software should be able to provide notification of employee training requirements. We should be  
+able to analyze who is trained in a specific work center or what training is required for an operator to work in a work  
+center.  
+
+### Assistant: Which skills do you think are most important for this project?
+
+Please select the skills that you believe are most important for the development of the database solution described above:
+
+1. SQL
+2. SharePoint Integration
+3. User Interface Design
+4. Front-end Development
+5. Back-end Development
+6. Database Management
+7. Notification System
+8. Work Center Analysis
+9. Employee Training Management
+10. Systems Programming
+11. Networking
+12. Computer Security
+13. Version Control
+14. Other (please specify)
