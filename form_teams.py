@@ -28,6 +28,7 @@ class Project:
         self.scores_per_lab_list = []
         self.assigned = False
         self.top_diff = np.inf
+        self.assigned_students = []
 
         # dict of skills init to 0, will be updated in assignment algo with a 1 for skills needed
         self.skills_dict = {key: 0 for key in SKILLS}
@@ -43,6 +44,9 @@ class Project:
     def weighted_sum(self, mean_weight=0.5, stddev_weight=0.5):
         self.project_permutation_score = mean_weight * self.project_permutation_mean + \
                                          stddev_weight * (1 / self.project_permutation_stddev)
+        
+    def assign_student(self, student):
+        self.assigned_students.append(student)
 
     '''
     takes skills from skill list and randomly distributes them to projects
@@ -70,6 +74,9 @@ class Student:
         self.scores_per_project_dict = {} # higher score means better fit for a project
         self.preferences = {}
         self.proficient = '' # not used for algorithm, but may be helpful for human intervention
+
+        self.assigned_project = ''
+        self.is_assigned = False
 
     def extract_student_info(self, df):
         s.fn = df.at[i, 'First Name']
@@ -103,8 +110,7 @@ class Student:
             rating = random.randint(1,5)
             self.skills_ratings_dict[skill] = rating
 
-    def reset_assignment(self):
-        self.skills_ratings_dict = {key: 0 for key in SKILLS}
+    def reset_weights(self):
         self.skills_weights_dict = {key: 1 for key in SKILLS}
 
 
@@ -201,17 +207,44 @@ def choose_best_assignment(lab_sizes_dict, projects, num_projects, lab_sections,
     return list(best_permutation)
 
 ''' *PRELIMINARY* student/project scoring algorithm
+algorithm expects subgroup of students and projects passed in
+i.e. lists should be students and project only in the same lab.
+
 iterate through all students and projects
 for each student/project pair, check their respective skill dicts
 append each matching skill (skills where value in both dicts is non zero) to a list
 for each matching skill, sum the product of student's self rating of that skill, times the skill weight
 this sum is the students score for that project
 
+TO IMPLEMENT
+update weights of students skills
+    - weights for skills still needed = total skills needed/num skills unfulfilled
+    if project p has skills a,b,c,d,e and a,b,c already fulfilled by assigned students,
+    then weights for skills d,e become 5/2 = 2.5
 
+    - apply the opposite method for skills that are already fulfilled
 '''
 def score_pairs(students, projects):
     for student in students:
         for project in projects:
+            # find skills that project requires that currently assigned students do not have
+            unfulfilled_skills = []
+            total_project_skills = 0
+            for skill, required in project.skills_dict.items(): # check all skills in project
+                if required: # if the current skill is a skill needed for the project
+                    total_project_skills += 1
+                    # checks if all students currently assigned are NOT proficient in current skill
+                    if all(student.skills_ratings_dict.get(skill) <= 1 for student in project.assigned_students):
+                        unfulfilled_skills.append(skill)
+
+            # update weights for student skills based on total num skills and num unfulfilled skills
+            if unfulfilled_skills:
+                num_unfulfilled_skills = len(unfulfilled_skills)
+                weight = total_project_skills / num_unfulfilled_skills
+                for skill in unfulfilled_skills:
+                    student.skills_weights_dict[skill] = weight
+
+            # find skills that current student/project pair both have
             matching_skills = [skill for skill in student.skills_ratings_dict\
                             if student.skills_ratings_dict[skill] != 0\
                             and project.skills_dict[skill] != 0]
@@ -221,6 +254,11 @@ def score_pairs(students, projects):
                product = student.skills_ratings_dict[matched_skill] * student.skills_weights_dict[matched_skill]
                student.scores_per_project_dict[project.name] += product
         print(student.fn, student.scores_per_project_dict)
+        student.reset_weights() # reset skill weights to 1 for next project
+
+        
+def assign_students_to_projects(students, projects):
+    pass
 
 if __name__ == '__main__':
     # get team distributions (and team sizes)
