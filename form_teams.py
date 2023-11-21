@@ -67,7 +67,7 @@ class Student:
         self.lab = ''
         self.skills_ratings_dict = {key: 0 for key in SKILLS}
         self.skills_weights_dict = {key: 1 for key in SKILLS}
-        self.scores_per_project_dict = {}
+        self.scores_per_project_dict = {} # higher score means better fit for a project
         self.preferences = {}
         self.proficient = '' # not used for algorithm, but may be helpful for human intervention
 
@@ -88,10 +88,8 @@ class Student:
         '''for skill in skills:
             s.skills_ratings_dict[skill] = 1 # all skills rated 1 for now until self rating survey implemented
             s.skills_weights_dict[skill] = 1 # skill weights 1 initially'''
-        #print(s.skills_ratings_dict, '\n', s.skills_weights_dict)
         for p in projects:
             s.preferences[p.name] = df.at[i, p.name]
-        #print(s.preferences)
 
     '''
     takes skills from skill list and randomly distributes them to students
@@ -202,12 +200,27 @@ def choose_best_assignment(lab_sizes_dict, projects, num_projects, lab_sections,
     
     return list(best_permutation)
 
-def single_round_assignment(students, projects, labs):
-    for lab in labs: # students must be grouped into the same lab
-        for student in students:
-            for project in projects:
-                pass
-        
+''' *PRELIMINARY* student/project scoring algorithm
+iterate through all students and projects
+for each student/project pair, check their respective skill dicts
+append each matching skill (skills where value in both dicts is non zero) to a list
+for each matching skill, sum the product of student's self rating of that skill, times the skill weight
+this sum is the students score for that project
+
+
+'''
+def score_pairs(students, projects):
+    for student in students:
+        for project in projects:
+            matching_skills = [skill for skill in student.skills_ratings_dict\
+                            if student.skills_ratings_dict[skill] != 0\
+                            and project.skills_dict[skill] != 0]
+            
+            student.scores_per_project_dict[project.name] = 0 # init dict entry for project score
+            for matched_skill in matching_skills:
+               product = student.skills_ratings_dict[matched_skill] * student.skills_weights_dict[matched_skill]
+               student.scores_per_project_dict[project.name] += product
+        print(student.fn, student.scores_per_project_dict)
 
 if __name__ == '__main__':
     # get team distributions (and team sizes)
@@ -278,4 +291,11 @@ if __name__ == '__main__':
         project.random_assignment()
         #print(f"{project.name}: {project.skills_dict}")
 
-    single_round_assignment(students, best_project_assignment, lab_sections)
+    for lab in lab_sections:
+        if lab != '04L': # testing with just 1 lab section
+            continue
+        # group students and project by lab
+        cur_students = [student for student in students if student.lab == lab]
+        cur_projects = [project for project in best_project_assignment if project.assigned_lab == lab]
+        score_pairs(cur_students, cur_projects)
+        print(len(cur_students), len(cur_projects))

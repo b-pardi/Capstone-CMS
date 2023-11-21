@@ -21,8 +21,7 @@ Frameworks (React, Bootstrap, Angular, Ionic, Vue)
 HTML/CSS
 Back end
 Frameworks (ExpressJS/NodeJS, Flask, ASP .NET, Django, Spring Boot, Ruby on Rails)
-API’s 
-Both
+API’s
 Javascript
 MERN
 Cloud platforms (Google Cloud, Azure, AWS)
@@ -39,4 +38,3 @@ Networking
 Computer and network security
 Systems programming (OS, utility programs, device drivers)
 Version control (git / GitHub)
-other
