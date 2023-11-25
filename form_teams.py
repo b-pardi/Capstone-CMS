@@ -115,7 +115,7 @@ class Student:
         self.skills_weights_dict = {key: 1 for key in SKILLS}
 
     def sort_skills_dict(self):
-        sorted_projects = sorted(student.project_scores.items(), key=lambda x: x[1], reverse=True)
+        sorted_projects = sorted(self.scores_per_project_dict.items(), key=lambda x: x[1], reverse=True)
         self.scores_per_project_dict = dict(sorted_projects)
 
 def assign_scores_dict(projects, lab_sections, df):
@@ -141,7 +141,7 @@ params:
 def assign_projects_to_labs(lab_sizes_dict, projects, num_projects):
     ref_lab_sizes_dict = copy.deepcopy(lab_sizes_dict) # copy lab sizes dict to maintain consist reference for lab sizes
     cycler = itertools.cycle(projects) # cycle indefinitely through projects list
-    max_iter = 1000
+    max_iter = 1000 # safety net to prevent inf loops
     for _ in range(max_iter):
         project = next(cycler)
         # 'next' item in a projects' score dictionary will be the next highest score
@@ -216,6 +216,11 @@ def size_projects(projects, lab_sections, team_sizes):
         for i in range(len(lab_projects)):
             lab_projects[i].team_size = team_sizes[f"lab-{lab}"][i]
 
+# sorts list of students objects by the first dict value
+# intended for use with sorted dicts
+def sort_objects_by_dicts(students):
+    return sorted(students, key=lambda students: next(iter(students.scores_per_project_dict.values())), reverse=True)
+
 ''' *PRELIMINARY* student/project scoring algorithm
 algorithm expects subgroup of students and projects passed in
 i.e. lists should be students and project only in the same lab.
@@ -264,12 +269,40 @@ def score_pairs(students, projects):
             for matched_skill in matching_skills:
                product = student.skills_ratings_dict[matched_skill] * student.skills_weights_dict[matched_skill]
                student.scores_per_project_dict[project.name] += product
-        print(student.fn, student.scores_per_project_dict)
+        #print(student.fn, student.scores_per_project_dict)
         student.reset_weights() # reset skill weights to 1 for next project
-        
+     
+
+'''
+grab top scoring student
+    - student objects should already be sorted by their score first dict entry
+    - score dicts themselves also already sorted
+
+assign cur student to project if:
+    - num students assigned to project is less than project team size
+    - student not already assigned
+'''
 def assign_students_to_projects(students, projects):
     for student in students:
-        pass
+        student.sort_skills_dict()
+    students = sort_objects_by_dicts(students)
+    for student in students:
+        print("FULLY SORTED ", student.fn, student.scores_per_project_dict)
+    cycler = itertools.cycle(students)
+    max_iter = 1000 # safety net to prevent inf loops
+    assigned_students = 0
+    iters = 0
+    num_students = len(students)
+    while iters < max_iter and assigned_students < num_students:
+        student = next(cycler)
+        top_scored_project = next(iter(student.scores_per_project_dict.items()))
+
+        if True:
+            student.is_assigned = True
+            assigned_students += 1
+
+        iters += 1
+
 
 if __name__ == '__main__':
     # get team distributions (and team sizes)
@@ -350,7 +383,6 @@ if __name__ == '__main__':
         # group students and project by lab
         cur_students = [student for student in students if student.lab == lab]
         cur_projects = [project for project in best_project_assignment if project.assigned_lab == lab]
-        for cur_project in cur_projects:
-            print(cur_project.name, ': ', cur_project.team_size)
         score_pairs(cur_students, cur_projects)
+        assign_students_to_projects(cur_students, cur_projects)
         print(len(cur_students), len(cur_projects))
