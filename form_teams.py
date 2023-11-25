@@ -6,6 +6,7 @@ from collections import deque
 import random
 import copy
 import re
+import uuid
 
 from team_sizer import size_teams_with_labs
 
@@ -75,16 +76,18 @@ class Student:
         self.scores_per_project_dict = {} # higher score means better fit for a project
         self.preferences = {}
         self.proficient = '' # not used for algorithm, but may be helpful for human intervention
+        self.uid = ''
 
         self.assigned_project = ''
         self.is_assigned = False
 
-    def extract_student_info(self, df):
-        s.fn = df.at[i, 'First Name']
-        s.ln = df.at[i, 'Last Name']
-        s.email = df.at[i, 'Email']
-        s.lab = df.at[i, 'Lab']
-        s.proficient = df.at[i, 'Proficient']
+    def extract_student_info(self, df, projects):
+        self.fn = df.at[i, 'First Name']
+        self.ln = df.at[i, 'Last Name']
+        self.email = df.at[i, 'Email']
+        self.lab = df.at[i, 'Lab']
+        self.proficient = df.at[i, 'Proficient']
+        self.uid = uuid.uuid3(uuid.NAMESPACE_OID, self.email)
         
         try: # special case where there is no survey data for given student
             skills = re.sub(r'\([^)]*\)', '', df.at[i, 'Skills']).split(',') # remove examples in ( ) and split separate skills at commas
@@ -97,7 +100,7 @@ class Student:
             s.skills_ratings_dict[skill] = 1 # all skills rated 1 for now until self rating survey implemented
             s.skills_weights_dict[skill] = 1 # skill weights 1 initially'''
         for p in projects:
-            s.preferences[p.name] = df.at[i, p.name]
+            self.preferences[p.name] = df.at[i, p.name]
 
     '''
     takes skills from skill list and randomly distributes them to students
@@ -289,16 +292,24 @@ def assign_students_to_projects(students, projects):
     for student in students:
         print("FULLY SORTED ", student.fn, student.scores_per_project_dict)
     cycler = itertools.cycle(students)
-    max_iter = 1000 # safety net to prevent inf loops
+    max_iter = 5000 # safety net to prevent inf loops
     assigned_students = 0
     iters = 0
     num_students = len(students)
     while iters < max_iter and assigned_students < num_students:
         student = next(cycler)
-        top_scored_project = next(iter(student.scores_per_project_dict.items()))
+        cur_student_top_project = next(iter(student.scores_per_project_dict.items()))
+        for project in projects:
+            if project.name == cur_student_top_project[0]:
+                assoc_project = project
+                break
 
-        if True:
+        # assign student to project if project not full and student not already assigned
+        if not student.is_assigned and len(assoc_project.assigned_students) < assoc_project.team_size:
             student.is_assigned = True
+            student.assigned_project = assoc_project.name
+            #assoc_project.assigned_students.append(student.uid)
+            assoc_project.assigned_students.append(student.uid)
             assigned_students += 1
 
         iters += 1
@@ -361,7 +372,7 @@ if __name__ == '__main__':
     students = []
     for i in range(num_students):
         s = Student()
-        s.extract_student_info(student_df)
+        s.extract_student_info(student_df, best_project_assignment)
         students.append(s)
 
     # now we have a list of student objects and project objects
@@ -378,11 +389,14 @@ if __name__ == '__main__':
     size_projects(best_project_assignment, lab_sections, team_sizes)
 
     for lab in lab_sections:
-        if lab != '05L': # testing with just 1 lab section
-            continue
+        print('\n***', lab, '\n***')
         # group students and project by lab
         cur_students = [student for student in students if student.lab == lab]
         cur_projects = [project for project in best_project_assignment if project.assigned_lab == lab]
         score_pairs(cur_students, cur_projects)
         assign_students_to_projects(cur_students, cur_projects)
+        for student in cur_students:
+            print(f"{student.fn}, {student.ln}, {student.assigned_project}")
+        for project in cur_projects:
+            print(f"{project.name}, assigned: {len(project.assigned_students)}, target: {project.team_size}")
         print(len(cur_students), len(cur_projects))
