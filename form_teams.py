@@ -29,6 +29,7 @@ class Project:
         self.assigned = False
         self.top_diff = np.inf
         self.assigned_students = []
+        self.team_size = 0
 
         # dict of skills init to 0, will be updated in assignment algo with a 1 for skills needed
         self.skills_dict = {key: 0 for key in SKILLS}
@@ -113,6 +114,9 @@ class Student:
     def reset_weights(self):
         self.skills_weights_dict = {key: 1 for key in SKILLS}
 
+    def sort_skills_dict(self):
+        sorted_projects = sorted(student.project_scores.items(), key=lambda x: x[1], reverse=True)
+        self.scores_per_project_dict = dict(sorted_projects)
 
 def assign_scores_dict(projects, lab_sections, df):
     for p in projects:
@@ -206,9 +210,21 @@ def choose_best_assignment(lab_sizes_dict, projects, num_projects, lab_sections,
     
     return list(best_permutation)
 
+def size_projects(projects, lab_sections, team_sizes):
+    for lab in lab_sections:
+        lab_projects = [project for project in best_project_assignment if project.assigned_lab == lab]
+        for i in range(len(lab_projects)):
+            lab_projects[i].team_size = team_sizes[f"lab-{lab}"][i]
+
 ''' *PRELIMINARY* student/project scoring algorithm
 algorithm expects subgroup of students and projects passed in
 i.e. lists should be students and project only in the same lab.
+
+first check if any skills in the project are not fulfilled by currently assigned students
+increased the weight of that skill that's unassigned so it becomes more important
+weights for skills still needed = total skills needed/num skills unfulfilled
+if project p has skills a,b,c,d,e and a,b,c already fulfilled by assigned students,
+then weights for skills d,e become 5/2 = 2.5
 
 iterate through all students and projects
 for each student/project pair, check their respective skill dicts
@@ -216,12 +232,7 @@ append each matching skill (skills where value in both dicts is non zero) to a l
 for each matching skill, sum the product of student's self rating of that skill, times the skill weight
 this sum is the students score for that project
 
-TO IMPLEMENT
-update weights of students skills
-    - weights for skills still needed = total skills needed/num skills unfulfilled
-    if project p has skills a,b,c,d,e and a,b,c already fulfilled by assigned students,
-    then weights for skills d,e become 5/2 = 2.5
-
+to implement
     - apply the opposite method for skills that are already fulfilled
 '''
 def score_pairs(students, projects):
@@ -236,7 +247,7 @@ def score_pairs(students, projects):
                     # checks if all students currently assigned are NOT proficient in current skill
                     if all(student.skills_ratings_dict.get(skill) <= 1 for student in project.assigned_students):
                         unfulfilled_skills.append(skill)
-
+                    
             # update weights for student skills based on total num skills and num unfulfilled skills
             if unfulfilled_skills:
                 num_unfulfilled_skills = len(unfulfilled_skills)
@@ -255,10 +266,10 @@ def score_pairs(students, projects):
                student.scores_per_project_dict[project.name] += product
         print(student.fn, student.scores_per_project_dict)
         student.reset_weights() # reset skill weights to 1 for next project
-
         
 def assign_students_to_projects(students, projects):
-    pass
+    for student in students:
+        pass
 
 if __name__ == '__main__':
     # get team distributions (and team sizes)
@@ -292,6 +303,7 @@ if __name__ == '__main__':
     # instantiate project objects
     project_objects = []
     for name in project_names:
+
         p = Project(name)
         project_objects.append(p)
 
@@ -329,11 +341,16 @@ if __name__ == '__main__':
         project.random_assignment()
         #print(f"{project.name}: {project.skills_dict}")
 
+    # assign team sizes to projects
+    size_projects(best_project_assignment, lab_sections, team_sizes)
+
     for lab in lab_sections:
-        if lab != '04L': # testing with just 1 lab section
+        if lab != '05L': # testing with just 1 lab section
             continue
         # group students and project by lab
         cur_students = [student for student in students if student.lab == lab]
         cur_projects = [project for project in best_project_assignment if project.assigned_lab == lab]
+        for cur_project in cur_projects:
+            print(cur_project.name, ': ', cur_project.team_size)
         score_pairs(cur_students, cur_projects)
         print(len(cur_students), len(cur_projects))
