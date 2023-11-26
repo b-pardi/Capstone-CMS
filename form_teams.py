@@ -284,18 +284,25 @@ grab top scoring student
 assign cur student to project if:
     - num students assigned to project is less than project team size
     - student not already assigned
+
+NEED TO:
+    - pop students' top project if that project is marked as full
+    - recalculate scores after each iteration
 '''
 def assign_students_to_projects(students, projects):
     for student in students:
         student.sort_skills_dict()
     students = sort_objects_by_dicts(students)
+
     for student in students:
         print("FULLY SORTED ", student.fn, student.scores_per_project_dict)
+    
     cycler = itertools.cycle(students)
-    max_iter = 5000 # safety net to prevent inf loops
+    max_iter = 1000 # safety net to prevent inf loops
     assigned_students = 0
     iters = 0
     num_students = len(students)
+
     while iters < max_iter and assigned_students < num_students:
         student = next(cycler)
         cur_student_top_project = next(iter(student.scores_per_project_dict.items()))
@@ -312,7 +319,17 @@ def assign_students_to_projects(students, projects):
             assoc_project.assigned_students.append(student.uid)
             assigned_students += 1
 
+        # if student top project is project that's full:
+        elif not student.is_assigned and len(assoc_project.assigned_students) == assoc_project.team_size:
+            student.scores_per_project_dict.pop(cur_student_top_project[0]) # pop top skill of that project
+
         iters += 1
+    if iters == 1000:
+        print("*** WARNING ASSIGNMENT CYCLE ITERATION LIMIT HIT ***")
+        for student in students:
+            if not student.is_assigned:
+                print(student.fn, student.scores_per_project_dict)
+
 
 
 if __name__ == '__main__':
