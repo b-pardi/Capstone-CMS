@@ -4,3 +4,4 @@ __pycache__
 student_data/*
 !student_data/.gitkeep
 /survey_backend/node_modules
+/survey_backend/.env
