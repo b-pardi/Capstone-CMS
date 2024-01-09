@@ -1,4 +1,4 @@
-
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 5001;
-const mongoURI = 'mongodb+srv://aadhikari:87x47GdDNURblhFW@cluster0.eytpvdt.mongodb.net/?retryWrites=true&w=majority';
+const mongoURI = process.env.mongoURI;
 
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
