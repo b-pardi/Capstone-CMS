@@ -15,7 +15,9 @@ If selections need to be updated, the script checks if a project's collection is
 
 To run survey:
 Have node installed from https://nodejs.org/en
-
+In the survey_backend folder create a file called ".env"
+In this file type: const mongoURI = "";
+In the quotes type the uri from uri.py file
 Navigate to Capstone-CMS/survey_backend
 `npm install`
 `npm start` - for server connecting survey to mongodb
