@@ -43,7 +43,7 @@ def init_db():
     print("Pinging database...")
 
     # create new client and connect to server
-    client = pymongo.MongoClient(URI, ssl_ca_certs=certifi.where())
+    client = pymongo.MongoClient(URI, tlsCAFile=certifi.where())
     
     # confirm connection made
     try:

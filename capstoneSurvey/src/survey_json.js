@@ -206,7 +206,7 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Frameworks",
+        "name": "FrontFrameworks",
         "visibleIf": "{Frontend} >=2",
         "title": "Frameworks",
         "description": "React/Vue/Angular/Ionic/Next",
@@ -226,7 +226,7 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Frameworks",
+        "name": "BackFrameworks",
         "visibleIf": "{Backend} >=2",
         "title": "Frameworks",
         "description": "ExpressJS, NodeJS, Flask, ASP, .NET, Django, Spring Boot, Ruby on Rails",

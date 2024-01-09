@@ -3,3 +3,4 @@ __pycache__
 /capstoneSurvey/node_modules
 student_data/*
 !student_data/.gitkeep
+/survey_backend/node_modules
