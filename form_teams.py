@@ -121,6 +121,7 @@ class Student:
         sorted_projects = sorted(self.scores_per_project_dict.items(), key=lambda x: x[1], reverse=True)
         self.scores_per_project_dict = dict(sorted_projects)
 
+
 def assign_scores_dict(projects, lab_sections, df):
     for p in projects:
         for lab in lab_sections:
@@ -253,7 +254,9 @@ def score_pairs(students, projects):
                 if required: # if the current skill is a skill needed for the project
                     total_project_skills += 1
                     # checks if all students currently assigned are NOT proficient in current skill
-                    if all(student.skills_ratings_dict.get(skill) <= 1 for student in project.assigned_students):
+                    if all(student.skills_ratings_dict.get(skill) <= 1
+                           for student in students
+                           if student.uid in project.assigned_students):
                         unfulfilled_skills.append(skill)
                     
             # update weights for student skills based on total num skills and num unfulfilled skills
@@ -272,9 +275,18 @@ def score_pairs(students, projects):
             for matched_skill in matching_skills:
                product = student.skills_ratings_dict[matched_skill] * student.skills_weights_dict[matched_skill]
                student.scores_per_project_dict[project.name] += product
-        #print(student.fn, student.scores_per_project_dict)
-        student.reset_weights() # reset skill weights to 1 for next project
+        print(student.fn, student.scores_per_project_dict)
+        student.reset_weights() # reset skill weights to 1 for next project !!!!!
      
+def sort_student_skills(students):
+    for student in students:
+        student.sort_skills_dict() # sort student scores per proj dict
+    students = sort_objects_by_dicts(students) # sort list of student objs by first dict value
+
+    for student in students:
+        print("FULLY SORTED ", student.fn, student.scores_per_project_dict)
+
+    return students
 
 '''
 grab top scoring student
@@ -285,51 +297,51 @@ assign cur student to project if:
     - num students assigned to project is less than project team size
     - student not already assigned
 
+if student's top scoring project is a full project, go to student's next top project
+
 NEED TO:
-    - pop students' top project if that project is marked as full
     - recalculate scores after each iteration
 '''
 def assign_students_to_projects(students, projects):
-    for student in students:
-        student.sort_skills_dict()
-    students = sort_objects_by_dicts(students)
-
-    for student in students:
-        print("FULLY SORTED ", student.fn, student.scores_per_project_dict)
-    
+    students = sort_student_skills(students)
     cycler = itertools.cycle(students)
     max_iter = 1000 # safety net to prevent inf loops
     assigned_students = 0
     iters = 0
     num_students = len(students)
-
     while iters < max_iter and assigned_students < num_students:
         student = next(cycler)
-        cur_student_top_project = next(iter(student.scores_per_project_dict.items()))
-        for project in projects:
+
+        # grab cur students top scoring project
+        cur_student_top_project = next(iter(student.scores_per_project_dict.items()))        
+        for project in projects: # find the corresponding project in projects list
             if project.name == cur_student_top_project[0]:
                 assoc_project = project
                 break
 
+        print(cur_student_top_project, student.fn, project.name)
+
         # assign student to project if project not full and student not already assigned
-        if not student.is_assigned and len(assoc_project.assigned_students) < assoc_project.team_size:
+        if not student.is_assigned and len(assoc_project.assigned_students) < assoc_project.team_size:            
             student.is_assigned = True
             student.assigned_project = assoc_project.name
-            #assoc_project.assigned_students.append(student.uid)
             assoc_project.assigned_students.append(student.uid)
             assigned_students += 1
+            students_list = list(itertools.islice(cycler, len(students)))  # Convert the current state of the cycler to a list
+            score_pairs(students_list, projects) # update weights and scores upon assignment
+            #students = sort_student_skills(cycler) 
+            # re-sort students and their skills upon score update
 
         # if student top project is project that's full:
         elif not student.is_assigned and len(assoc_project.assigned_students) == assoc_project.team_size:
             student.scores_per_project_dict.pop(cur_student_top_project[0]) # pop top skill of that project
 
         iters += 1
-    if iters == 1000:
-        print("*** WARNING ASSIGNMENT CYCLE ITERATION LIMIT HIT ***")
-        for student in students:
-            if not student.is_assigned:
-                print(student.fn, student.scores_per_project_dict)
-
+        if iters == 1000:
+            print("*** WARNING ASSIGNMENT CYCLE ITERATION LIMIT HIT ***")
+            for student in students:
+                if not student.is_assigned:
+                    print(student.fn, student.scores_per_project_dict)
 
 
 if __name__ == '__main__':

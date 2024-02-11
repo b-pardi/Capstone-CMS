@@ -4,8 +4,8 @@ First install requirements from requirements.txt
 To connect to the Atlas Mongodb, you need to have a valid URI
 Put the uri.py file sent to your email in the root of the project directory
 
-Then run team_descriptor.py
-    `python team_descriptor.py`
+Then run manual_skill_selector.py
+    `python manual_skill_selector.py`
 
 Database connection is setup first thing upon running, so check the terminal to ensure ping was succesful
 
