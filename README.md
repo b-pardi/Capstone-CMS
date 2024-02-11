@@ -1,5 +1,5 @@
 First install requirements from requirements.txt
-    `pip install -r requirements.txt`
+`pip install -r requirements.txt`
 
 To connect to the Atlas Mongodb, you need to have a valid URI
 Put the uri.py file sent to your email in the root of the project directory
@@ -13,10 +13,16 @@ Window opens up with a list of projects and skills for each of them to be select
 When selections are done, hit submit on the top left and they will be added to the database
 If selections need to be updated, the script checks if a project's collection is already in the db, and updates accordingly
 
-To run survey in localhost:
-1. Have node installed from https://nodejs.org/en
-2. Install React: npm install react 
-3. Install Dom: npm install react react-dom
-4. Install React scripts: npm install react react-dom react-scripts
-Start local server by: npm start
-If server doesn't open in web browser, navigate to http://localhost:3000/
+To run survey:
+Have node installed from https://nodejs.org/en
+In the survey_backend folder create a file called ".env"
+In this file type: const mongoURI = "";
+In the quotes type the uri from uri.py file
+Navigate to Capstone-CMS/survey_backend
+`npm install`
+`npm start` - for server connecting survey to mongodb
+Navigate to Capstone-CMS/capstoneSurvey/src
+`npm install`
+`npm start` - for starting survey app in http://localhost:3000/
+
+If survey doesn't open in web browser, navigate to http://localhost:3000/

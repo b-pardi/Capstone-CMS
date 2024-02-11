@@ -28,7 +28,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "OpenCV",
         "visibleIf": "{Python} >=2",
-        "title": "OpenCV",
+        "title": "OpenCV/SimpleCV",
         "description": "Python",
         "autoGenerate": false,
         "rateCount": 5,
@@ -66,6 +66,36 @@ export const surveyJson = {
         },
         {
         "type": "rating",
+        "name": "C",
+        "title": "C/C++",
+        "isRequired": true,
+        "description": "Object-Oriented Programming",
+        "autoGenerate": false,
+        "rateCount": 5,
+        "rateValues": [ 1, 2, 3, 4, 5, ]
+        },
+        {
+        "type": "rating",
+        "name": "C#",
+        "title": "C#",
+        "isRequired": true,
+        "description": "Object-Oriented Programming",
+        "autoGenerate": false,
+        "rateCount": 5,
+        "rateValues": [ 1, 2, 3, 4, 5, ]
+        },
+        {
+        "type": "rating",
+        "name": "Java",
+        "title": "Java",
+        "isRequired": true,
+        "description": "Object-Oriented Programming",
+        "autoGenerate": false,
+        "rateCount": 5,
+        "rateValues": [ 1, 2, 3, 4, 5, ]
+        },
+        {
+        "type": "rating",
         "name": "Machine Learning",
         "title": "Machine Learning",
         "isRequired": true,
@@ -87,7 +117,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Image Classification",
         "visibleIf": "{Machine Learning} >=2",
-        "title": "Image Classification",
+        "title": "Classification/Image Classification",
         "description": "Machine Learning",
         "autoGenerate": false,
         "rateCount": 5,
@@ -97,7 +127,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Regression",
         "visibleIf": "{Machine Learning} >=2",
-        "title": "Regression",
+        "title": "Regression Analysis",
         "description": "Machine Learning",
         "autoGenerate": false,
         "rateCount": 5,
@@ -107,7 +137,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Large Language Model",
         "visibleIf": "{Machine Learning} >=2",
-        "title": "Large Language Model",
+        "title": "Large Language Models",
         "description": "ML/AI",
         "autoGenerate": false,
         "rateCount": 5,
@@ -122,6 +152,17 @@ export const surveyJson = {
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
+        },
+        {
+          "type": "rating",
+          "name": "GenAI",
+          "visibleIf": "{Machine Learning} >= 2",
+          "title": "Generative AI",
+          "description": "ML/AI",
+          "autogenerate": false,
+          "rateCount": 5,
+          "rateValues": [ 1, 2, 3, 4, 5 ]
+
         },
         {
         "type": "rating",
@@ -165,7 +206,7 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Frameworks",
+        "name": "FrontFrameworks",
         "visibleIf": "{Frontend} >=2",
         "title": "Frameworks",
         "description": "React/Vue/Angular/Ionic/Next",
@@ -185,20 +226,10 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "NodeJS",
+        "name": "BackFrameworks",
         "visibleIf": "{Backend} >=2",
-        "title": "NodeJS",
-        "description": "Back end Web development",
-        "autoGenerate": false,
-        "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
-        },
-        {
-        "type": "rating",
-        "name": "Express",
-        "visibleIf": "{Backend} >=2",
-        "title": "Express",
-        "description": "Back end Web development",
+        "title": "Frameworks",
+        "description": "ExpressJS, NodeJS, Flask, ASP, .NET, Django, Spring Boot, Ruby on Rails",
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
@@ -245,20 +276,10 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Microcontrollers",
-        "title": "Microcontrollers",
+        "name": "Cloudc",
+        "title": "Cloud Platforms",
         "isRequired": true,
-        "description": "Rasberry Pi/Arduino",
-        "autoGenerate": false,
-        "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
-        },
-        {
-        "type": "rating",
-        "name": "Alg/DS",
-        "title": "Algorithms and Data Structures",
-        "isRequired": true,
-        "description": "CSE31 and CSE100",
+        "description": "AWS, Azure, Google Cloud",
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
@@ -294,85 +315,6 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Cloudc",
-        "title": "Cloud Platforms",
-        "isRequired": true,
-        "description": "Cloud platforms/computing",
-        "autoGenerate": false,
-        "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
-        },
-        {
-        "type": "rating",
-        "name": "Google Cloud",
-        "visibleIf": "{Cloudc} >=2",
-        "title": "Google Cloud",
-        "description": "Cloud platforms/computing",
-        "autoGenerate": false,
-        "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
-        },
-        {
-        "type": "rating",
-        "name": "Azure",
-        "visibleIf": "{Cloudc} >=2",
-        "title": "Azure",
-        "description": "Cloud platforms/computing",
-        "autoGenerate": false,
-        "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
-        },
-        {
-        "type": "rating",
-        "name": "AWS",
-        "visibleIf": "{Cloudc} >=2",
-        "title": "AWS",
-        "description": "Cloud platforms/computing",
-        "autoGenerate": false,
-        "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
-        },
-        {
-        "type": "rating",
-        "name": "C",
-        "title": "C/C++",
-        "isRequired": true,
-        "description": "Object-Oriented Programming",
-        "autoGenerate": false,
-        "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
-        },
-        {
-        "type": "rating",
-        "name": "Java",
-        "title": "Java",
-        "isRequired": true,
-        "description": "Object-Oriented Programming",
-        "autoGenerate": false,
-        "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
-        },
-        {
-        "type": "rating",
-        "name": "Bootstrap",
-        "title": "Bootstrap",
-        "visibleIf": "{Java} >=2",
-        "autoGenerate": false,
-        "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
-        },
-        {
-        "type": "rating",
-        "name": "VR",
-        "title": "VR",
-        "isRequired": true,
-        "description": "",
-        "autoGenerate": false,
-        "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
-        },
-        {
-        "type": "rating",
         "name": "GameEngines",
         "title": "Game Engines",
         "isRequired": true,
@@ -402,16 +344,6 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Git",
-        "title": "Version Control",
-        "isRequired": true,
-        "description": "git",
-        "autoGenerate": false,
-        "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
-        },
-        {
-        "type": "rating",
         "name": "GIS",
         "title": "Geographic Information Systems",
         "isRequired": true,
@@ -420,6 +352,65 @@ export const surveyJson = {
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
         },
+        {
+        "type": "rating",
+        "name": "Microcontrollers",
+        "title": "Microcontrollers",
+        "isRequired": true,
+        "description": "Rasberry Pi/Arduino",
+        "autoGenerate": false,
+        "rateCount": 5,
+        "rateValues": [ 1, 2, 3, 4, 5, ]
+        },
+        {
+        "type": "rating",
+        "name": "Alg/DS",
+        "title": "Algorithms and Data Structures",
+        "isRequired": true,
+        "description": "CSE31 and CSE100",
+        "autoGenerate": false,
+        "rateCount": 5,
+        "rateValues": [ 1, 2, 3, 4, 5, ]
+        },
+        {
+        "type": "rating",
+        "name": "Networking",
+        "title": "Networking",
+        "isRequired": true,
+        "autoGenerate": false,
+        "rateCount": 5,
+        "rateValues": [ 1, 2, 3, 4, 5, ]
+        },
+        {
+        "type": "rating",
+        "name": "CN Sec",
+        "title": "Computer and Network Security",
+        "isRequired": true,
+        "autoGenerate": false,
+        "rateCount": 5,
+        "rateValues": [ 1, 2, 3, 4, 5, ]
+        },
+         {
+        "type": "rating",
+        "name": "Systems Prog",
+        "title": "Systems Programming",
+        "isRequired": true,
+        "description": "OS, utility programs, device drivers",
+        "autoGenerate": false,
+        "rateCount": 5,
+        "rateValues": [ 1, 2, 3, 4, 5, ]
+        },
+        {
+        "type": "rating",
+        "name": "Git",
+        "title": "Version Control",
+        "isRequired": true,
+        "description": "git",
+        "autoGenerate": false,
+        "rateCount": 5,
+        "rateValues": [ 1, 2, 3, 4, 5, ]
+        },
+        
         {
         "name": "other",
         "type": "text",
