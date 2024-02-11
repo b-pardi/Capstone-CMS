@@ -417,6 +417,12 @@ if __name__ == '__main__':
     # assign team sizes to projects
     size_projects(best_project_assignment, lab_sections, team_sizes)
 
+    formed_teams_dict = {
+        'student.fn': [],
+        'student.ln': [],
+        'assigned_project': [],
+        'score_for_project': [],
+    }
     for lab in lab_sections:
         print('\n***', lab, '\n***')
         # group students and project by lab
@@ -424,8 +430,21 @@ if __name__ == '__main__':
         cur_projects = [project for project in best_project_assignment if project.assigned_lab == lab]
         score_pairs(cur_students, cur_projects)
         assign_students_to_projects(cur_students, cur_projects)
-        for student in cur_students:
-            print(f"{student.fn}, {student.ln}, {student.assigned_project}")
+
         for project in cur_projects:
             print(f"{project.name}, assigned: {len(project.assigned_students)}, target: {project.team_size}")
         print(len(cur_students), len(cur_projects))
+
+        for student in cur_students:
+            print(f"{student.fn}, {student.ln}, {student.assigned_project}")
+            # append results to dictionary
+            formed_teams_dict['student.fn'].append(student.fn)
+            formed_teams_dict['student.ln'].append(student.ln)
+            formed_teams_dict['assigned_project'].append(student.assigned_project)
+            formed_teams_dict['score_for_project'].append(student.scores_per_project_dict[student.assigned_project])
+
+    print(formed_teams_dict)
+
+    # put results of algorithm into dataframe (will eventually be db)
+    res_df = pd.DataFrame(formed_teams_dict)
+    res_df.to_csv('output/formed_teams.csv')
