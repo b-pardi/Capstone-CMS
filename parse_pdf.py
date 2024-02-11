@@ -42,7 +42,7 @@ def extract_objectives(proj_file):
             print(project_title_cleaned, '\n', objectives[i-1])
             
             # put paired project and description into their own files
-            semester = os.path.basename(file)[:3]
+            semester = os.path.basename(proj_file)[:3]
             with open(f"data/parsed_descriptions/{semester}_{project_title_cleaned}.txt", 'w') as extract_file:
                 extract_file.write(objectives[i-1])
             i+=1
@@ -85,4 +85,4 @@ if __name__ == '__main__':
         extract_objectives(f"data/project_descriptions/{semester}_all_projects.txt")
     '''
     skills_df = table_skills()
-    skills_df.to_csv("data/skill_table.csv")
+    skills_df.to_csv("output/skill_table.csv")
