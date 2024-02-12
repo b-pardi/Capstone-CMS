@@ -26,9 +26,7 @@ class Project:
         self.assigned_lab = ''
         self.assigned_lab_score = -1
         self.scores_per_lab_dict = {}
-        self.scores_per_lab_list = []
         self.assigned = False
-        self.top_diff = np.inf
         self.assigned_students = []
         self.team_size = 0
 
@@ -329,8 +327,7 @@ def assign_students_to_projects(students, projects):
             assigned_students += 1
             students_list = list(itertools.islice(cycler, len(students)))  # Convert the current state of the cycler to a list
             score_pairs(students_list, projects) # update weights and scores upon assignment
-            #students = sort_student_skills(cycler) 
-            # re-sort students and their skills upon score update
+            sort_student_skills(students_list) # re-sort students and their skills upon score update
 
         # if student top project is project that's full:
         elif not student.is_assigned and len(assoc_project.assigned_students) == assoc_project.team_size:
