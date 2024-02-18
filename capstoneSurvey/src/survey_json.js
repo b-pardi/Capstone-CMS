@@ -9,7 +9,6 @@ export const surveyJson = {
         "type": "rating",
         "name": "python",
         "title": "Python",
-        "isRequired": true,
         "autoGenerate": false,
         "rateCount": 5,
         rateValues: [ 1, 2, 3, 4, 5, ]
@@ -68,7 +67,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "C",
         "title": "C/C++",
-        "isRequired": true,
+        
         "description": "Object-Oriented Programming",
         "autoGenerate": false,
         "rateCount": 5,
@@ -78,7 +77,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "C#",
         "title": "C#",
-        "isRequired": true,
+        
         "description": "Object-Oriented Programming",
         "autoGenerate": false,
         "rateCount": 5,
@@ -88,7 +87,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Java",
         "title": "Java",
-        "isRequired": true,
+        
         "description": "Object-Oriented Programming",
         "autoGenerate": false,
         "rateCount": 5,
@@ -98,7 +97,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Machine Learning",
         "title": "Machine Learning",
-        "isRequired": true,
+        
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
@@ -168,7 +167,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "App Dev",
         "title": "App Dev",
-        "isRequired": true,
+        
         "description": "React Native/Swift/Flutter/Ionic",
         "autoGenerate": false,
         "rateCount": 5,
@@ -178,7 +177,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Web Dev",
         "title": "Web Dev",
-        "isRequired": true,
+        
         "description": "Web Development",
         "autoGenerate": false,
         "rateCount": 5,
@@ -278,7 +277,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Cloudc",
         "title": "Cloud Platforms",
-        "isRequired": true,
+        
         "description": "AWS, Azure, Google Cloud",
         "autoGenerate": false,
         "rateCount": 5,
@@ -288,7 +287,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "datam",
         "title": "Data Management",
-        "isRequired": true,
+        
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
@@ -317,7 +316,6 @@ export const surveyJson = {
         "type": "rating",
         "name": "GameEngines",
         "title": "Game Engines",
-        "isRequired": true,
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
@@ -346,7 +344,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "GIS",
         "title": "Geographic Information Systems",
-        "isRequired": true,
+        
         "description": "Google Maps Api",
         "autoGenerate": false,
         "rateCount": 5,
@@ -356,7 +354,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Microcontrollers",
         "title": "Microcontrollers",
-        "isRequired": true,
+        
         "description": "Rasberry Pi/Arduino",
         "autoGenerate": false,
         "rateCount": 5,
@@ -366,7 +364,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Alg/DS",
         "title": "Algorithms and Data Structures",
-        "isRequired": true,
+        
         "description": "CSE31 and CSE100",
         "autoGenerate": false,
         "rateCount": 5,
@@ -376,7 +374,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Networking",
         "title": "Networking",
-        "isRequired": true,
+        
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
@@ -385,7 +383,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "CN Sec",
         "title": "Computer and Network Security",
-        "isRequired": true,
+        
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
@@ -394,7 +392,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Systems Prog",
         "title": "Systems Programming",
-        "isRequired": true,
+        
         "description": "OS, utility programs, device drivers",
         "autoGenerate": false,
         "rateCount": 5,
@@ -404,7 +402,7 @@ export const surveyJson = {
         "type": "rating",
         "name": "Git",
         "title": "Version Control",
-        "isRequired": true,
+        
         "description": "git",
         "autoGenerate": false,
         "rateCount": 5,

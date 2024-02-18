@@ -8,11 +8,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 5001;
-const mongoURI = process.env.mongoURI;
 
-mongoose.connect(mongoURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+mongoose.connect(process.env.URImongo, {
     dbName: 'surveyTest'
 });
 
@@ -46,7 +43,7 @@ const surveySchema = new mongoose.Schema({
     MERN: Number,
     Cloudc: Number,
     datam: Number,
-    QL: Number,
+    SQL: Number,
     noSQL: Number,
     GameEngines: Number,
     Unity: Number,
