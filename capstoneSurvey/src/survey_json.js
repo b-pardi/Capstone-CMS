@@ -7,7 +7,7 @@ export const surveyJson = {
         "elements": [
         {
         "type": "rating",
-        "name": "python",
+        "name": "Python",
         "title": "Python",
         "autoGenerate": false,
         "rateCount": 5,
@@ -15,8 +15,8 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Pytorch/Tensorflow/Keras",
-        "visibleIf": "{python} >= 2",
+        "name": "PytorchTensorflowKeras",
+        "visibleIf": "{Python} >= 2",
         "title": "Pytorch/Tensorflow/Keras",
         "description": "Python",
         "autoGenerate": false,
@@ -65,9 +65,8 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "C",
+        "name": "CandCpp",
         "title": "C/C++",
-        
         "description": "Object-Oriented Programming",
         "autoGenerate": false,
         "rateCount": 5,
@@ -75,9 +74,8 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "C#",
+        "name": "Csharp",
         "title": "C#",
-        
         "description": "Object-Oriented Programming",
         "autoGenerate": false,
         "rateCount": 5,
@@ -87,7 +85,6 @@ export const surveyJson = {
         "type": "rating",
         "name": "Java",
         "title": "Java",
-        
         "description": "Object-Oriented Programming",
         "autoGenerate": false,
         "rateCount": 5,
@@ -95,17 +92,16 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Machine Learning",
+        "name": "ML",
         "title": "Machine Learning",
-        
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
             },
         {
         "type": "rating",
-        "name": "Object Detection",
-        "visibleIf": "{Machine Learning} >=2",
+        "name": "ObjectDetection",
+        "visibleIf": "{ML} >=2",
         "title": "Object Detection",
         "description": "Machine Learning",
         "autoGenerate": false,
@@ -114,8 +110,8 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Image Classification",
-        "visibleIf": "{Machine Learning} >=2",
+        "name": "ImageClassification",
+        "visibleIf": "{ML} >=2",
         "title": "Classification/Image Classification",
         "description": "Machine Learning",
         "autoGenerate": false,
@@ -125,7 +121,7 @@ export const surveyJson = {
         {
         "type": "rating",
         "name": "Regression",
-        "visibleIf": "{Machine Learning} >=2",
+        "visibleIf": "{ML} >=2",
         "title": "Regression Analysis",
         "description": "Machine Learning",
         "autoGenerate": false,
@@ -134,8 +130,8 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Large Language Model",
-        "visibleIf": "{Machine Learning} >=2",
+        "name": "LLM",
+        "visibleIf": "{ML} >=2",
         "title": "Large Language Models",
         "description": "ML/AI",
         "autoGenerate": false,
@@ -144,8 +140,8 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Reinforcement Learning",
-        "visibleIf": "{Machine Learning} >=2",
+        "name": "ReinforcementLearning",
+        "visibleIf": "{ML} >=2",
         "title": "Reinforcement Learning",
         "description": "ML/AI",
         "autoGenerate": false,
@@ -153,21 +149,20 @@ export const surveyJson = {
         "rateValues": [ 1, 2, 3, 4, 5, ]
         },
         {
-          "type": "rating",
-          "name": "GenAI",
-          "visibleIf": "{Machine Learning} >= 2",
-          "title": "Generative AI",
-          "description": "ML/AI",
-          "autogenerate": false,
-          "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5 ]
+        "type": "rating",
+        "name": "GenerativeAI",
+        "visibleIf": "{ML} >= 2",
+        "title": "Generative AI",
+        "description": "ML/AI",
+        "autogenerate": false,
+        "rateCount": 5,
+        "rateValues": [ 1, 2, 3, 4, 5 ]
 
         },
         {
         "type": "rating",
-        "name": "App Dev",
+        "name": "AppDev",
         "title": "App Dev",
-        
         "description": "React Native/Swift/Flutter/Ionic",
         "autoGenerate": false,
         "rateCount": 5,
@@ -175,9 +170,8 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Web Dev",
+        "name": "WebDev",
         "title": "Web Dev",
-        
         "description": "Web Development",
         "autoGenerate": false,
         "rateCount": 5,
@@ -186,7 +180,7 @@ export const surveyJson = {
         {
         "type": "rating",
         "name": "Frontend",
-        "visibleIf": "{Web Dev} >=2",
+        "visibleIf": "{WebDev} >=2",
         "title": "Front end",
         "description": "Web Development",
         "autoGenerate": false,
@@ -195,7 +189,7 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "HTML/CSS",
+        "name": "HTML_CSS",
         "visibleIf": "{Frontend} >=2",
         "title": "HTML/CSS",
         "description": "Front-end Web Development",
@@ -216,7 +210,7 @@ export const surveyJson = {
         {
         "type": "rating",
         "name": "Backend",
-        "visibleIf": "{Web Dev} >=2",
+        "visibleIf": "{WebDev} >=2",
         "title": "Back end",
         "description": "Web Development",
         "autoGenerate": false,
@@ -246,7 +240,7 @@ export const surveyJson = {
         {
         "type": "rating",
         "name": "Both",
-        "visibleIf": "{Web Dev} >=2",
+        "visibleIf": "{WebDev} >=2",
         "title": "Both Front and Backend",
         "description": "Web Development",
         "autoGenerate": false,
@@ -277,7 +271,6 @@ export const surveyJson = {
         "type": "rating",
         "name": "Cloudc",
         "title": "Cloud Platforms",
-        
         "description": "AWS, Azure, Google Cloud",
         "autoGenerate": false,
         "rateCount": 5,
@@ -285,9 +278,8 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "datam",
+        "name": "dataManagement",
         "title": "Data Management",
-        
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
@@ -295,7 +287,7 @@ export const surveyJson = {
         {
         "type": "rating",
         "name": "SQL",
-        "visibleIf": "{datam} >=2",
+        "visibleIf": "{dataManagement} >=2",
         "title": "SQL Based Data Management",
         "description": "SQL, SQLite, PostgreSQL, etc",
         "autoGenerate": false,
@@ -305,7 +297,7 @@ export const surveyJson = {
         {
         "type": "rating",
         "name": "noSQL",
-        "visibleIf": "{datam} >=2",
+        "visibleIf": "{dataManagement} >=2",
         "title": "noSQL Based Data Management",
         "description": "MongoDB, DynamoDB, Firebase, etc",
         "autoGenerate": false,
@@ -344,7 +336,6 @@ export const surveyJson = {
         "type": "rating",
         "name": "GIS",
         "title": "Geographic Information Systems",
-        
         "description": "Google Maps Api",
         "autoGenerate": false,
         "rateCount": 5,
@@ -354,7 +345,6 @@ export const surveyJson = {
         "type": "rating",
         "name": "Microcontrollers",
         "title": "Microcontrollers",
-        
         "description": "Rasberry Pi/Arduino",
         "autoGenerate": false,
         "rateCount": 5,
@@ -362,9 +352,8 @@ export const surveyJson = {
         },
         {
         "type": "rating",
-        "name": "Alg/DS",
+        "name": "Alg_DS",
         "title": "Algorithms and Data Structures",
-        
         "description": "CSE31 and CSE100",
         "autoGenerate": false,
         "rateCount": 5,
@@ -374,25 +363,22 @@ export const surveyJson = {
         "type": "rating",
         "name": "Networking",
         "title": "Networking",
-        
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
         },
         {
         "type": "rating",
-        "name": "CN Sec",
+        "name": "CN_Security",
         "title": "Computer and Network Security",
-        
         "autoGenerate": false,
         "rateCount": 5,
         "rateValues": [ 1, 2, 3, 4, 5, ]
         },
          {
         "type": "rating",
-        "name": "Systems Prog",
+        "name": "Systems_Prog",
         "title": "Systems Programming",
-        
         "description": "OS, utility programs, device drivers",
         "autoGenerate": false,
         "rateCount": 5,
@@ -402,7 +388,6 @@ export const surveyJson = {
         "type": "rating",
         "name": "Git",
         "title": "Version Control",
-        
         "description": "git",
         "autoGenerate": false,
         "rateCount": 5,
