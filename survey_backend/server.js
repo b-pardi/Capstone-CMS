@@ -14,6 +14,12 @@ mongoose.connect(process.env.URImongo, {
 });
 
 const surveySchema = new mongoose.Schema({
+    Name: String,
+    Email: String,
+    LabSection: {
+        type: String,
+        enum: ['001d','002D','OO3D']
+    },
     Python: Number,
     PytorchTensorflowKeras: Number,
     OpenCV: Number,

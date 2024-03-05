@@ -54,7 +54,7 @@ export const surveyJson = {
           "title": "Python",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [1, 2, 3, 4, 5]
+          "rateValues": [0,1, 2, 3, 4, 5]
 
         },
         
@@ -66,7 +66,7 @@ export const surveyJson = {
           //"description": "Python",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [1, 2, 3, 4, 5],
+          "rateValues": [0,1, 2, 3, 4, 5],
           "indent": 3
         },
         {
@@ -77,7 +77,7 @@ export const surveyJson = {
           //"description": "Python",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [1, 2, 3, 4, 5],
+          "rateValues": [0, 1, 2, 3, 4, 5],
           "indent": 3
         },
         {
@@ -88,7 +88,7 @@ export const surveyJson = {
           //"description": "Python",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [1, 2, 3, 4, 5],
+          "rateValues": [0, 1, 2, 3, 4, 5],
           "indent": 3
         },
         {
@@ -99,7 +99,7 @@ export const surveyJson = {
           //"description": "Python",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [1, 2, 3, 4, 5],
+          "rateValues": [0, 1, 2, 3, 4, 5],
           "indent": 3
         },
         {
@@ -110,7 +110,7 @@ export const surveyJson = {
           //"description": "Python",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [1, 2, 3, 4, 5],
+          "rateValues": [0,1, 2, 3, 4, 5],
           "indent": 3
         },
         {
@@ -120,7 +120,7 @@ export const surveyJson = {
           "description": "Object-Oriented Programming",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [1, 2, 3, 4, 5],
+          "rateValues": [0,1, 2, 3, 4, 5],
           //"indent": 0
         },
         {
@@ -130,7 +130,7 @@ export const surveyJson = {
           "description": "Object-Oriented Programming",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [1, 2, 3, 4, 5],
+          "rateValues": [0,1, 2, 3, 4, 5],
           //"indent": 0
         },
         {
@@ -140,7 +140,7 @@ export const surveyJson = {
           "description": "Object-Oriented Programming",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [1, 2, 3, 4, 5],
+          "rateValues": [0,1, 2, 3, 4, 5],
           "indent": 0
         }
       ]
@@ -152,7 +152,7 @@ export const surveyJson = {
           "title": "Machine Learning",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ]
+          "rateValues": [0, 1, 2, 3, 4, 5, ]
           },
           {
           "type": "rating",
@@ -162,7 +162,7 @@ export const surveyJson = {
           //"description": "Machine Learning",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 3
           },
           {
@@ -173,7 +173,7 @@ export const surveyJson = {
           //"description": "Machine Learning",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 3
           },
           {
@@ -184,7 +184,7 @@ export const surveyJson = {
           //"description": "Machine Learning",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 3
           },
           {
@@ -195,7 +195,7 @@ export const surveyJson = {
           //"description": "ML/AI",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 3
           },
           {
@@ -206,7 +206,7 @@ export const surveyJson = {
           //"description": "ML/AI",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 3
           },
           {
@@ -217,7 +217,7 @@ export const surveyJson = {
           //"description": "ML/AI",
           "autogenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5 ],
+          "rateValues": [0, 1, 2, 3, 4, 5 ],
           "indent": 3
   
           } 
@@ -232,7 +232,7 @@ export const surveyJson = {
           "description": "React Native/Swift/Flutter/Ionic",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ]
+          "rateValues": [0, 1, 2, 3, 4, 5, ]
           },
           {
           "type": "rating",
@@ -241,7 +241,7 @@ export const surveyJson = {
           //"description": "Web Development",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ]
+          "rateValues": [0, 1, 2, 3, 4, 5, ]
           },
           {
           "type": "rating",
@@ -251,7 +251,7 @@ export const surveyJson = {
           //"description": "Web Development",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 3 
           },
           {
@@ -262,7 +262,7 @@ export const surveyJson = {
           "description": "Front-end Web Development",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 5
           },
           {
@@ -273,7 +273,7 @@ export const surveyJson = {
           "description": "React/Vue/Angular/Ionic/Next",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 5
           },
           {
@@ -284,7 +284,7 @@ export const surveyJson = {
           //"description": "Web Development",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 3
           },
           {
@@ -295,7 +295,7 @@ export const surveyJson = {
           "description": "ExpressJS, NodeJS, Flask, ASP, .NET, Django, Spring Boot, Ruby on Rails",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 5
           },
           {
@@ -306,7 +306,7 @@ export const surveyJson = {
           "description": "Utilizing APIs within a web app",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 3
           },
           {
@@ -317,7 +317,7 @@ export const surveyJson = {
           //"description": "Web Development",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 3
           },
           {
@@ -328,7 +328,7 @@ export const surveyJson = {
           "description": "",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 5
           },
           {
@@ -339,7 +339,7 @@ export const surveyJson = {
           "description": "MERN or something similar",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ],
+          "rateValues": [0, 1, 2, 3, 4, 5, ],
           "indent": 5
           }, 
         
@@ -353,7 +353,7 @@ export const surveyJson = {
         "description": "AWS, Azure, Google Cloud",
         "autoGenerate": false,
         "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
+        "rateValues": [0, 1, 2, 3, 4, 5, ]
         },
         {
         "type": "rating",
@@ -361,7 +361,7 @@ export const surveyJson = {
         "title": "Data Management",
         "autoGenerate": false,
         "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ],
+        "rateValues": [0, 1, 2, 3, 4, 5, ],
         
         },
         {
@@ -372,7 +372,7 @@ export const surveyJson = {
         "description": "SQL, SQLite, PostgreSQL, etc",
         "autoGenerate": false,
         "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ],
+        "rateValues": [0, 1, 2, 3, 4, 5, ],
         "indent": 3
         },
         {
@@ -383,7 +383,7 @@ export const surveyJson = {
         "description": "MongoDB, DynamoDB, Firebase, etc",
         "autoGenerate": false,
         "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ],
+        "rateValues": [0, 1, 2, 3, 4, 5, ],
         "indent": 3
         },
         {
@@ -392,7 +392,7 @@ export const surveyJson = {
         "title": "Game Engines",
         "autoGenerate": false,
         "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ]
+        "rateValues": [0, 1, 2, 3, 4, 5, ]
         },
         {
         "type": "rating",
@@ -402,7 +402,7 @@ export const surveyJson = {
         //"description": "Game Engines",
         "autoGenerate": false,
         "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ],
+        "rateValues": [0, 1, 2, 3, 4, 5, ],
         "indent": 3
         },
         {
@@ -413,7 +413,7 @@ export const surveyJson = {
         //"description": "Game Engines",
         "autoGenerate": false,
         "rateCount": 5,
-        "rateValues": [ 1, 2, 3, 4, 5, ],
+        "rateValues": [0, 1, 2, 3, 4, 5, ],
         "indent": 3
         }
       ]
@@ -426,7 +426,7 @@ export const surveyJson = {
           "description": "Google Maps Api",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ]
+          "rateValues": [0, 1, 2, 3, 4, 5, ]
           },
           {
           "type": "rating",
@@ -435,7 +435,7 @@ export const surveyJson = {
           "description": "Rasberry Pi/Arduino",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ]
+          "rateValues": [0, 1, 2, 3, 4, 5, ]
           },
           {
           "type": "rating",
@@ -444,7 +444,7 @@ export const surveyJson = {
           "description": "CSE31 and CSE100",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ]
+          "rateValues": [0, 1, 2, 3, 4, 5, ]
           },
           {
           "type": "rating",
@@ -452,7 +452,7 @@ export const surveyJson = {
           "title": "Networking",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ]
+          "rateValues": [0, 1, 2, 3, 4, 5, ]
           },
           {
           "type": "rating",
@@ -460,7 +460,7 @@ export const surveyJson = {
           "title": "Computer and Network Security",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ]
+          "rateValues": [0, 1, 2, 3, 4, 5, ]
           },
            {
           "type": "rating",
@@ -469,7 +469,7 @@ export const surveyJson = {
           "description": "OS, utility programs, device drivers",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ]
+          "rateValues": [0, 1, 2, 3, 4, 5, ]
           },
           {
           "type": "rating",
@@ -478,7 +478,7 @@ export const surveyJson = {
           "description": "git",
           "autoGenerate": false,
           "rateCount": 5,
-          "rateValues": [ 1, 2, 3, 4, 5, ]
+          "rateValues": [ 0,1, 2, 3, 4, 5, ]
           },
           
           {
