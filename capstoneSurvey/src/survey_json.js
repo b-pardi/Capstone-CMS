@@ -257,7 +257,7 @@ export const surveyJson = {
           {
           "type": "rating",
           "name": "HTML_CSS",
-          "visibleIf": "{Frontend} >=2",
+          "visibleIf": "{WebDev} >= 2 and {Frontend} >= 2",
           "title": "HTML/CSS",
           "description": "Front-end Web Development",
           "autoGenerate": false,
@@ -307,7 +307,7 @@ export const surveyJson = {
           "autoGenerate": false,
           "rateCount": 5,
           "rateValues": [0, 1, 2, 3, 4, 5, ],
-          "indent": 3
+          "indent": 5
           },
           {
           "type": "rating",

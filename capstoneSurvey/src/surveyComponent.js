@@ -10,6 +10,34 @@ function SurveyComponent() {
     const survey = new Model(surveyJson);
     survey.applyTheme(Theme)
 
+    const dependentQuestionsConfig = {
+        PytorchTensorflowKeras: { controllingQuestions: ['Python'], threshold: 2 },
+        OpenCV: { controllingQuestions: ['Python'], threshold: 2},
+        Numpy: { controllingQuestions: ['Python'], threshold: 2},
+        Pandas: { controllingQuestions: ['Python'], threshold: 2},
+        Tkinter: { controllingQuestions: ['Python'], threshold: 2},
+        ObjectDetection: { controllingQuestions: ['ML'], threshold: 2},
+        ImageClassification: { controllingQuestions: ['ML'], threshold: 2},
+        Regression: { controllingQuestions: ['ML'], threshold: 2},
+        LLM: { controllingQuestions: ['ML'], threshold: 2},
+        ReinforcementLearning: { controllingQuestions: ['ML'], threshold: 2},
+        GenerativeAI: { controllingQuestions: ['ML'], threshold: 2},
+        Frontend: { controllingQuestions: ['WebDev'], threshold: 2},
+        HTML_CSS: { controllingQuestions: ['WebDev', 'Frontend'], threshold: 2},
+        FrontFrameworks: { controllingQuestions: ['WebDev', 'Frontend'], threshold: 2},
+        Backend: { controllingQuestions: ['WebDev'], threshold: 2},
+        BackFrameworks: { controllingQuestions: ['WebDev', 'Backend'], threshold: 2},
+        APIs: { controllingQuestions: ['WebDev', 'Backend'], threshold: 2},
+        Both: { controllingQuestions: ['WebDev'], threshold: 2},
+        Javascript: { controllingQuestions: ['WebDev', 'Both'], threshold: 2},
+        MERN: { controllingQuestions: ['WebDev', 'Both'], threshold: 2},
+        SQL: { controllingQuestions: ['dataManagement'], threshold: 2},
+        noSQL: { controllingQuestions: ['dataManagement'], threshold: 2},
+        Unity: { controllingQuestions: ['GameEngines'], threshold: 2},
+        Unreal: {controllingQuestions: ['GameEngines'], threshold: 2}
+    };
+
+
     const onCompleteSurvey = (survey) => {
         const surveyData = survey.data;
         console.log(surveyData);
@@ -21,6 +49,21 @@ function SurveyComponent() {
             console.error("Error handling survey: ", error);
         });
     };
+
+    survey.onValueChanged.add((sender, options) => {
+        Object.entries(dependentQuestionsConfig).forEach(([dependentQuestionsName, config]) => {
+            const controllingQuestionsValues = config.controllingQuestions.map(questionName => 
+                sender.getValue(questionName)
+                );
+            const isVisible = controllingQuestionsValues.every(value => value >= config.threshold);
+            const dependentQuestion = sender.getQuestionByName(dependentQuestionsName);
+            dependentQuestion.visible = isVisible;
+            if (!isVisible) {
+                dependentQuestion.clearValue();
+            }
+        });
+        survey.render();
+    });
 
     return (<Survey model={survey} onComplete={(survey) => onCompleteSurvey(survey)}/>);
 }
